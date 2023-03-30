@@ -78,6 +78,7 @@ class Homepage extends CI_Controller
         $data['title']      = NAMETITLE . " - Currency Setting";
 
         $this->load->view('tamplate/header', $data);
+        $this->load->view('tamplate/navbar-bottom-homepage', $data);
         $this->load->view('member/setting-currency', $body);
         $this->load->view('tamplate/footer', $footer);
     }

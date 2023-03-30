@@ -2,15 +2,9 @@
     <div class="col-12 col-lg-8 col-xl-6 box-navbar-freedy d-flex flex-row justify-content-start align-items-center bottom">
         <a href="<?= base_url() ?>homepage" class="d-flex align-items-center border-0 ms-0 me-auto">
             <div class="icon-menus d-flex align-items-center home-svg py-0">
-                <img src="<?= base_url() ?>assets/img/logo.png" alt="">
+                <img src="<?= base_url() ?>assets/img/speedybank/logoindex.png" alt="">
             </div>
         </a>
-
-        <!-- <a href="<?= base_url() ?>soon" class="d-flex align-items-center border-0 mx-2">
-            <div class="icon-menus d-flex align-items-center home-svg py-0">
-                <img src="<?= base_url() ?>assets/img/icon-search.png" alt="">
-            </div>
-        </a> -->
     </div>
 </div>
 
@@ -23,12 +17,12 @@
                     <path d="M2 17.9421C2 15.17 2 13.784 2.57179 12.5656C3.14359 11.3473 4.21743 10.4453 6.36511 8.64121L8.44844 6.89121C12.3304 3.6304 14.2713 2 16.5833 2C18.8954 2 20.8363 3.6304 24.7182 6.89121L26.8016 8.64121C28.9492 10.4453 30.0231 11.3473 30.5949 12.5656C31.1667 13.784 31.1667 15.17 31.1667 17.9421V26.5996C31.1667 30.4494 31.1667 32.3743 29.9463 33.5702C28.7259 34.7662 26.7617 34.7662 22.8333 34.7662H10.3333C6.40496 34.7662 4.44078 34.7662 3.22039 33.5702C2 32.3743 2 30.4494 2 26.5996V17.9421Z" stroke="url(#paint1_linear_789_3464)" stroke-width="4" />
                     <defs>
                         <linearGradient id="paint0_linear_789_3464" x1="11.375" y1="34.7666" x2="24.0288" y2="34.7666" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#8B0000" />
-                            <stop offset="1" stop-color="#CB0000" />
+                            <stop stop-color="#0F4E97" />
+                            <stop offset="1" stop-color="#0F4E97" />
                         </linearGradient>
                         <linearGradient id="paint1_linear_789_3464" x1="2" y1="34.7662" x2="37.4306" y2="34.7662" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#8B0000" />
-                            <stop offset="1" stop-color="#CB0000" />
+                            <stop stop-color="#0F4E97" />
+                            <stop offset="1" stop-color="#0F4E97" />
                         </linearGradient>
                     </defs>
                 </svg>
@@ -44,16 +38,16 @@
                     <path d="M26 7.00036L34 13.4396L26 19.8789" stroke="url(#paint2_linear_319_7)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                     <defs>
                         <linearGradient id="paint0_linear_319_7" x1="10.7999" y1="2.08743" x2="14.9766" y2="23.6873" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#8B0000" />
-                            <stop offset="1" stop-color="#CB0000" />
+                            <stop stop-color="#0F4E97" />
+                            <stop offset="1" stop-color="#0F4E97" />
                         </linearGradient>
                         <linearGradient id="paint1_linear_319_7" x1="26" y1="13.4414" x2="26" y2="12.4414" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#8B0000" />
-                            <stop offset="1" stop-color="#CB0000" />
+                            <stop stop-color="#0F4E97" />
+                            <stop offset="1" stop-color="#0F4E97" />
                         </linearGradient>
                         <linearGradient id="paint2_linear_319_7" x1="30" y1="19.8789" x2="30" y2="7.00036" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#8B0000" />
-                            <stop offset="1" stop-color="#CB0000" />
+                            <stop stop-color="#0F4E97" />
+                            <stop offset="1" stop-color="#0F4E97" />
                         </linearGradient>
                     </defs>
                 </svg>

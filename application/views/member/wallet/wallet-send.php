@@ -5,7 +5,7 @@
                 <div class="row d-flex justify-content-center">
                     <div class="col-12">
                         <div class="text-start">
-                            <span class="me-auto f-monserat title-top-navbar"><?= $_SESSION["currency"] ?> - Send Wallet
+                            <span class="me-auto f-hahmlet title-top-navbar"><?= $_SESSION["currency"] ?> - Send Wallet
                                 to Wallet</span>
                         </div>
                     </div>
@@ -72,8 +72,8 @@
                     <path d="M20.5001 27.7338L8.54175 17.5245L20.5001 7.31531" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                     <defs>
                         <linearGradient id="paint0_linear_30_4821" x1="20.5" y1="0" x2="20.5" y2="35" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#8B0000" />
-                            <stop offset="1" stop-color="#CB0000" />
+                            <stop stop-color="#0F4E97" />
+                            <stop offset="1" stop-color="#0F4E97" />
                         </linearGradient>
                     </defs>
                 </svg>

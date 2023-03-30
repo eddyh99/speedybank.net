@@ -2,9 +2,10 @@
     <div class="col-12 col-lg-8 col-xl-6">
         <div class="container" style="margin-bottom: 8rem;">
             <div class="app-container py-5">
-                <?php $this->load->view("tamplate/banner-nofiat"); ?>
+                <?php $this->load->view("tamplate/banner-nofiat-balance"); ?>
                 <div class="row d-flex justify-content-center">
                     <div class="col-12">
+                        <h2 class="f-hahmlet text-blue-freedy fw-bold text-center">Swap</h2>
                         <div class="col-12 recive-bank  d-flex align-items-center flex-column text-center">
                             <form method="POST" id="swapconfirm" action="<?= base_url() ?>swap/confirm"
                                 class="swap text-center" onsubmit="return validate()">

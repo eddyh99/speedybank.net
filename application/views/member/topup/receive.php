@@ -19,13 +19,17 @@
                                 ($_SESSION["currency"] == "GBP") ||
                                 ($_SESSION["currency"] == "RON")
                             ) { ?>
-                            <div class="receive-attention d-flex flex-column text-center col-12 p-3"
+                            <button type="button" class="receive-attention d-flex flex-column text-center col-12 p-3"
                                 data-bs-toggle="modal" data-bs-target="#attention">
-                                <span class="w-100 mb-2 fw-bold title">IMPORTANT</span>
-                                <p class="fw-bold">To maximize the level of privacy, </p>
-                                    <span class="fw-bold">all incoming and outgoing transfers will be managed by a payment and collection gateway which will not custody the funds but will just transfer them.</span>
-                                <p class="fw-bold"> The bank details, of each currency, will be the same for all users; excluding the ‘’causal’’ which identify the receiving wallet.</p>
-                            </div>
+                                <span class="mb-2 fw-bold title text-center mx-auto">IMPORTANT</span>
+                                <p class="desc fw-normal">
+                                    To maximize the privacy level, all incoming and outgoing transfers 
+                                        <b class="will-manage">
+                                            will be managed by a payment and collection gateway.
+                                        </b>
+                                    The bank details, of each currency, will be the same for all users;  excluding the ‘’causal’’ which identify the receiving wallet.
+                                </p>
+                            </button>
                             <?php } ?>
                         </div>
                         <div class="col-12 recive-bank  d-flex align-items-center flex-column text-center">
@@ -69,7 +73,7 @@
                                     in <b>SWAP</b>
                                     section</span><br>
                                 <hr>
-                                <span>Or make an international bank transfer toward EURO or
+                                <span class="text-blue-freedy">Or make an international bank transfer toward EURO or
                                     DOLLAR</span>
                                 <hr>
                             </div>
@@ -79,7 +83,7 @@
                             <a href="<?= base_url() ?>receive/interbank?currency=EUR" class="col-8 py-3 my-2">EUR
                                 International</a>
                             <div class="receive-note">
-                                <span>
+                                <span class="text-blue-freedy">
                                     <b>ATTENTION:<br>
                                         UPON THE ARRIVAL OF THE BANK TRANSFER, THE SENT CURRENCY WILL BE CONVERTED INTO
                                         THE
