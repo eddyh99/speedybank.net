@@ -38,7 +38,7 @@
                                 <input type="hidden" name="url" value="local">
                                 <div class="tab-pane box-tab-bank" id="us">
                                     <div class="align-items-center my-3">
-                                        <small class="text-danger">MAX
+                                        <small class="text-blue-freedy">MAX
                                             : <?= $_SESSION["symbol"] ?>
                                             <?= number_format(balance($_SESSION['user_id'], $_SESSION["currency"]) - $fee,2) ?></small>
                                         <input class="form-control money-input me-2" type="text" name="amount"
@@ -99,8 +99,8 @@
                     <defs>
                         <linearGradient id="paint0_linear_30_4821" x1="20.5" y1="0" x2="20.5" y2="35"
                             gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#8B0000" />
-                            <stop offset="1" stop-color="#CB0000" />
+                            <stop stop-color="#0F4E97" />
+                            <stop offset="1" stop-color="#0F4E97" />
                         </linearGradient>
                     </defs>
                 </svg>

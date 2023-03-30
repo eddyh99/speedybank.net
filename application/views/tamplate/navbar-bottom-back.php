@@ -3,7 +3,7 @@
     <div class="col-12 col-lg-8 col-xl-6 box-navbar-freedy d-flex flex-row justify-content-start align-items-center bottom">
         <a href="<?= base_url() ?>homepage" class="d-flex align-items-center border-0 ms-0 me-auto">
             <div class="icon-menus d-flex align-items-center home-svg py-0">
-                <img class="img-fluid" src="<?= base_url() ?>assets/img/logo.png" alt="logo">
+                <img class="img-fluid" src="<?= base_url() ?>assets/img/speedybank/logo.png" alt="logo">
             </div>
         </a>
 
@@ -61,8 +61,8 @@
                     <path d="M18.5 2L3.5 17L18.5 32" stroke="url(#paint0_linear_916_4049)" stroke-width="4" stroke-linecap="round"/>
                     <defs>
                         <linearGradient id="paint0_linear_916_4049" x1="3.5" y1="32" x2="21.7215" y2="32" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#CD0000"/>
-                            <stop offset="1" stop-color="#CD0000"/>
+                            <stop stop-color="#0F4E97"/>
+                            <stop offset="1" stop-color="#0F4E97"/>
                         </linearGradient>
                     </defs>
                 </svg>
@@ -81,16 +81,16 @@
                     <path d="M26 7.00036L34 13.4396L26 19.8789" stroke="url(#paint2_linear_319_7)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                     <defs>
                         <linearGradient id="paint0_linear_319_7" x1="10.7999" y1="2.08743" x2="14.9766" y2="23.6873" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#CD0000" />
-                            <stop offset="1" stop-color="#CD0000" />
+                            <stop stop-color="#0F4E97" />
+                            <stop offset="1" stop-color="#0F4E97" />
                         </linearGradient>
                         <linearGradient id="paint1_linear_319_7" x1="26" y1="13.4414" x2="26" y2="12.4414" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#CD0000" />
-                            <stop offset="1" stop-color="#CD0000" />
+                            <stop stop-color="#0F4E97" />
+                            <stop offset="1" stop-color="#0F4E97" />
                         </linearGradient>
                         <linearGradient id="paint2_linear_319_7" x1="30" y1="19.8789" x2="30" y2="7.00036" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#CD0000" />
-                            <stop offset="1" stop-color="#CD0000" />
+                            <stop stop-color="#0F4E97" />
+                            <stop offset="1" stop-color="#0F4E97" />
                         </linearGradient>
                     </defs>
                 </svg>

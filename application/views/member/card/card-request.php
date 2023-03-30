@@ -39,10 +39,10 @@
                     <?php if($requestcard ==  'requestcard'){?>
                         <div class="row my-5 ">
                             <div class="text-topup-card ">
-                                <h1 class="text-blue-freedy fw-bolder f-poppins text-center ">
+                                <h1 class="text-black fw-bolder f-hahmlet  text-center ">
                                     Request Card
                                 </h1>
-                                <ul class="text-start fw-semibold f-lexend col-10 mx-auto mt-4">
+                                <ul class="text-start fw-semibold f-jakarta col-10 mx-auto mt-4">
                                     <li>The card will be linked and rechargable only in Euro from your own wallet</li>
                                     <li class="mt-3">Every wallet is allowed to have a maximum of 1  card, the card is a rechargeable VISA in Euro currency</li>
                                 </ul>
@@ -91,12 +91,12 @@
                                 </h1>
                             </div>
                             <a href="<?= base_url(); ?>homepage/requestcard?requestcard=<?= base64_encode('activenow')?>" class="col-12 mx-auto card-topup d-flex align-items-center justify-content-center">
-                                <span class="text-blue-freed fw-bold text-center f-lexend fw-bold">
+                                <span class="text-blue-freed fw-bold text-center f-hahmlet ">
                                 Request Virtual Card
                                 </span>
                             </a>
                             <a href="" class="col-12 mx-auto card-topup d-flex align-items-center justify-content-center mt-4">
-                                <span class="text-blue-freed fw-bold text-center f-lexend fw-bold">
+                                <span class="text-blue-freed fw-bold text-center f-hahmlet ">
                                 Request Physical Card 
                                 <br>
                                 (COMING SOON)
