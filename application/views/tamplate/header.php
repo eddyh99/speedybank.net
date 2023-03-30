@@ -22,6 +22,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Hahmlet" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
 
 
     <link rel="stylesheet"

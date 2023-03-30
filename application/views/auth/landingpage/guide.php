@@ -1,11 +1,11 @@
 <!-- ======= Hero Section ======= -->
-<section id="" class="hero d-flex align-items-center p-3 pt-md-5">
+<section id="" class="d-flex align-items-center p-3 pt-md-5">
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <div class="link-back p-0">
                     <a href="<?= base_url() ?>#guide">
-                        <img src="<?= base_url() ?>assets/img/back-link.png" alt="">
+                        <img src="<?= base_url() ?>assets/img/speedybank/back-link.png" alt="">
                     </a>
                 </div>
             </div>
@@ -22,46 +22,53 @@
                     </div>
                 </div>
             <?php } ?>
-
+            
+            <!-- Start Wallet -->
             <?php if ($guide == 1) { ?>
-                <div class="col-12 my-5">
-                    <div class="logo-text text-center">
-                        <img src="<?= base_url() ?>assets/img/icon-guide-1.png" alt="">
-                        <span class="fw-bold text-blue-freedy f-lexend">Wallet</span>
+                <div class="col-12 my-5 ">
+                    <div class="logo-text wallet text-center">
+                        <span class="fw-bolder text-blue-freedy f-hahmlet py-1">Wallet</span>
                     </div>
                 </div>
-                <div class="col-12 mb-5">
-                    <div class="col-12 text-center mb-5">
-                        <p>
-                            <b translate="no"> ExchangeTailor </b> offers the possibility of sending or receiving funds by
-                            bank transfer, <b>even
-                                from
-                                a bank account not under your name</b>, without limitations, without any documentation
-                            required and
-                            anonymously.
-                        </p>
+                <div class="position-relative mb-0 mb-lg-5">
+                    <div class="position-absolute element-banking d-none d-lg-block">
+                        <svg width="111" height="349" viewBox="0 0 111 349" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M-195 4.99999C-195 2.23857 -192.761 0 -190 0H106C108.761 0 111 2.23858 111 5V344C111 346.761 108.761 349 106 349H-190C-192.761 349 -195 346.761 -195 344V4.99999Z" fill="#0F4E97"/>
+                        </svg>
                     </div>
-                    <div class="col-12 text-center">
-                        <div class="text-center bg-flowers-pink">
-                            <img src="<?= base_url() ?>assets/img/flower.png" alt="" class="lt">
-                            <img src="<?= base_url() ?>assets/img/flower.png" alt="" class="rb">
-                            <p class="d-inline-block">
-                                <b>Your wallet is identified through the </b><b translate="no"> ‘’Unique Code’’ </b><br>
-                                (you can find it on the home page of your account)<br>
-                                <b>You have to use your Unique Code in order to topup your wallet and receive incoming
-                                    transfers</b>
-                            </p>
+                    <div class="position-absolute element-banking right d-none d-lg-block">
+                        <svg width="106" height="349" viewBox="0 0 106 349" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="306" height="349" rx="5" fill="#0F4E97"/>
+                        </svg>
+                    </div>
+                    <div class="container p-r mb-5 pb-5">
+                        <div class="row gx-0">
+                            <div class="col-12 col-lg-7 mx-auto ">
+                                <div class="content-freedy text-center">
+                                    <h3 class="d-inline-block p-r f-hahmlet text-black">
+                                        The Importance of the <span class="text-blue-freedy" translate="no">Unique Code</span>
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-7 mx-auto text-center mt-4 f-jakarta">
+                                <p>
+                                    Your wallet is identified through the ‘’Unique Code’’ <br> (you can find it on the homepage of your  wallet ).You have to use your Unique Code in order to top up your wallet and receive incoming transfers.
+                                </p>
+                                <p>
+                                    <span translate="no">SpeedyBank</span> offers the possibility of making bank transfers, directly from your wallet, to any  bank accounts, even not under your name,without any documentation required and anonymously.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12">
+                </div>
+                <div class="col-12 mt-3">
                     <div class="accordion" id="accordionFreedy">
                         <div class="accordion-item freedy-accordion-item mb-5">
                             <h2 class="accordion-header m-0" id="pageOne">
                                 <button id="btnaccorionOne" class="accordion-button freedy-accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                     <div class="box-title-accordion ms-auto text-center">
-                                        <span class="head">How to Topup your wallet and receive funds</span>
-                                        <span class="small" id="seemoreOne">See more</span>
+                                        <span class="head text-blue-freedy f-hahmlet py-3">How to Topup your wallet and receive funds</span>
                                     </div>
                                 </button>
                             </h2>
@@ -75,8 +82,7 @@
                             <h2 class="accordion-header m-0" id="pageTwo">
                                 <button id="btnaccorionTwo" class="accordion-button freedy-accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                     <div class="box-title-accordion ms-auto text-center">
-                                        <span class="head">How to transfers funds between wallet to wallet</span>
-                                        <span class="small" id="seemoreTwo">See more</span>
+                                        <span class="head text-blue-freedy f-hahmlet py-3">How to make a wallet to wallet transfer</span>
                                     </div>
                                 </button>
                             </h2>
@@ -90,8 +96,7 @@
                             <h2 class="accordion-header m-0" id="pageThree">
                                 <button id="btnaccorionThree" class="accordion-button freedy-accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                     <div class="box-title-accordion ms-auto text-center">
-                                        <span class="head">How to convert currencies </span>
-                                        <span class="small" id="seemoreThree">See more</span>
+                                        <span class="head text-blue-freedy f-hahmlet py-3">How to convert currencies </span>
                                     </div>
                                 </button>
                             </h2>
@@ -105,8 +110,7 @@
                             <h2 class="accordion-header m-0" id="pageFour">
                                 <button id="btnaccorionFour" class="accordion-button freedy-accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                     <div class="box-title-accordion ms-auto text-center">
-                                        <span class="head">How to withdraw funds and make bank transfers</span>
-                                        <span class="small" id="seemoreFour">See more</span>
+                                        <span class="head text-blue-freedy f-hahmlet py-3">How to withdraw funds and make bank transfers</span>
                                     </div>
                                 </button>
                             </h2>
@@ -119,20 +123,22 @@
                     </div>
                 </div>
             <?php } ?>
-
+            <!-- End Wallet  -->
+            
+            <!-- Start Capital Exportation -->
             <?php if ($guide == 2) { ?>
                 <div class="col-12 my-5">
                     <div class="logo-text text-center">
-                        <img src="<?= base_url() ?>assets/img/icon-guide-5.png" alt="">
-                        <span class="fw-bold text-blue-freedy f-lexend">Capital Exportation</span>
+                        <img src="<?= base_url() ?>assets/img/speedybank/iconin-guide-2.png" alt="icon-2">
+                        <span class="fw-bolder text-blue-freedy f-hahmlet">Capital Exportation</span>
                     </div>
                 </div>
                 <div class="col-12 mb-5">
-                    <div class="col-12 text-center mb-5">
+                    <div class="col-12 col-lg-7 text-center mb-5 mx-auto">
                         <p>
                             Given the increasingly stringent and restrictive regulations on international bank transfers,
-                            <b translate="no"> ExchangeTailor </b> offers a simple, risk-free and 100% legal solution.
-                            The user who wants to send capital abroad will have to open a <b translate="no"> ExchangeTailor
+                            <b translate="no"> SpeedyBank </b> offers a simple, risk-free and 100% legal solution.
+                            The user who wants to send capital abroad will have to open a <b translate="no"> SpeedyBank
                             </b> account and will
                             have to carry out the following procedure to remain in the legality and away from tax
                             assessments:
@@ -143,8 +149,8 @@
                             <div class="col-12 col-md-6 col-lg-4 px-2 py-2">
                                 <div class="card freedy-card small text-center">
                                     <div class="card-body">
-                                        <h5 class="card-title text-blue-freedy fw-bold">Step 1</h5>
-                                        <p class="card-text"><b>Top up wallet</b> (the top up is not a credit transfer and
+                                        <h5 class="card-title f-hahmlet text-blue-freedy fw-bold pb-3">Step 1</h5>
+                                        <p class="card-text f-jakarta"><b>Top up wallet</b> (the top up is not a credit transfer and
                                             therefore is not fiscally relevant as it is not comparable to a payment).</p>
                                     </div>
                                 </div>
@@ -152,8 +158,8 @@
                             <div class="col-12 col-md-6 col-lg-4 px-2 py-2">
                                 <div class="card freedy-card small text-center">
                                     <div class="card-body">
-                                        <h5 class="card-title text-blue-freedy fw-bold">Step 2</h5>
-                                        <p class="card-text"><b>Convert</b> the amount to export into the currency of the
+                                        <h5 class="card-title f-hahmlet text-blue-freedy fw-bold pb-3">Step 2</h5>
+                                        <p class="card-text f-jakarta"><b>Convert</b> the amount to export into the currency of the
                                             destination country (the currency conversion is also not fiscally relevant).</p>
                                     </div>
                                 </div>
@@ -161,8 +167,8 @@
                             <div class="col-12 col-md-6 col-lg-4 px-2 py-2">
                                 <div class="card freedy-card small text-center">
                                     <div class="card-body">
-                                        <h5 class="card-title text-blue-freedy fw-bold">Step 3</h5>
-                                        <p class="card-text"><b>Send</b> the converted amount, via our platform, as a
+                                        <h5 class="card-title f-hahmlet text-blue-freedy fw-bold pb-3">Step 3</h5>
+                                        <p class="card-text f-jakarta"><b>Send</b> the converted amount, via our platform, as a
                                             national transfer (with this procedure the international transfer is
                                             eliminated).</p>
                                     </div>
@@ -172,33 +178,29 @@
                     </div>
 
                     <div class="col-12 text-center mb-5">
-                        <h3 class="text-dark fw-bold">How we make this service possible?</h3>
+                        <h3 class="text-dark f-hahmlet fw-bold">How we make this service possible?</h3>
                         <div class="col-12 col-md-8 mx-auto my-4">
-                            <img src="<?= base_url() ?>assets/img/img-13.png" alt="" class="img-fluid">
+                            <img src="<?= base_url() ?>assets/img/speedybank/img-13.png" alt="" class="img-fluid">
                         </div>
-                        <p>
-                            <b translate="no"> ExchangeTailor </b>, making use of the licensee company's capitals, partners
-                            and offices, in
-                            order to
-                            respect the laws in force on the matter, will not carry out an international transfer but will
-                            send a national transfer from the current account of the country of destination to the current
-                            account required by the sender, in the same country, carrying out an internal clearing only
-                            afterwards (the internal clearing procedure is 100% legal).
+                        <p class="col-12 col-lg-9 mx-auto">
+                            <span translate="no">SpeedyBank</span>, making use of the licensee company's capitals, partners and offices, in order to respect the laws in force on the matter, will not carry out an international transfer but will send a national transfer from the current account of the country of destination to the current account required by the sender, in the same country, carrying out an internal clearing only afterwards (the internal clearing procedure is 100% legal).
                         </p>
                     </div>
                 </div>
             <?php } ?>
+            <!-- End Capital Exportation -->
 
+            <!-- Start Easy Trip -->
             <?php if ($guide == 3) { ?>
                 <div class="col-12 my-5">
                     <div class="logo-text text-center">
-                        <img src="<?= base_url() ?>assets/img/icon-guide-2.png" alt="">
-                        <span class="f-lexend text-blue-freedy">Easy trips</span>
+                        <img src="<?= base_url() ?>assets/img/speedybank/iconin-guide-3.png" alt="">
+                        <span class="fw-bolder f-hahmlet text-blue-freedy mt-4">Business Trips</span>
                     </div>
                 </div>
                 <div class="col-12 mb-5 text-center">
-                    <h3 class="fw-bold">With <b translate="no"> ExchangeTailor </b> your money travels with you.</h3>
-                    <p>Follow few easy steps to instant convert FIAT currencies and make easy payments from wherever
+                    <h3 class="fw-normal f-hahmlet">With <b translate="no"> Speedybank </b> your money travels with you.</h3>
+                    <p class="f-jakarta col-12 col-lg-7 mx-auto mt-3">Follow few easy steps to instant convert FIAT currencies and make easy payments from wherever
                         you want
                     </p>
                 </div>
@@ -206,11 +208,14 @@
                 <div class="col-12 mb-5">
                     <div class="d-flex flex-column flex-md-row flex-wrap justify-content-center">
                         <div class="col-12 col-md-6 col-lg-3 text-center px-2 py-2">
-                            <h5 class="card-title my-3 text-blue-freedy fw-bold">Step 1</h5>
+                            <h5 class="card-title my-3 text-blue-freedy fw-bold ">Step 1</h5>
                             <div class="card freedy-card text-center">
                                 <div class="card-body">
                                     <p class="card-text">
-                                        Top up your wallet by bank transfers
+                                        <span class="fw-bolder pb-3">
+                                            Top up your wallet by bank transfers
+                                        </span>
+                                        <br> <br>
                                         in one of the 10 currencies that allows you to receive bank transfers.<br>
                                         You just need to follow the easy procedure that you can find in the
                                         <b translate="no"> ‘’Deposit/Receive’’ </b> section of your wallet
@@ -222,8 +227,12 @@
                             <h5 class="card-title my-3 text-blue-freedy fw-bold">Step 2</h5>
                             <div class="card freedy-card text-center">
                                 <div class="card-body">
-                                    <p class="card-text">Select one of the currencies
-                                        in where you have the funds and
+                                    <p class="card-text">
+                                        <span class="fw-bolder pb-3">
+                                            Select one of the currencies
+                                        </span>
+                                        <br> <br>
+                                        where you have the funds and
                                         Click the button <b translate="no"> ‘’Swap’’ </b></p>
                                 </div>
                             </div>
@@ -232,8 +241,13 @@
                             <h5 class="card-title my-3 text-blue-freedy fw-bold">Step 3</h5>
                             <div class="card freedy-card text-center">
                                 <div class="card-body">
-                                    <p class="card-text">Enter the amount and choose
-                                        one of the 50 currencies that allows you to convert and send and
+                                    <p class="card-text">
+                                        <span class="fw-bolder pb-3">
+                                            Enter the amount
+                                        </span>
+                                        <br> <br>
+                                        choose
+                                        one of the 40 currencies that allows you to convert and send and
                                         click <b translate="no"> ‘’Confirm’’ </b>
                                     </p>
                                 </div>
@@ -243,7 +257,11 @@
                             <h5 class="card-title my-3 text-blue-freedy fw-bold">Step 4</h5>
                             <div class="card freedy-card text-center">
                                 <div class="card-body">
-                                    <p class="card-text"><b>Congratulations!</b><br>
+                                    <p class="card-text">
+                                        <span class="fw-bolder pb-3">
+                                            Congratulations!
+                                        </span>
+                                        <br> <br>
                                         Now you can make easy and fast payments in the currency of the country you are in
                                     </p>
                                 </div>
@@ -252,94 +270,109 @@
                     </div>
                 </div>
             <?php } ?>
+            <!-- End Easy Trip -->
 
+            <!-- Start Daily Use -->
             <?php if ($guide == 4) { ?>
                 <div class="col-12 my-5">
                     <div class="logo-text text-center">
-                        <img src="<?= base_url() ?>assets/img/icon-guide-3.png" alt="">
-                        <span class="f-lexend text-blue-freedy">Daily use</span>
+                        <img src="<?= base_url() ?>assets/img/speedybank/iconin-guide-4.png" alt="">
+                        <span class="f-hahmlet fw-bold text-blue-freedy">Daily use</span>
                     </div>
                 </div>
                 <div class="col-12 mb-5">
                     <div class="row">
-                        <div class="col-12 col-md-6">
+                        <div class="col-12 col-md-8">
                             <p>
-                                The wallet functions of <b translate="no"> ExchangeTailor </b> are suitable for all daily
+                                The wallet functions of <b translate="no"> SpeedyBank </b> are suitable for all daily
                                 payments, even for small
                                 amounts; everywhere in the world.
                             </p>
                             <div class="col-12 d-flex flex-column justify-content-center">
                                 <div class="content-freedy circle text-start">
-                                    <ul class="ps-0">
+                                    <ul class="ps-0 text-black">
                                         <li class="ali">Low and fixed fees </li>
                                         <li class="ali">Convert currencies for free during any trip</li>
                                         <li class="ali">More convenient, faster and safer than the use of cash and credit
                                             cards</li>
-                                        <li class="ali">User will be able to make any payment from his own device </li>
-                                        <li class="ali">Balance will be updated in real time </li>
-                                        <li class="ali">Can be consulted directly through the specific application</li>
+                                        <li class="ali">Users will be able to make any payment from his own device </li>
+                                        <li class="ali">The balance will be updated in real time </li>
+                                        <li class="ali">The balance can be consulted directly through the specific application</li>
                                         <li class="ali">Respect of the privacy and anonymity of each user as no sms email or
                                             paper will be sent</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 d-none d-md-grid">
-                            <img src="<?= base_url() ?>assets/img/img-12.png" alt="" class="img-fluid">
+                        <div class="col-4 d-none d-md-grid">
+                            <img src="<?= base_url() ?>assets/img/speedybank/img-12.png" alt="" class="img-fluid">
                         </div>
                     </div>
                 </div>
             <?php } ?>
+            <!-- End Daily Use -->
 
+            <!-- Start Buy & Sell FIAT Currencies -->
             <?php if ($guide == 5) { ?>
-                <div class="col-12 text-center">
-                    <h3>Coming soon!</h3>
-                </div>
-
-                <div class="col-12">
-                    <div class="logo-text text-center">
-                        <h2 class="title-top-header fw-bold">
-                            Buy and sell crypto using FIAT currencies <br>
-                            ‘’<b translate="no">Trade-Off </b> Platform’’
-                        </h2>
+                <div class="col-12 mt-5"></div>
+                <div class="position-relative mt-5 mb-0 mb-lg-5">
+                    <div class="position-absolute element-banking d-none d-lg-block">
+                        <svg width="111" height="349" viewBox="0 0 111 349" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M-195 4.99999C-195 2.23857 -192.761 0 -190 0H106C108.761 0 111 2.23858 111 5V344C111 346.761 108.761 349 106 349H-190C-192.761 349 -195 346.761 -195 344V4.99999Z" fill="#0F4E97"/>
+                        </svg>
+                    </div>
+                    <div class="position-absolute element-banking right d-none d-lg-block">
+                        <svg width="106" height="349" viewBox="0 0 106 349" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="306" height="349" rx="5" fill="#0F4E97"/>
+                        </svg>
+                    </div>
+                    <div class="container p-r mb-5 pb-5">
+                        <div class="row gx-0">
+                            <div class="col-12 col-lg-7 mx-auto ">
+                                <div class="content-freedy text-center">
+                                    <h3 class="d-inline-block p-r f-hahmlet text-blue-freedy">
+                                        Buy and sell crypto using <span translate="no">Fiat currencies</span> <span translate="no">‘’Trade-Off Platform’’</span>
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-7 mx-auto text-center mt-4 f-jakarta">
+                                <p class="text-black">
+                                    <span translate="no">SpeedyBank</span> offers the possibility to buy and sell cryptocurrencies using <span translate="no">FIAT</span>, directly from any <span translate="no">FIAT balance </span> of your <span translate="no"> SpeedyBank wallet. </span>
+                                    <br>
+                                    <span translate="no">SpeedyBank</span> also gives the possibility to withdraw
+                                    your funds by converting them INTO ANY <span translate="no">FIAT</span> CURRENCY; after conversion you can send your funds to any bank account, even if it is not under your name,
+                                    thanks to the integrated trade-off platform.
+                                </p>
+                                <p class="text-black">
+                                    On <span translate="no"> SpeedyBank, </span> being a trade-off platform,  the ‘’Buy’’ and ‘’Sell’’ orders are just  ‘’LIMIT’’ orders.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-12 mb-5 mt-3">
+
+
+                <div class="col-12 mb-5 ">
                     <div class="col-12 text-center mb-5">
-                        <p class="mb-5">
-                            <b translate="no"> ExchangeTailor </b> offers the possibility to buy and sell cryptocurrencies
-                            using FIAT, directly from
-                            any FIAT balance of your <b translate="no"> ExchangeTailor </b> wallet.<br>
-                            <b translate="no"> ExchangeTailor </b> also give the possibility to withdraw<br>
-                            your funds by converting them INTO ANY FIAT CURRENCY; after conversion you can send your funds
-                            to any bank account, even if it is not under your name,<br>
-                            thanks to the integrated <b translate="no"> trade-off </b> platform.<br>
-                            <br>
-                            <b translate="no"> ExchangeTailor </b>, being a <b translate="no"> trade-off </b> platform, the
-                            ‘’Buy’’ and ‘’Sell’’
-                            orders are just ‘’LIMIT’’
-                            orders.
-                        </p>
+                        <h3 class="fw-bold text-blue-freedy f-hahmlet">How to top up crypto wallet</h3>
 
-                        <h3 class="fw-bold text-blue-freedy">How to topup crypto wallet</h3>
-
-                        <p class="mt-3">In order to topup your <b translate="no"> ExchangeTailor </b> crypto wallet follow the procedure below :</p>
+                        <p class="mt-3 f-jakarta">In order to topup your <span translate="no"> Speedybank </span> crypto wallet follow the procedure below :</p>
 
                     </div>
                     <div class="d-flex flex-row justify-content-center flex-wrap">
                         <div class="in-crypto">
                             <span>Step 1</span>
                             <div class="box-crypto">
-                                <p class="mb-3">Log in to your <b translate="no"> ExchangeTailor </b> wallet and select
+                                <p class="mb-3">Log in to your <b translate="no"> SpeedyBank </b> wallet and select
                                     crypto</p>
-                                <img class="my-auto img-fluid" src="<?= base_url() ?>assets/img/crypto-1.png" alt="">
+                                <img class="my-auto img-fluid" src="<?= base_url() ?>assets/img/speedybank/crypto-1.png" alt="crypto-1">
                             </div>
                         </div>
                         <div class="in-crypto">
                             <span>Step 2</span>
                             <div class="box-crypto">
                                 <p class="mb-3">Click top up button</p>
-                                <img class="my-auto img-fluid" src="<?= base_url() ?>assets/img/crypto-2.png" alt="">
+                                <img class="my-auto img-fluid" src="<?= base_url() ?>assets/img/speedybank/crypto-2.png" alt="">
                             </div>
                         </div>
                         <div class="in-crypto">
@@ -365,25 +398,21 @@
                     </div>
 
                     <div class="col-12 text-center mt-5">
-                        <h3 class="fw-bold text-blue-freedy">How to buy and sell crypto by placing limit order</h3>
+                        <h3 class="fw-bold f-hahmlet text-blue-freedy">How to buy and sell crypto by placing limit order</h3>
 
                         <p class="mt-3">
-                            A buy limit order will be executed only at the limit price or a lower price; and a sell limit
-                            order will be executed only at the limit price or a higher one.
-                            <br>
-                            The price is guaranteed, but the filling of the order is not. Limit orders will be executed only
-                            if the price meets the order qualifications.
+                            A buy limit order will be executed only at the limit price or a lower price and a sell limit order will be executed only at the limit price or a higher one.The price is guaranteed, but the filling of the order is not. Limit orders will be executed only if the price meets the order qualifications.
                         </p>
 
-                        <div class="box-p-crypto">
-                            <p>To start trading, enter the price you want to trade at, once you've entered the amount, you
+                        <div class="box-p-crypto p-4">
+                            <p class="f-jakarta">To start trading, enter the price you want to trade at, once you've entered the amount, you
                                 can choose to enter the amount of cryptocurrency you want to buy/sell  or the USDX amount
                                 you want to spend or receive.</p>
                         </div>
 
-                        <h3 class="fw-bold text-blue-freedy">How to withdraw your earning</h3>
+                        <h3 class="fw-bold f-hahmlet text-blue-freedy mt-5">How to withdraw your earning</h3>
 
-                        <p class="mt-3">
+                        <p class="mt-3 f-jakarta">
                             In order to withdraw your your funds follow the procedure below :
                         </p>
 
@@ -394,7 +423,7 @@
                             <span>Step 1</span>
                             <div class="box-crypto">
                                 <p class="mb-3">From your wallet, in crypto section, click the button withdraw</p>
-                                <img class="my-auto img-fluid" src="<?= base_url() ?>assets/img/crypto-3.png" alt="">
+                                <img class="my-auto img-fluid" src="<?= base_url() ?>assets/img/speedybank/crypto-3.png" alt="">
                             </div>
                         </div>
                         <div class="in-crypto">
@@ -428,10 +457,11 @@
                     </div>
                 </div>
 
-                <div class="col-12 text-center">
-                    <h3>Coming soon!</h3>
+                <div class="col-12 text-center fw-bold">
+                    <h3>Coming soon</h3>
                 </div>
             <?php } ?>
+            <!-- End Buy & Sell FIAT Currencies -->
 
             <?php if ($guide == 11) { ?>
                 <div class="col-12 my-5">
@@ -456,54 +486,50 @@
                 </div>
             <?php } ?>
 
+            <!-- Start Search -->
             <?php if ($guide == 6) { ?>
-                <div class="col-12 text-center">
-                    <h3>Coming soon!</h3>
-                </div>
                 <div class="col-12 my-5">
                     <div class="logo-text text-center">
-                        <img src="<?= base_url() ?>assets/img/icon-guide-6.png" alt="">
-                        <span class="f-lexend text-blue-freedy">Search</span>
+                        <img src="<?= base_url() ?>assets/img/speedybank/iconin-guide-6.png" alt="">
+                        <span class="f-hahmlet fw-bolder text-blue-freedy">Search</span>
                     </div>
                 </div>
                 <div class="col-12 mb-5">
                     <div class="row">
                         <div class="col-12 col-md-6 my-auto">
                             <p>With this function integrated into your wallet, you will be able to see all the activities
-                                that accept <b translate="no"> ExchangeTailor </b> as a collection and payment system.
+                                that accept <b translate="no"> SpeedyBank </b> as a collection and payment system.
                             </p>
                         </div>
-                        <div class="col-4 d-none d-md-grid mx-auto">
-                            <img src="<?= base_url() ?>assets/img/img-14.png" alt="" class="img-fluid">
+                        <div class="col-6 d-none d-md-grid mx-auto">
+                            <img src="<?= base_url() ?>assets/img/speedybank/img-14.png" alt="" class="img-fluid">
                         </div>
                     </div>
                 </div>
-                <div class="col-12 my-5 text-center">
-                    <h3>Coming soon!</h3>
-                </div>
             <?php } ?>
+            <!-- End Search -->
             
             <!-- Start Findme -->
             <?php if ($guide == 7) { ?>
                 <div class="col-12 my-5">
                     <div class="logo-text text-center">
-                        <div class="wrap-icon-guide-7 d-flex justify-content-center align-items-center mx-auto ">
-                            <img src="<?= base_url() ?>assets/img/icon-guide-7.png" alt="icon-guide-7">
+                        <div class="d-flex justify-content-center align-items-center mx-auto ">
+                            <img src="<?= base_url() ?>assets/img/speedybank/iconin-guide-7.png" alt="icon-guide-7">
                         </div>
-                        <span class="f-poppins fw-bolder text-blue-freedy mt-3">Find me</span>
+                        <span class="f-hahmlet fw-bolder text-blue-freedy mt-3">Find me</span>
                     </div>
                 </div>
                 <div class="col-12 mb-5">
                     <div class="row">
                         <div class="col-12 col-md-6 text-md-start">
-                            <p><b translate="no"> ExchangeTailor </b> allows you to increase the visibility of your business
+                            <p class="f-jakarta"><b translate="no"> SpeedyBank </b> allows you to increase the visibility of your business
                                 by including it in the
                                 search section that will be in every single wallet of all the users.
                                 <br>
                                 In this way your company will be easily accessible and traceable by all users who use
-                                <b translate="no"> ExchangeTailor </b> for daily payments.
+                                <b translate="no"> SpeedyBank </b> for daily payments.
                             </p>
-                            <h6 class="text-blue-freedy fw-bolder f-poppins mt-5">
+                            <h6 class="fw-bolder f-hahmlet mt-5 " style="color: #1D003F;">
                                 START TO APPLY NOW FOR FIND ME SERVICE
                             </h6>
                             <form id="form-input-unique-code" action="<?=base_url()?>link/getref" method="post" class="w-100 my-3">
@@ -530,20 +556,20 @@
                                     </div>
                                 </div>
                             </form>
-                            <h6 class="text-blue-freedy fw-bolder f-poppins mb-5">
+                            <h6 class="fw-bolder f-hahmlet mb-5" style="color: #1D003F;">
                                 How to register to FIND ME service :
                             </h6>
 
-                            <p class="">
+                            <p class="f-jakarta">
                                 Enter your unique code in order to validate your account, then click next and fill out all the fields that you find on the next pages, make sure to have ready an image of your business logo of and prepare the google maps link your business locations
                             </p>
 
-                            <p>
+                            <p class="f-jakarta">
                                 If you encounter problems while applying, contact our support service :
                             </p>
 
                             <p class="fw-semibold text-decoration-underline">
-                                 contact@exchangetailor.com
+                                  contact@SpeedyBank.com
                             </p>
 
                             <div class="col-12 d-flex flex-column justify-content-center">
@@ -554,22 +580,20 @@
                         </div>
                             
                         <div class="col-4 d-none d-md-grid mx-auto">
-                            <img src="<?= base_url() ?>assets/img/img-15.png" alt="" class="img-fluid">
+                            <img src="<?= base_url() ?>assets/img/speedybank/img-15.png" alt="" class="img-fluid">
                         </div>
                     </div>
                 </div>
                 
             <?php } ?>
             <!-- End Findme -->
-
+            
+            <!-- Start Collection & Payment -->
             <?php if ($guide == 8) { ?>
-                <div class="col-12 text-center">
-                    <h3>Coming soon!</h3>
-                </div>
                 <div class="col-12 my-5">
                     <div class="logo-text text-center">
-                        <img src="<?= base_url() ?>assets/img/icon-guide-8.png" alt="">
-                        <span class="f-lexend text-blue-freedy">Collections and Payments</span>
+                        <img src="<?= base_url() ?>assets/img/speedybank/iconin-guide-8.png" alt="">
+                        <span class="f-hahmlet fw-bolder text-blue-freedy mt-4">Collections and Payments</span>
                     </div>
                 </div>
                 <div class="col-12 mb-5">
@@ -577,7 +601,7 @@
                         <div class="row">
                             <div class="col-12 col-md-6">
                                 <p>
-                                    <b translate="no"> ExchangeTailor </b> offers your company, a multi-currency collection
+                                    <b translate="no"> SpeedyBank </b> offers your company, a multi-currency collection
                                     and payment system that
                                     can
                                     be easily integrated into your e-commerce :
@@ -587,7 +611,7 @@
                                         <ul class="ps-0">
                                             <li class="ali">Integration is free of charge</li>
                                             <li class="ali">No monthly and no annual fees</li>
-                                            <li class="ali">Collections in real time from users of the TracklessBank circuit
+                                            <li class="ali">Collections in real time from users of the <span translate="no">TracklessBank</span> circuit
                                             </li>
                                             <li class="ali">Cheaper than credit cards</li>
                                             <li class="ali">Reception and sending of national and international bank
@@ -605,7 +629,7 @@
                             </div>
 
                             <div class="col-4 d-none d-md-grid mx-auto">
-                                <img src="<?= base_url() ?>assets/img/img-23.png" alt="" class="img-fluid">
+                                <img src="<?= base_url() ?>assets/img/speedybank/img-23.png" alt="" class="img-fluid">
                             </div>
                             <div class="col-12">
                                 <h4 class="text-dark">Request the service by contacting : ........@trackless.com</h4>
@@ -613,10 +637,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 my-5 text-center">
-                    <h3>Coming soon!</h3>
-                </div>
             <?php } ?>
+            <!-- End Collection & Payment -->
         </div>
     </div>
 </section><!-- End Hero -->

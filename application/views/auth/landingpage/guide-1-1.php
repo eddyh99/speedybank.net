@@ -19,7 +19,7 @@
                 </ol>
             </div>
             <div class="col-4 m-auto text-center d-none d-md-grid">
-                <img src="<?= base_url() ?>assets/img/img-8.png" alt="" class="img-fluid">
+                <img src="<?= base_url() ?>assets/img/speedybank/img-8.png" alt="img-8" class="img-fluid">
             </div>
         </div>
     </div>

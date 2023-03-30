@@ -24,7 +24,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 |
 */
 if ($_SERVER['HTTP_HOST'] == 'localhost') {
-    $addurl = '/'.'speedybank/'; 
+    $addurl = '/'.'speedybank.net/'; 
 }else{
     $addurl = '/'; 
 }
