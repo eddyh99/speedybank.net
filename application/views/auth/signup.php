@@ -92,3 +92,18 @@
         </div>
     </div>
 </div>
+
+<!-- <div class="">
+    <div class="row">
+        <div class="col-8">
+            <div class="container">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero deleniti voluptates, cupiditate laudantium eius quos asperiores consequuntur maiores nesciunt! Quam, laudantium laborum doloremque voluptatibus corporis saepe inventore ut accusantium error. Non tempore esse commodi dicta consequuntur provident eligendi expedita alias, dolorem corrupti culpa in et id, omnis excepturi praesentium maiores voluptates vel neque. Vero laboriosam porro, rerum excepturi, itaque magni debitis qui neque consectetur iusto nostrum ipsum alias, odio tempora sit aperiam iste nesciunt amet exercitationem? Ratione veritatis facilis nesciunt modi facere, quasi maiores animi similique est, aut quam earum quos, iure quis molestiae deleniti tempore corporis architecto unde vero!
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="container">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, delectus quod qui laboriosam aliquam aliquid quam odio numquam! Accusantium nesciunt vitae quis repellendus in incidunt, mollitia, necessitatibus, accusamus distinctio ipsam culpa sint minus quia temporibus rerum. Et iure doloribus facilis excepturi sit porro quam veritatis doloremque. Provident voluptatum ut ullam optio, quidem perspiciatis, exercitationem harum eveniet sequi possimus enim eos reiciendis error? Earum aliquid, voluptates quisquam, nisi enim tempora eaque obcaecati alias, quis praesentium dolorum maxime quibusdam adipisci incidunt omnis suscipit ullam? Quos cumque dolorem ducimus ipsum? Pariatur velit consequatur voluptatem, quibusdam inventore eos minus vero nisi minima nihil libero.
+            </div>
+        </div>
+    </div>
+</div> -->

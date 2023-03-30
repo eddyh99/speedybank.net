@@ -1,11 +1,11 @@
 <!-- ======= Hero Section ======= -->
-<section id="" class="hero d-flex align-items-center p-3 pt-md-5">
+<section id="" class="d-flex align-items-center p-3 pt-md-5">
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <div class="link-back p-0">
                     <a href="<?= base_url() ?>#technology">
-                        <img src="<?= base_url() ?>assets/img/back.png" alt="">
+                        <img src="<?= base_url() ?>assets/img/speedybank/back-link.png" alt="galau">
                     </a>
                 </div>
             </div>
@@ -13,34 +13,27 @@
             <?php if ($features == 1) { ?>
             <div class="col-12 my-5">
                 <div class="logo-text text-center">
-                    <img src="<?= base_url() ?>assets/img/features-1.png" alt="">
-                    <span class="f-lexend text-blue-freedy fw-bold">100% Safe</span>
+                    <h2 class="f-hahmlet text-blue-freedy fw-bold">100% Safe</h2>
                 </div>
             </div>
             <div class="col-12 mb-5">
                 <div class="row">
-                    <div class="col-md-6 col-lg-4 d-none d-md-grid m-auto">
-                        <img src="<?= base_url() ?>assets/img/img-6.png" alt="" class="img-fluid">
-                    </div>
-                    <div class="col-12 col-md-6 col-md-8 text-start">
-                        <h2 class="title-top-header fw-bold mb-3 f-lexend">Why can you trust <b translate="no">
-                                ExchangeTailor </b> ?</h2>
+                    <div class="col-12 col-md-6 text-start">
+                        <h2 class="title-top-header fw-bold mb-3 text-blue-freedy f-hahmlet">Why can you trust <b translate="no">
+                                SpeedyBank </b> ?</h2>
                         <p>
-                            Your funds are protected by global banks, our clients' funds are entirely deposited in
-                            encrypted escrow accounts at the main credit institutions with which our payment gateway
-                            works in the various countries. <br>
-                            To give total security to our customers, only the account
-                            holder will have access to the operations and even for <b translate="no"> ExchangeTailor
-                            </b> it will be impossible to
-                            bypass this security system.</p>
-                        <p><b translate="no"> ExchangeTailor </b> , being part of the TracklessBank circuit,
-                            offers to customers a great guarantee, as any problem that may arise, the funds will always
-                            be accessible at another institution of the TraklessBank circuit. </p>
-                        <p>None of the tracklessbank
-                            institutions have the ability to make any type of investment or money handling using
-                            clients’ funds, leaving the capital available to the customers in the fiat corresponding to
-                            the balance of the <b translate="no"> ExchangeTailor </b> wallet
+                            Your funds are protected by global banks, our clients' funds are entirely deposited in encrypted escrow accounts at the main credit institutions with which our payment gateway works in the various countries.
+                            To give total security to our customers, only the account holder will have access to the operations and even for <b translate="no">SpeedyBank</b> it will be impossible to bypass this security system.
                         </p>
+                        <p>
+                            <b translate="no">SpeedyBank </b>, being part of the <b translate="no">TracklessBank circuit,</b> offers to customers a great guarantee, as any problem that may arise, the funds will always be accessible at another institution of the <b translate="no">TraklessBank circuit.</b>
+                         </p>
+                        <p>
+                            None of the <span translate="no">tracklessbank institutions</span> have the ability to make any type of investment or money handling using clients’ funds, leaving the capital available to the customers in the fiat corresponding to the balance of the <b translate="no">SpeedyBank</b>  wallet
+                        </p>
+                    </div>
+                    <div class="col-md-6  d-none d-md-grid m-auto">
+                        <img src="<?= base_url() ?>assets/img/speedybank/img-6.png" alt="" class="img-fluid">
                     </div>
                 </div>
             </div>
@@ -49,19 +42,19 @@
             <?php if ($features == 3) { ?>
             <div class="col-12 my-5">
                 <div class="logo-text text-center">
-                    <img src="<?= base_url() ?>assets/img/features-2.png" alt="">
-                    <span class="f-lexend text-blue-freedy fw-bold">Technology</span>
+                    <img src="<?= base_url() ?>assets/img/speedybank/features-2.png" alt="">
+                    <span class="f-lexend text-blue-freedy fw-bold f-hahmlet">Technology</span>
                 </div>
             </div>
             <div class="col-12 mb-5">
                 <div class="row">
                     <div class="col-12 col-lg-6 text-start my-auto">
-                        <p>
-                            <b translate="no"> ExchangeTailor </b> is a DApp that running on NP, considered the
+                        <p class="f-jakarta">
+                            <b translate="no"> SpeedyBank </b> is a DApp that running on NP, considered the
                             evolution
                             of the blockchain and
-                            it uses SECC (SMART ELECTRONIC CREDIT CERTIFICATE), developed by MONEY INDUSTRIAL FACTORY on
-                            NP and issued by PBS Online which converts FIAT by capitalizing the SECC 1: 1 with the
+                            it uses <span translate="no">SECC (SMART ELECTRONIC CREDIT CERTIFICATE),</span> developed by MONEY INDUSTRIAL FACTORY on
+                            NP and issued by <span translate="no">PBS </span>Online which converts <span translate="no">FIAT</span> by capitalizing the SECC 1: 1 with the
                             currency on which it is pegged to offer a cheaper and faster alternative to normal Stable
                             coins such as Tether and others and with greater security and transparency than the
                             complicated Smart Contracts that run on Ethereum and on the others blockchain. <br>
@@ -72,12 +65,12 @@
                         </p>
                     </div>
                     <div class="col-4 mx-auto d-none d-lg-grid">
-                        <img src="<?= base_url() ?>assets/img/img-7.png" alt="" class="img-fluid">
+                        <img src="<?= base_url() ?>assets/img/speedybank/img-7.png" alt="" class="img-fluid">
                     </div>
                     <div class="col-12 text-start">
-                        <h2 class="f-lexend fw-bold mb-3">
+                        <h2 class="f-hahmlet fw-bold mb-3">
                             This new technology was born as an evolution of the blockchain and is the solution for:</h2>
-                        <ol>
+                        <ol class="f-jakarta">
                             <li>The problem of scalability, the first major problem that afflicts the old blockchain
                                 technology ;</li>
                             <li>Resolving vulnerability to hashrate attacks;</li>
@@ -85,7 +78,7 @@
                             <li>An ecological system because it has low energy consumption, without losing any of the
                                 strengths of traditional blockchain.</li>
                         </ol>
-                        <p>
+                        <p class="f-jakarta">
                             NP eliminates the figure of miners and ensures that this system is decentralized and truly
                             distributed on a large scale and not in the hands of a few large companies, as happens with
                             the main cryptocurrencies. This also allows us to replace the PoW, PoS or PoA with more
@@ -120,9 +113,9 @@
                             large-scale and decentralized distributed system.<br>
                             NP solves the scalability problem by transforming each user into a validating node every
                             time he performs an operation, thus giving double the necessary computing power.<br>
-                            all the users of <b translate="no"> ExchangeTailor </b> will be repaid with part of the<br>
+                            all the users of <b translate="no"> SpeedyBank </b> will be repaid with part of the<br>
                             commissions in a clear, transparent and fair manner, as described in the section earn with
-                            <b translate="no"> ExchangeTailor </b>.
+                            <b translate="no"> SpeedyBank </b>.
                         </p>
                     </div>
                 </div>

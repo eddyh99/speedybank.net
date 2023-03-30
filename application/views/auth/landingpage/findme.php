@@ -3,7 +3,7 @@
   <div class="container ">
     <div class="row">
       <div class="col-12 col-lg-8 col-xl-6 mx-auto thank-findme">
-        <h1 class="f-roboto text-center fw-bold  pt-0">Thank you <br>your application <br>has been received! </h1>
+        <h1 class="f-hahmlet text-center fw-bold text-blue-freedy pt-0">Thank you <br>your application <br>has been received! </h1>
         <p class="f-roboto text-center fw-bold mt-4">Our staff is working for you; <br> the process validation can take until 48 working hours</p>
         <div class="text-center mt-5">
               <a href="<?= base_url(); ?>"
@@ -17,7 +17,7 @@
 </section>
 
 <?php } else { ?>
-<section id="" class="hero d-flex p-3 pt-md-5 ">
+<section id="" class="d-flex p-3 pt-md-5 ">
       <div class="container">
             <div class="row">
         
@@ -32,7 +32,7 @@
                     <div class="col-12 mb-5 pb-5">
                         <div class="link-back p-0">
                             <a href="<?= base_url(); ?>link/guide?guide=<?= base64_encode('7')?>">
-                                <img src="<?= base_url() ?>assets/img/back-link.png" alt="back-link">
+                                <img src="<?= base_url() ?>assets/img/speedybank/back-link.png" alt="speedybank/back-link">
                             </a>
                         </div>
                     </div>
@@ -100,7 +100,7 @@
                     <div class="col-12 mb-5 pb-5">
                         <div class="link-back p-0">
                             <a href="<?= base_url(); ?>link/findme?findme=<?= base64_encode('1')?>">
-                                <img src="<?= base_url() ?>assets/img/back-link.png" alt="back-link">
+                                <img src="<?= base_url() ?>assets/img/speedybank/back-link.png" alt="speedybank/back-link">
                             </a>
                         </div>
                     </div>
@@ -178,7 +178,7 @@
                     <div class="col-12 mb-5 pb-5">
                         <div class="link-back p-0">
                             <a href="<?= base_url(); ?>link/findme?findme=<?= base64_encode('1')?>">
-                                <img src="<?= base_url() ?>assets/img/back-link.png" alt="">
+                                <img src="<?= base_url() ?>assets/img/speedybank/back-link.png" alt="">
                             </a>
                         </div>
                     </div>
@@ -219,7 +219,7 @@
                                 <li>Paste on our form "Google maps"</li>
                               </ol>
                               <div class="d-flex justify-content-center">
-                                <img class="img-fluid" src="<?= base_url(); ?>assets/img/sharemaps.png" alt="sharemaps">
+                                <img class="img-fluid" src="<?= base_url(); ?>assets/img/speedybank/sharemaps.png" alt="sharemaps">
                               </div>
                             </div>
                           </div>
@@ -239,7 +239,7 @@
                           </div>
                           <div class="row  mt-3">
                             <div class="col-12 d-flex flex-column flex-sm-row">
-                              <img id="image-container" src="<?= base_url()?>assets/img/preview_image.png"/>
+                              <img id="image-container" src="<?= base_url()?>assets/img/speedybank/preview_image.png"/>
                               <span class="p-4 fw-bolder">
                                 <p class="text-findme text-start">*Maximum 1MB</p>
                                 <p class="text-findme text-start">*png, jpg, jpeg</p>

@@ -10,7 +10,7 @@
                 </p>
             </div>
             <div class="col-4 text-center d-none d-md-grid">
-                <img src="<?= base_url() ?>assets/img/img-5.png" alt="" class="img-fluid" style="max-width: 200px;">
+                <img src="<?= base_url() ?>assets/img/speedybank/img-5.png" alt="" class="img-fluid" >
             </div>
         </div>
     </div>
@@ -29,7 +29,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Step 2</h5>
                         <p class="card-text">Create textual and visual content on your website / social media to
-                            advertise <b translate="no"> ExchangeTailor </b></p>
+                            advertise <b translate="no"> SpeedyBank </b></p>
                     </div>
                 </div>
             </div>

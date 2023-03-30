@@ -5,7 +5,7 @@
                 <div class="box-service-list d-flex flex-row">
                     <div class="text-content d-flex flex-column">
                         <div class="top d-flex flex-row">
-                            <span class="number">01.</span>
+                            <span class="number text-blue-freedy">01.</span>
                             <span class="title">Open your account</span>
                         </div>
                         <div class="bot">
@@ -13,7 +13,7 @@
                         </div>
                     </div>
                     <div class="icon">
-                        <img src="<?=base_url()?>assets/img/icon-service-1.png" alt="icon">
+                        <img src="<?=base_url()?>assets/img/speedybank/icon-service-1.png" alt="icon">
                     </div>
                 </div>
             </div>
@@ -21,7 +21,7 @@
                 <div class="box-service-list d-flex flex-row">
                     <div class="text-content d-flex flex-column">
                         <div class="top d-flex flex-row">
-                            <span class="number">02.</span>
+                            <span class="number text-blue-freedy">02.</span>
                             <span class="title">Get your personal
                                 link</span>
                         </div>
@@ -30,7 +30,7 @@
                         </div>
                     </div>
                     <div class="icon">
-                        <img src="<?=base_url()?>assets/img/icon-service-2.png" alt="icon">
+                        <img src="<?=base_url()?>assets/img/speedybank/icon-service-2.png" alt="icon">
                     </div>
                 </div>
             </div>
@@ -38,18 +38,18 @@
                 <div class="box-service-list d-flex flex-row">
                     <div class="text-content d-flex flex-column">
                         <div class="top d-flex flex-row">
-                            <span class="number">03.</span>
+                            <span class="number text-blue-freedy">03.</span>
                             <span class="title">Invite people</span>
                         </div>
                         <div class="bot">
                             <p>
-                                Invite people/companies to register on <b translate="no"> ExchangeTailor </b>
+                                Invite people/companies to register on <b translate="no"> SpeedyBank </b>
                                 using your link
                             </p>
                         </div>
                     </div>
                     <div class="icon">
-                        <img src="<?=base_url()?>assets/img/icon-service-3.png" alt="icon">
+                        <img src="<?=base_url()?>assets/img/speedybank/icon-service-3.png" alt="icon">
                     </div>
                 </div>
             </div>
@@ -57,25 +57,25 @@
                 <div class="box-service-list d-flex flex-row">
                     <div class="text-content d-flex flex-column">
                         <div class="top d-flex flex-row">
-                            <span class="number">04.</span>
+                            <span class="number text-blue-freedy">04.</span>
                             <span class="title">Congratulation!</span>
                         </div>
                         <div class="bot">
                             <p>
-                                Now you will receive a commission on every FIAT transaction or on every crypto buy /sell
+                                Now you will receive a commission on every <span>FIAT</span> transaction or on every crypto buy /sell
                                 person/company makes.
                             </p>
                         </div>
                     </div>
                     <div class="icon">
-                        <img src="<?=base_url()?>assets/img/icon-service-4.png" alt="icon">
+                        <img src="<?=base_url()?>assets/img/speedybank/icon-service-4.png" alt="icon">
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="col-12 text-center">
-        <h2 class="title-top-header fw-bold">Referral earning</h2>
+        <h2 class="title-top-header fw-bold f-hahmlet text-blue-freedy">Referral earning</h2>
         <span class="fw-bold">(Select currency to see all referral earning)</span>
         <div class="col-12 text-start mx-auto table-responsive my-5">
             <table class="table tbl-piggy-service text-center">

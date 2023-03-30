@@ -1,26 +1,23 @@
 <!-- ======= Hero Section ======= -->
-<section id="" class="hero d-flex align-items-center p-3 pt-md-5">
+<section id="" class="d-flex align-items-center p-3 pt-md-5">
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <div class="link-back p-0">
                     <a href="<?= base_url() ?>#crypto">
-                        <img src="<?= base_url() ?>assets/img/back-link.png" alt="">
+                        <img src="<?= base_url() ?>assets/img/speedybank/back-link.png" alt="">
                     </a>
                 </div>
             </div>
-            <div class="col-12 my-5 text-center">
-                <h3>Coming soon!</h3>
-            </div>
 
-            <div class="col-12 mb-3 text-center">
-                <h1>Boost your crypto exchange experience</h1>
+            <div class="col-12 mb-3 text-center mt-5 pt-3">
+                <h1 class="f-hahmlet text-blue-freedy fw-bold">Boost your crypto exchange experience</h1>
             </div>
 
             <div class="col-12 text-center">
                 <div class="content-freedy">
-                    <p>
-                        <b translate="no">ExchangeTailor </b>, being a <b translate="no"> trade-off </b> platform, the
+                    <p class="f-jakarta">
+                        <b translate="no">SpeedyBank </b>, being a <b translate="no"> trade-off </b> platform, the
                         <b translate="no"> ‘’Buy’’ </b> and <b translate="no"> ‘’Sell’’ </b>
                         orders are just LIMIT
                         orders.
@@ -32,9 +29,9 @@
                         the price meets the order qualifications.
                     </p>
 
-                    <h3 class="my-3 fw-bold">How to place a limit order ?</h3>
+                    <h4 class="my-3 fw-bold f-hahmlet">How to place a limit order ?</h4>
 
-                    <p>
+                    <p class="f-jakarta">
                         To start trading, enter the price you want to trade at, once you've entered the amount, you can
                         choose to enter the amount of cryptocurrency you want to buy/sell  or the USDX amount you want
                         to
@@ -43,10 +40,19 @@
 
                     <div class="d-flex flex-column flex-md-row flex-wrap justify-content-center">
                         <div class="col-12 col-md-6 col-lg-3 text-center px-2 py-2">
-                            <div class="card freedy-card btop blue text-center">
+                            <div class="card freedy-card btop one text-center">
                                 <div class="card-body">
-                                    <h5 class="card-title box-number fw-bold"><span class="m-auto">1</span></h5>
-                                    <h5 class="card-title mb-3 text-blue-freedy fw-bold">Open your account</h5>
+                                    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.146484" y="0.0390625" width="63.7755" height="63.1441" rx="17.1429" fill="url(#paint0_linear_46_16912)"/>
+                                        <path d="M26.582 25.4343V19.9829H36.0791V45.0115H29.9762V25.4343H26.582Z" fill="white"/>
+                                        <defs>
+                                        <linearGradient id="paint0_linear_46_16912" x1="44.0254" y1="18.2917" x2="22.5873" y2="28.2518" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#77BEFF"/>
+                                        <stop offset="1" stop-color="#84D3FF"/>
+                                        </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <h5 class="card-title mb-3 text-blue-freedy f-hahmlet fw-bold  py-2">Open your account</h5>
                                     <p class="card-text">
                                         Simple and fast opening without documents and KYC request
                                     </p>
@@ -54,24 +60,42 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-3 text-center px-2 py-2">
-                            <div class="card freedy-card btop orange text-center">
+                            <div class="card freedy-card btop two text-center">
                                 <div class="card-body">
-                                    <h5 class="card-title box-number fw-bold"><span class="m-auto">2</span></h5>
-                                    <h5 class="card-title mb-3 text-blue-freedy fw-bold">Top up your wallet</h5>
+                                    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.146484" y="0.0390625" width="63.7755" height="63.1441" rx="17.1429" fill="url(#paint0_linear_46_16912)"/>
+                                        <path d="M26.582 25.4343V19.9829H36.0791V45.0115H29.9762V25.4343H26.582Z" fill="white"/>
+                                        <defs>
+                                        <linearGradient id="paint0_linear_46_16912" x1="44.0254" y1="18.2917" x2="22.5873" y2="28.2518" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#77BEFF"/>
+                                        <stop offset="1" stop-color="#84D3FF"/>
+                                        </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <h5 class="card-title mb-3 text-blue-freedy f-hahmlet fw-bold py-2">Top up your wallet</h5>
                                     <p class="card-text">
-                                        Top up, through a bank transfer, your <b translate="no"> ExchangeTailor </b>
+                                        Top up, through a bank transfer, your <b translate="no"> SpeedyBank </b>
                                         wallet with your favorite
-                                        FIAT
+                                        <span translate="no">FIAT</span>
                                         currency and than convert any amount into USDX to start to trading
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-3 text-center px-2 py-2">
-                            <div class="card freedy-card btop blue2 text-center">
+                            <div class="card freedy-card btop three text-center">
                                 <div class="card-body">
-                                    <h5 class="card-title box-number fw-bold"><span class="m-auto">3</span></h5>
-                                    <h5 class="card-title mb-3 text-blue-freedy fw-bold">Start buying and selling</h5>
+                                    <svg width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.318359" y="0.784485" width="63.7755" height="63.1441" rx="17.1429" fill="url(#paint0_linear_46_16930)"/>
+                                        <path d="M23.1744 28.2993C23.2658 25.8536 24.0658 23.9679 25.5744 22.6422C27.0829 21.3164 29.1286 20.6536 31.7115 20.6536C33.4258 20.6536 34.8886 20.9507 36.1001 21.545C37.3344 22.1393 38.2601 22.9507 38.8772 23.9793C39.5172 25.0079 39.8372 26.1622 39.8372 27.4422C39.8372 28.9507 39.4601 30.185 38.7058 31.145C37.9515 32.0822 37.0715 32.7222 36.0658 33.065V33.2022C37.3686 33.6364 38.3972 34.3564 39.1515 35.3622C39.9058 36.3679 40.2829 37.6593 40.2829 39.2364C40.2829 40.6536 39.9515 41.9107 39.2886 43.0079C38.6486 44.0822 37.7001 44.9279 36.4429 45.545C35.2086 46.1622 33.7344 46.4707 32.0201 46.4707C29.2772 46.4707 27.0829 45.7964 25.4372 44.4479C23.8144 43.0993 22.9572 41.065 22.8658 38.345H28.5572C28.5801 39.3507 28.8658 40.1507 29.4144 40.745C29.9629 41.3164 30.7629 41.6022 31.8144 41.6022C32.7058 41.6022 33.3915 41.3507 33.8715 40.8479C34.3744 40.3222 34.6258 39.6364 34.6258 38.7907C34.6258 37.6936 34.2715 36.905 33.5629 36.425C32.8772 35.9222 31.7686 35.6707 30.2372 35.6707H29.1401V30.905H30.2372C31.4029 30.905 32.3401 30.7107 33.0486 30.3222C33.7801 29.9107 34.1458 29.1907 34.1458 28.1622C34.1458 27.3393 33.9172 26.6993 33.4601 26.2422C33.0029 25.785 32.3744 25.5564 31.5744 25.5564C30.7058 25.5564 30.0544 25.8193 29.6201 26.345C29.2086 26.8707 28.9686 27.5222 28.9001 28.2993H23.1744Z" fill="white"/>
+                                        <defs>
+                                        <linearGradient id="paint0_linear_46_16930" x1="44.1972" y1="19.0371" x2="22.7591" y2="28.9972" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#77BEFF"/>
+                                        <stop offset="1" stop-color="#84D3FF"/>
+                                        </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <h5 class="card-title mb-3 text-blue-freedy f-hahmlet fw-bold py-2">Start buying and selling</h5>
                                     <p class="card-text">
                                         You are ready to buy and sell Crypto Currencies, placing limit orders, in an
                                         anonymous way
@@ -80,10 +104,19 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-3 text-center px-2 py-2">
-                            <div class="card freedy-card btop green text-center">
+                            <div class="card freedy-card btop four text-center">
                                 <div class="card-body">
-                                    <h5 class="card-title box-number fw-bold"><span class="m-auto">4</span></h5>
-                                    <h5 class="card-title mb-3 text-blue-freedy fw-bold">Withdraw your earning</h5>
+                                    <svg width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.896484" y="0.704956" width="63.7755" height="63.1441" rx="17.1429" fill="url(#paint0_linear_46_16921)"/>
+                                        <path d="M21.1722 41.2203V36.4889L32.0065 20.9918H38.555V36.1461H41.3665V41.2203H38.555V45.6775H32.6922V41.2203H21.1722ZM33.1036 27.4375L27.3436 36.1461H33.1036V27.4375Z" fill="white"/>
+                                        <defs>
+                                        <linearGradient id="paint0_linear_46_16921" x1="44.7754" y1="18.9575" x2="23.3373" y2="28.9177" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#77BEFF"/>
+                                        <stop offset="1" stop-color="#84D3FF"/>
+                                        </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <h5 class="card-title mb-3 text-blue-freedy f-hahmlet fw-bold py-2">Withdraw your earning</h5>
                                     <p class="card-text">
                                         You will be able to withdraw, anonymously, your FIAT earnings to
                                         any bank account <b class="text-uppercase">even if are not registered under you
