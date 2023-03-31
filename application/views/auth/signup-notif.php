@@ -1,29 +1,27 @@
-<div class="login bg-signin-succes">
+<div class="login bg-signup">
     <div class="container">
         <div class="row d-flex d-lg-inline-grid justify-content-center justify-content-xl-start">
-            <div class="col-10 col-sm-9 col-md-7 col-lg-5 box-form hide-bg">
+            <div class="col-10 col-sm-9 col-md-7 col-lg-5 hide-bg mx-auto text-center">
                 <form class="form-login-freedy d-flex align-items-start flex-column" style="height: 100%;" method="POST"
                     action="<?= base_url(); ?>member">
-                    <div class="col-12 mt-auto text-center my-auto">
+                    <div class="mt-5">
+                        <h1 class="text-white f-poppins fw-bold">Welcome to SpeedyBank</h1>
                         <a href="<?= base_url() ?>">
-                            <img src="<?= base_url(); ?>assets/img/logo.png" alt="" class="img-fluid">
+                            <img src="<?= base_url(); ?>assets/img/speedybank/logo-white.png" alt="logo-white" class="img-fluid">
                         </a>
-                    </div>
-                    <div class="col-12 d-grid gap-2 my-auto">
-                        <p class="text-center f-roboto">To activate your <b translate="no"> ExchangeTailor </b> account
+                        <div class="text-white f-poppins">
+                            To activate your <b translate="no"> SpeedyBank </b> account
                             click
                             the link receive in
                             your registration email
-                            <br><br>
+                            <br>
                             <b>ATTENTION:</b>
-                        </p>
-                        <ul class="f-roboto">
-                            <li>You will receive the email within 15 minutes</li>
-                            <li>If you dont see it check into the SPAM folder</li>
-                        </ul>
+                            <div>You will receive the email within 15 minutes</div>
+                            <div> If you don’t see it check into the SPAM folder</div>
+                        </div>
                     </div>
-                    <div class="col-12 d-grid gap-2">
-                        <a href="<?= base_url() ?>auth/login" class="btn btn-login f-roboto">Back</a>
+                    <div class="col-12 d-grid gap-2 mt-5">
+                        <a href="<?= base_url() ?>auth/login" class="btn btn-login f-poppins">Back</a>
                     </div>
                 </form>
             </div>

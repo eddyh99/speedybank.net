@@ -50,10 +50,12 @@
                                             placeholder="Recipient Name">
                                     </div>
 
+                                    
                                     <?php 
                                         $data['type'] = "inter";
                                         $data['countries_list'] = $countries_list;
-                                        $this->load->view('member/tobank/currency/' . @$_SESSION['currency'], $data) ?>
+                                        $this->load->view('member/tobank/currency/' . @$_SESSION['currency'], $data) 
+                                    ?>
 
                                     <div class="align-items-center my-3">
                                         <input class="form-control me-2" type="text" name="causal" placeholder="Causal">

@@ -37,7 +37,7 @@
                             <a class="nav-link" href="<?= base_url() ?>admin/transactions/topup">Add/Receive Funds</a>
                             <a class="nav-link" href="<?= base_url() ?>admin/transactions/towallet">Wallet to Wallet</a>
                             <a class="nav-link" href="<?= base_url() ?>admin/transactions/tobank">Wallet to Bank</a>
-                            <a class="nav-link" href="">Wallet to Card</a>
+                            <a class="nav-link" href="<?= base_url() ?>admin/transactions/tocard">Wallet to Card</a>
                         </nav>
                     </div>
                     <a class="nav-link <?= @$mn_swap ?>" href="<?= base_url() ?>admin/swap">

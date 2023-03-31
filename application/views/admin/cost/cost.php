@@ -95,6 +95,11 @@
                         <input type="text" id="walletbank_outside_pct" name="walletbank_outside_pct"
                             class="form-control" readonly>
                     </div>
+                    <div class="mb-3" id="card_fxd_div">
+                        <label class="form-label">Card (Fixed)</label>
+                        <input type="text" id="card_fxd" name="card_fxd"
+                            class="form-control" readonly>
+                    </div>
                 </div>
             </div>
         </div>

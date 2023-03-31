@@ -30,7 +30,7 @@
                         <input type="hidden" name="url" value="wdinter">
 
                         <div class="mb-3">
-                            <small class="text-danger">MAX
+                            <small class="text-blue-freedy">MAX
                                 : <?= $_SESSION["symbol"] ?>
                                 <?= number_format(balanceadmin($_SESSION["currency"]) - $bankcost,2) ?></small>
                             <input class="form-control money-input" type="text" name="amount" placeholder="Amount">

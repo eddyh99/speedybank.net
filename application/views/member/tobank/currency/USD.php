@@ -29,16 +29,23 @@
 <?php } ?>
 
 <div class="d-flex flex-row align-items-center my-3 <?php if ($type == 'local') echo 'd-none'; ?>">
+    <input class="form-control me-2" type="text" name="firstLine" placeholder="FirstLine"
+        <?php if ($type == 'local') echo 'value="16192 Coastal Highway"'; ?>>
+</div>
+
+<div class="d-flex flex-row align-items-center my-3 <?php if ($type == 'local') echo 'd-none'; ?>">
     <input class="form-control me-2" type="text" name="city" placeholder="City"
         <?php if ($type == 'local') echo 'value="Delaware"'; ?>>
 </div>
+
+<div class="d-flex flex-row align-items-center my-3 <?php if ($type == 'local') echo 'd-none'; ?>">
+    <input class="form-control me-2" type="text" name="state" placeholder="State"
+        <?php if ($type == 'local') echo 'value="United State"'; ?>>
+</div>
+
 <div class="d-flex flex-row align-items-center my-3 <?php if ($type == 'local') echo 'd-none'; ?>">
     <input class="form-control me-2" type="text" name="postCode" placeholder="Postcode"
         <?php if ($type == 'local') echo 'value="19958"'; ?>>
-</div>
-<div class="d-flex flex-row align-items-center my-3 <?php if ($type == 'local') echo 'd-none'; ?>">
-    <input class="form-control me-2" type="text" name="firstLine" placeholder="FirstLine"
-        <?php if ($type == 'local') echo 'value="16192 Coastal Highway"'; ?>>
 </div>
 
 <?php if ($type == "local") { ?>
@@ -54,10 +61,6 @@
 <?php } ?>
 
 <?php if ($type == "inter") { ?>
-<div class="d-flex flex-row align-items-center my-3">
-    <input class="form-control me-2" type="text" name="state" placeholder="State">
-</div>
-
 <div class="d-flex flex-row align-items-center my-3">
     <select name="countryCode" class="form-select me-2" id="countryCode">
         <option value="">--Country Initial--</option>

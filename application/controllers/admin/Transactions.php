@@ -100,4 +100,34 @@ class Transactions extends CI_Controller
         $data["history"] = $result->message;
         echo json_encode($data);
     }
+
+    public function tocard()
+    {
+        $data = array(
+            "title"     => NAMETITLE . " - History Topup Card",
+            "content"   => "admin/history/tocard",
+            "extra"     => "admin/history/js/js_tocard",
+        );
+
+        $this->load->view('admin_template/wrapper2', $data);
+    }
+
+    public function historycard()
+    {
+        $input = $this->input;
+        $tgl = explode("-", $this->security->xss_clean($input->post("tgl")));
+        $awal = date_format(date_create($tgl[0]), "Y-m-d");
+        $akhir = date_format(date_create($tgl[1]), "Y-m-d");
+
+        $mdata = array(
+            "date_start" => $awal,
+            "date_end"  => $akhir,
+            "currency"  => $_SESSION["currency"],
+            "timezone"  => $_SESSION["time_location"]
+        );
+        $result = apitrackless(URLAPI . "/v1/admin/wallet/gethistory_tocard", json_encode($mdata));
+        $data["token"] = $this->security->get_csrf_hash();
+        $data["history"] = $result->message;
+        echo json_encode($data);
+    }    
 }

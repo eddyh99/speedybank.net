@@ -27,7 +27,7 @@
                 </div>
                 <div class="card-body">
                     <table id="member" class="table table-bordered">
-                        <thead class="table-danger">
+                        <thead class="table-primary">
                             <tr>
                                 <th>No.</th>
                                 <th>Email</th>
