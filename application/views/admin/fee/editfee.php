@@ -165,6 +165,15 @@
                             <input type="text" id="referral_bank_pct" name="referral_bank_pct"
                                 class="form-control money-input" value="<?= $fee['referral_bank_pct'] ?>">
                         </div>
+                        <?php
+                            if ($currency=="EUR"){
+                        ?>
+                        <div class="mb-3" id="card_fxd_div">
+                            <label class="form-label">Card (Fixed)</label>
+                            <input type="text" id="card_fxd" name="card_fxd"
+                                class="form-control money-input" value="<?= $fee['card_fxd'] ?>">
+                        </div>
+                        <?php }?>
                         <div class="mb-3">
                             <a href="<?= base_url() ?>admin/fee" class="btn btn-warning">Cancel</a>
                             <button id="btnconfirm" class="btn btn-success">Confirm</button>

@@ -5,10 +5,10 @@
                 <div class="row d-flex justify-content-center">
                     <div class="col-12">
                         <div class="text-center">
-                            <span class="me-auto f-monserat title-top-navbar">Confirmation</span>
+                            <span class="me-auto f-hahmlet text-blue-freedy fs-2 title-top-navbar">Confirmation</span>
                         </div>
                     </div>
-                    <div class="col-12 infobank-list-app my-4">
+                    <div class="col-12 infobank-list-app f-jakarta my-4">
                         <div class="col-12 py-4">
                             <form method="POST" action="<?= base_url() ?>wallet/send_notif" id="form_submit" onsubmit="return validate()">
                                 <input type="hidden" id="token" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>">
@@ -74,8 +74,8 @@
                     <path d="M20.5001 27.7338L8.54175 17.5245L20.5001 7.31531" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                     <defs>
                         <linearGradient id="paint0_linear_30_4821" x1="20.5" y1="0" x2="20.5" y2="35" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#8B0000" />
-                            <stop offset="1" stop-color="#CB0000" />
+                            <stop stop-color="#0F4E97" />
+                            <stop offset="1" stop-color="#0F4E97" />
                         </linearGradient>
                     </defs>
                 </svg>

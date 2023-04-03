@@ -69,63 +69,7 @@ class Ciqrcode
 		if (!defined('QR_PNG_MAXIMUM_SIZE')) define('QR_PNG_MAXIMUM_SIZE',  $this->size);
 	}
 
-	public function addLogo($name, $dirr, $logoMid)
-	{
-		$QR = imagecreatefrompng(FCPATH . $dirr . $name . '.png');
-
-		// memulai menggambar logo dalam file qrcode
-		$logo = imagecreatefromstring(file_get_contents(FCPATH . $logoMid));
-
-		imagecolortransparent($logo, imagecolorallocatealpha($logo, 0, 0, 0, 127));
-		imagealphablending($logo, false);
-		imagesavealpha($logo, true);
-
-		$QR_width = imagesx($QR);
-		$QR_height = imagesy($QR);
-
-		$logo_width = imagesx($logo);
-		$logo_height = imagesy($logo);
-
-		// Scale logo to fit in the QR Code
-		$logo_qr_width = $QR_width / 4;
-		$scale = $logo_width / $logo_qr_width;
-		$logo_qr_height = $logo_height / $scale;
-
-		imagecopyresampled($QR, $logo, $QR_width / 2.65, $QR_height / 2.65, 0, 0, $logo_qr_width, $logo_qr_height, $logo_width, $logo_height);
-
-		// Simpan kode QR lagi, dengan logo di atasnya
-		imagepng($QR, FCPATH . $dirr . $name . 'wlogo.png');
-	}
-
-	public function createThumbnail($name, $dirrqr)
-	{
-		$QR = imagecreatefrompng(FCPATH . '/assets/img/' . 'thumbnail.png');
-
-		// memulai menggambar logo dalam file qrcode
-		$logo = imagecreatefromstring(file_get_contents(FCPATH . $dirrqr . $name . 'wlogo.png'));
-
-		imagecolortransparent($logo, imagecolorallocatealpha($logo, 0, 0, 0, 127));
-		imagealphablending($logo, false);
-		imagesavealpha($logo, true);
-
-		$QR_width = imagesx($QR);
-		$QR_height = imagesy($QR);
-
-		$logo_width = imagesx($logo);
-		$logo_height = imagesy($logo);
-
-		// Scale logo to fit in the QR Code
-		$logo_qr_width = $QR_width / 2.3;
-		$scale = $logo_width / $logo_qr_width;
-		$logo_qr_height = $logo_height / $scale;
-
-		imagecopyresampled($QR, $logo, $QR_width / 3.25, $QR_height / 3.75, 0, 0, $logo_qr_width, $logo_qr_height, $logo_width, $logo_height);
-
-		// Simpan kode QR lagi, dengan logo di atasnya
-		imagepng($QR, FCPATH . $dirrqr . $name . 'Thumbnail.png');
-	}
-
-	public function generate($params = array())
+		public function generate($params = array())
 	{
 		if (
 			isset($params['black'])
@@ -165,6 +109,64 @@ class Ciqrcode
 			QRcode::png($params['data'], NULL, $level, $size, 2);
 		}
 	}
+
+	public function addLogo($name, $dirr, $logoMid)
+	{
+		$QR = imagecreatefrompng(FCPATH . $dirr . $name . '.png');
+
+		// memulai menggambar logo dalam file qrcode
+		$logo = imagecreatefromstring(file_get_contents(FCPATH . $logoMid));
+
+		imagecolortransparent($logo, imagecolorallocatealpha($logo, 0, 0, 0, 127));
+		imagealphablending($logo, false);
+		imagesavealpha($logo, true);
+
+		$QR_width = imagesx($QR);
+		$QR_height = imagesy($QR);
+
+		$logo_width = imagesx($logo);
+		$logo_height = imagesy($logo);
+
+		// Scale logo to fit in the QR Code
+		$logo_qr_width = $QR_width / 4;
+		$scale = $logo_width / $logo_qr_width;
+		$logo_qr_height = $logo_height / $scale;
+
+		imagecopyresampled($QR, $logo, $QR_width / 2.65, $QR_height / 2.65, 0, 0, $logo_qr_width, $logo_qr_height, $logo_width, $logo_height);
+
+		// Simpan kode QR lagi, dengan logo di atasnya
+		imagepng($QR, FCPATH . $dirr . $name . 'wlogo.png');
+	}
+
+	public function createThumbnail($name, $dirrqr)
+	{
+		$QR = imagecreatefrompng(FCPATH . '/assets/img/speedybank/' . 'thumbnail.png');
+
+		// memulai menggambar logo dalam file qrcode
+		$logo = imagecreatefromstring(file_get_contents(FCPATH . $dirrqr . $name . 'wlogo.png'));
+
+		imagecolortransparent($logo, imagecolorallocatealpha($logo, 0, 0, 0, 127));
+		imagealphablending($logo, false);
+		imagesavealpha($logo, true);
+
+		$QR_width = imagesx($QR);
+		$QR_height = imagesy($QR);
+
+		$logo_width = imagesx($logo);
+		$logo_height = imagesy($logo);
+
+		// Scale logo to fit in the QR Code
+		$logo_qr_width = $QR_width / 2.3;
+		$scale = $logo_width / $logo_qr_width;
+		$logo_qr_height = $logo_height / $scale;
+
+		imagecopyresampled($QR, $logo, $QR_width / 3.25, $QR_height / 3.75, 0, 0, $logo_qr_width, $logo_qr_height, $logo_width, $logo_height);
+
+		// Simpan kode QR lagi, dengan logo di atasnya
+		imagepng($QR, FCPATH . $dirrqr . $name . 'Thumbnail.png');
+	}
+
+
 }
 
 /* end of file */

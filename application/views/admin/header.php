@@ -4,5 +4,5 @@
         <h6 class="fw-bold">Balance</h6>
         <h4 class="fw-bold"><?= $_SESSION["symbol"] ?> <?= number_format(balanceadmin($_SESSION["currency"]),2) ?></h4>
     </div>
-    <img src="<?=base_url()?>assets/img/logo.png" alt="" style="height: 75px;" class="me-5">
+    <img src="<?=base_url()?>assets/img/speedybank/logo.png" alt="" style="height: 75px;" class="me-5">
 </div>

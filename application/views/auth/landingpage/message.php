@@ -5,15 +5,15 @@
             <div class="col-12">
                 <div class="link-back p-0">
                     <a href="<?= base_url() ?>#contactus">
-                        <img src="<?= base_url() ?>assets/img/back.png" alt="">
+                        <img src="<?= base_url() ?>assets/img/speedybank/back-link.png" alt="">
                     </a>
                 </div>
             </div>
             <div class="col-12 my-5">
                 <div class="col-12 mb-5 text-center">
-                    <h2 class="title-top-header fw-bold">Contact us</h2>
+                    <h2 class="text-white fw-bold">Contact us</h2>
                 </div>
-                <div class="col-12 col-md-8 col-lg-6 mx-auto mb-5 text-center text-blue-freedy">
+                <div class="col-12 col-md-8 col-lg-6 mx-auto mb-5 text-center text-white">
                     <p> Our support service is exclusively reserved to our clients. Register for free on the platform,
                         in few seconds, to request assistance or further information</p>
                 </div>

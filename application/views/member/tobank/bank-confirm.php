@@ -134,7 +134,7 @@
         <a href="<?= base_url() ?>bank" class="d-flex align-items-center border-0">
             <div class="icon-menus d-flex align-items-center home-svg">
                 <svg width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1.875 9.5L10.125 1.25M1.875 9.5L10.125 17.75M1.875 9.5H21.125" stroke="#8B0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M1.875 9.5L10.125 1.25M1.875 9.5L10.125 17.75M1.875 9.5H21.125" stroke="#0F4E97" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
             </div>
         </a>

@@ -45,10 +45,10 @@
                                 <a href="<?= base_url() ?>qr/ref/<?= $_SESSION["ucode"] ?>Thumbnail.png" download class="qrcode-download ms-auto mt-3 d-flex flex-column align-items-center">
                                     <img class="img-fluid" src="<?= base_url() ?>qr/ref/<?= $_SESSION["ucode"] ?>.png" alt="QR" width="90" height="90">
                                     <div>
-                                        <img class="img-fluid d-block d-sm-none" src="<?=base_url()?>assets/img/btn-qrdw-mobile.png" alt="dw-qr" width="15" height="auto">
+                                        <img class="img-fluid d-block d-sm-none" src="<?=base_url()?>assets/img/speedybank/btn-qrdw-mobile.png" alt="dw-qr" width="15" height="auto">
                                     </div>
                                     <div>
-                                        <img class="img-fluid d-none d-sm-block" src="<?=base_url()?>assets/img/btn-qrdw.png" alt="dw-qr" width="90" height="auto">
+                                        <img class="img-fluid d-none d-sm-block" src="<?=base_url()?>assets/img/speedybank/btn-qrdw.png" alt="dw-qr" width="90" height="auto">
                                     </div>
                                 </a>
                             </div>

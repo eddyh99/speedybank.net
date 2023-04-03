@@ -20,6 +20,7 @@ function readfee() {
             $("#topup_circuit_pct").val(data.topup_circuit_pct)
             $("#topup_outside_fxd").val(data.topup_outside_fxd)
             $("#topup_outside_pct").val(data.topup_outside_pct)
+            $("#card_fxd").val(data.card_fxd)
 
             if ((readcurrency != "USD") &&
                 (readcurrency != "EUR") &&
@@ -67,6 +68,12 @@ function readfee() {
             alert(response);
         }
     })
+}
+
+if (readcurrency == "EUR"){
+    $("#card_fxd_div").show()
+}else{
+    $("#card_fxd_div").hide()
 }
 
 $("#currency").on("change", function() {

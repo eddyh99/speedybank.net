@@ -258,7 +258,7 @@ class Auth extends CI_Controller
 
 			$srcrefwlogo = base_url() . 'qr/ref/' . $result->message->ucode . 'wlogo.png';
 			if (@getimagesize($srcrefwlogo) == FALSE) {
-				$this->ciqrcode->addLogo($result->message->ucode, '/qr/ref/', '/assets/img/logoQR.png');
+				$this->ciqrcode->addLogo($result->message->ucode, '/qr/ref/', '/assets/img/speedybank/logoQR.png');
 			}
 
 			// if (@getimagesize($srcr) == FALSE) {
@@ -517,4 +517,13 @@ class Auth extends CI_Controller
 		$this->load->view('auth/request-bank', $data);
 		$this->load->view('tamplate/footer');
 	}
+
+	// public function test_notif(){
+	// 	$data['title'] = NAMETITLE . " - Succes Signup";
+
+	// 	$this->load->view('tamplate/header', $data);
+	// 	$this->load->view('auth/signup-notif');
+	// 	$this->load->view('tamplate/footer');
+	// }
+
 }
