@@ -8,7 +8,7 @@
                             <span class="me-auto f-hahmlet text-blue-freedy fs-2 title-top-navbar">Confirmation</span>
                         </div>
                     </div>
-                    <div class="col-12 infobank-list-app text-blue-freedy f-jakarta my-4">
+                    <div class="col-12 infobank-list-app f-jakarta my-4">
                         <div class="col-12 py-4">
                             <form method="POST" action="<?= base_url() ?>wallet/send_notif" id="form_submit" onsubmit="return validate()">
                                 <input type="hidden" id="token" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>">

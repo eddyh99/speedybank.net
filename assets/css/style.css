@@ -3072,8 +3072,8 @@ color: rgba(255, 255, 255, 0.8);
 }
 
 .attention-box {
-  background: #FF0000;
-  border: 3px solid #FF0000;
+  background: linear-gradient(180deg, #00A7DC 0%, #0F4E97 100%);
+  border: 3px solid #0F4E97;
   border-radius: 10px;
 }
 
@@ -3081,7 +3081,7 @@ color: rgba(255, 255, 255, 0.8);
   font-weight: 700;
   font-size: 18px;
   line-height: 110%;
-  color: #000000;
+  color: #ffffff;
 }
 
 .attention-box p {
@@ -3089,7 +3089,7 @@ color: rgba(255, 255, 255, 0.8);
   font-size: 16px;
   line-height: 20px;
 
-  color: #000000;
+  color: #e1e1e1;
 }
 
 .navbar .btn-login,
@@ -4839,8 +4839,10 @@ color: rgba(255, 255, 255, 0.8);
     font-weight: 700;
     font-size: 15px;
     line-height: 18px;
-
-    color: #CB0000;
+    background: linear-gradient(263.23deg, #0F4E97 6.67%, #00A7DC 70.3%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 
   .freedy-accordion-item {
@@ -4853,8 +4855,7 @@ color: rgba(255, 255, 255, 0.8);
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
-
-    color: #CB0000;
+    color: #000000;
   }
 
   .w-receive img {
@@ -7095,16 +7096,17 @@ color: rgba(255, 255, 255, 0.8);
     font-weight: 700;
     font-size: 15px;
     line-height: 18px;
-
-    color: #CB0000;
+    background: linear-gradient(263.23deg, #0F4E97 6.67%, #00A7DC 70.3%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 
   .list-send-wallet span {
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
-
-    color: #CB0000;
+    color: #000000;
   }
 
   .w-receive img {
@@ -9310,16 +9312,17 @@ color: rgba(255, 255, 255, 0.8);
     font-weight: 700;
     font-size: 15px;
     line-height: 18px;
-
-    color: #CB0000;
+    background: linear-gradient(263.23deg, #0F4E97 6.67%, #00A7DC 70.3%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 
   .list-send-wallet span {
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
-
-    color: #CB0000;
+    color: #000000;
   }
 
   .w-receive img {
@@ -11874,16 +11877,17 @@ color: rgba(255, 255, 255, 0.8);
     font-weight: 700;
     font-size: 15px;
     line-height: 18px;
-
-    color: #CB0000;
+    background: linear-gradient(263.23deg, #0F4E97 6.67%, #00A7DC 70.3%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 
   .list-send-wallet span {
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
-
-    color: #CB0000;
+    color: #000000;
   }
 
   .w-receive img {
