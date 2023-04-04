@@ -50,7 +50,7 @@
         });
     })
 
-
+    // Start Open Eye in Member Card Already
     const toogleEye = document.getElementById('eye-toggle');
     const textSecret = document.getElementById('text-secret');
 
@@ -70,4 +70,6 @@
 
         this.classList.toggle('ri-eye-off-line');
     });
+    // End Open Eye in Member Card Already
+
 </script>

@@ -375,6 +375,12 @@ color: rgba(255, 255, 255, 0.8);
   font-weight: 500;
 }
 
+.card-number div:nth-child(2) input,
+.card-number div:nth-child(2) input:focus {
+  border: none;
+  outline: none;
+}
+
 .card-expire-date div:nth-child(1) {
   font-size: 12px;
 }
@@ -971,7 +977,7 @@ color: rgba(255, 255, 255, 0.8);
 
 .hero h1 {
   margin: 0;
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 700;
   color: #ffffff;
 }
@@ -1019,7 +1025,7 @@ color: rgba(255, 255, 255, 0.8);
 # Tranfer Money 
 --------------------------------------------------------------*/
 .transfer-money h1 {
-  font-size: 44px;
+  font-size: 30px;
 }
 
 .transfer-money h1 b {
@@ -1049,6 +1055,8 @@ color: rgba(255, 255, 255, 0.8);
 
 
 
+
+
 /*--------------------------------------------------------------
 # Accordion how to use speedybank
 --------------------------------------------------------------*/
@@ -1064,14 +1072,15 @@ color: rgba(255, 255, 255, 0.8);
 
 .card-first-debit{
   background-color: #BCE7FF;
-  min-height: 160px;
-  font-size: 20px;
+  height: 160px;
+  width: auto;
+  font-size: 16px;
   color: #566A75;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .title-first-debit {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .title-first-debit span {
@@ -3255,7 +3264,7 @@ color: rgba(255, 255, 255, 0.8);
     background: #0F4E97 !important;
   }
   .hero .btn-slider-signin {
-    /* margin-top: 40rem; */
+    width: 200px;
     line-height: 0;
     padding: 1.5rem 4rem;
     transition: 0.5s;
@@ -3334,7 +3343,7 @@ color: rgba(255, 255, 255, 0.8);
 
   .content-freedy h2 {
     font-weight: 600;
-    font-size: 32px;
+    font-size: 20px;
     line-height: 116.69%;
 
     color: #CB0000;
@@ -5291,7 +5300,7 @@ color: rgba(255, 255, 255, 0.8);
   }
 
   .list-different .items-different {
-    min-height: 350px;
+    height: 300px;
   }
 
   .list-different .items-different img {
@@ -5313,7 +5322,7 @@ color: rgba(255, 255, 255, 0.8);
   }
 
   .list-different .items-different span.title.specifications {
-    font-weight: 800;
+    font-weight: 600;
     font-size: 16px;
     line-height: 177.9%;
     color: #000000;
@@ -5514,11 +5523,11 @@ color: rgba(255, 255, 255, 0.8);
   .navbar .btn-login:focus {
     padding: 8px 20px;
     margin-left: 30px;
-    border: 2px solid #CB0000;
+    border: 2px solid #0F4E97;
     filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.10));
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
-    color: #CB0000;
+    color: #0F4E97;
   }
 
   .navbar .btn-login:hover,
@@ -7546,7 +7555,7 @@ color: rgba(255, 255, 255, 0.8);
   }
 
   .list-different .items-different {
-    min-height: 350px;
+    height: 300px;
   }
 
   .list-different .items-different img {
@@ -7569,7 +7578,7 @@ color: rgba(255, 255, 255, 0.8);
   }
 
   .list-different .items-different span.title.specifications {
-    font-weight: 800;
+    font-weight: 600;
     font-size: 16px;
     line-height: 177.9%;
     color: #000000;
@@ -7666,6 +7675,20 @@ color: rgba(255, 255, 255, 0.8);
 }
 
 @media (min-width: 768px) {
+
+  .hero h1,
+  .transfer-money h1
+  {
+    font-size: 50px;
+  }
+
+  .title-first-debit {
+    font-size: 45px;
+  }
+
+  
+  
+
   .element-transfer-money {
     position: absolute;
     right: 0;
@@ -7745,16 +7768,6 @@ color: rgba(255, 255, 255, 0.8);
     color: #fff;
   }
 
-  .navbar .btn-login,
-  .navbar .btn-login:focus {
-    padding: 8px 20px;
-    margin-left: 30px;
-    border: 2px solid #0F4E97;
-    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.10));
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 4px;
-    color: #0F4E97;
-  }
 
   .navbar .btn-login:hover,
   .navbar .btn-login:focus:hover {
@@ -7845,7 +7858,7 @@ color: rgba(255, 255, 255, 0.8);
 
   .content-freedy h2 {
     font-weight: 600;
-    font-size: 43px;
+    font-size: 32px;
     line-height: 116.69%;
 
     color: #CB0000;
@@ -7861,7 +7874,7 @@ color: rgba(255, 255, 255, 0.8);
 
   .content-freedy p {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 180%;
 
     color: #000000;
@@ -9770,7 +9783,7 @@ color: rgba(255, 255, 255, 0.8);
   }
 
   .list-different .items-different {
-    min-height: 350px;
+    height: 300px;
   }
 
   .list-different .items-different img {
@@ -9786,14 +9799,14 @@ color: rgba(255, 255, 255, 0.8);
 
   .list-different .items-different span.title {
     font-weight: 500;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 177.9%;
 
     color: #000000;
   }
 
   .list-different .items-different span.title.specifications {
-    font-weight: 800;
+    font-weight: 600;
     font-size: 16px;
     line-height: 177.9%;
     color: #000000;
@@ -9803,7 +9816,7 @@ color: rgba(255, 255, 255, 0.8);
 
   .list-different .items-different a {
    font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 144.69%;
     color: #D2E4F5;
     background-color: #0F4E97;
@@ -9899,6 +9912,19 @@ color: rgba(255, 255, 255, 0.8);
 }
 
 @media (min-width: 992px) {
+
+  .navbar .btn-login,
+  .navbar .btn-login:focus {
+    width: 110px;
+    padding: 8px 20px;
+    margin-left: 30px;
+    border: 2px solid #0F4E97;
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.10));
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    color: #0F4E97;
+  }
+
 
   .element-transfer-money {
     position: absolute;
@@ -10189,6 +10215,10 @@ color: rgba(255, 255, 255, 0.8);
 }
 
 @media (min-width: 1024px){
+
+  .hero h1 {
+    font-size: 60px;
+  }
   
   .card-balance div:nth-child(1) {
     font-size: 18px;
@@ -10242,6 +10272,10 @@ color: rgba(255, 255, 255, 0.8);
 }
 
 @media (min-width: 1200px) {
+  .card-first-debit{
+    font-size: 20px;
+  }
+
   .box-service-list .icon img {
     height: 75px;
   }
@@ -10399,7 +10433,7 @@ color: rgba(255, 255, 255, 0.8);
 
   .content-freedy h2 {
     font-weight: 600;
-    font-size: 43px;
+    font-size: 40px;
     line-height: 116.69%;
 
     color: #CB0000;
@@ -10415,9 +10449,8 @@ color: rgba(255, 255, 255, 0.8);
 
   .content-freedy p {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 180%;
-
     color: #000000;
   }
 
@@ -12349,7 +12382,7 @@ color: rgba(255, 255, 255, 0.8);
   }
 
   .list-different .items-different {
-    min-height: 350px;
+    height: 300px;
   }
 
   .list-different .items-different img {
@@ -12372,7 +12405,7 @@ color: rgba(255, 255, 255, 0.8);
   }
 
   .list-different .items-different span.title.specifications {
-    font-weight: 800;
+    font-weight: 600;
     font-size: 16px;
     line-height: 177.9%;
     color: #000000;

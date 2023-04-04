@@ -29,7 +29,7 @@ if (isset($extra)) {
 }
 ?>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-H40PJ6JPE5"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JVEK6294YT"></script>
 
 <script>
 window.dataLayer = window.dataLayer || [];
