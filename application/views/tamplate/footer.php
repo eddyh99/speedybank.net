@@ -39,7 +39,7 @@ function gtag() {
 }
 gtag('js', new Date());
 
-gtag('config', 'G-H40PJ6JPE5');
+gtag('config', 'G-JVEK6294YT');
 
 
 $(".money-input").autoNumeric('init', {

@@ -138,8 +138,8 @@ class Auth extends CI_Controller
 		if ($result->code == 200) {
 			//kirim email registrasi
 
-			$subject = "ExchangeTailor Registration";
-			$message = "Thank you for registering on ExchangeTailor<br><br>
+			$subject = "SpeedyBank Registration";
+			$message = "Thank you for registering on SpeedyBank<br><br>
 			username : " . $email . "<br>
 			password : (your chosen password)<br><br>
 			click this <a href='" . base_url("auth/activate?token=") . $result->message->token . "'>link</a> to activate your account<br><br>
@@ -361,7 +361,7 @@ class Auth extends CI_Controller
 		$result = apitrackless($url);
 		if (!empty(@$result->code == 200)) {
 
-			$subject = "Reset Password for ExchangeTailor Account";
+			$subject = "Reset Password for Speedybank Account";
 			// kirim email forgot password dengan token validasi, lebih dari 1jam expired tokennya
 			$message = "Hi,<br><br>
 

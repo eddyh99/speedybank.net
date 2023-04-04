@@ -322,7 +322,7 @@ class Link extends CI_Controller
     public function about()
     {
         $data = array(
-            "title"     => NAMETITLE . " - About ExchangeTailor",
+            "title"     => NAMETITLE . " - About SpeedyBank",
             "content"   => "auth/landingpage/aboutus",
             "extra"     => "auth/landingpage/js/js_index",
         );
