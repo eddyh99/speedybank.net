@@ -8,7 +8,7 @@
         <nav id="navbar" class="navbar">
             <ul class="px-5">
                 <li><a class="f-hahmlet nav-link navbar-freedy scrollto" href="#service">Services</a></li>
-                <li><a class="f-hahmlet nav-link navbar-freedy scrollto" href="#guide">guide</a></li>
+                <li><a class="f-hahmlet nav-link navbar-freedy scrollto" href="#guide">Guide</a></li>
                 <li><a class="f-bevietnam nav-link navbar-freedy scrollto" href="#specifications">Specifications</a>
                 </li>
                 <li><a class="f-bevietnam nav-link navbar-freedy scrollto" href="<?= base_url() ?>link/translate">Translate</a></li>
@@ -57,7 +57,9 @@
         </div>
         <div class="row d-flex justify-content-end">
             <div class="col-12 col-lg-4">
-                <img class="img-fluid" src="<?= base_url()?>assets/img/speedybank/institute.png" alt="institute of trackless">
+                <a href="https://tracklessbank.com/" target="_blank">
+                    <img class="img-fluid" src="<?= base_url()?>assets/img/speedybank/institute.png" alt="institute of trackless">
+                </a>
             </div>
         </div>
     </div>
@@ -71,29 +73,29 @@
             <div class="row gx-0">
                 <div class="row transfer-money">
                     <div class="col-12 col--lg-8 mx-auto text-start text-lg-center">
-                        <h1 class="f-hahmlet fw-bold">Transfer Money <b>Worldwide</b> <br> Fast & <b>Easy</b></h1>
+                        <h1 class="f-hahmlet fw-bold">Transfer Money <b>Worldwide</b> <br> <b>Fast & Easy</b></h1>
                     </div>
                 </div>
                 <div class="row mt-5 pt-3">
                     <div class="col-12 col-lg-6 d-flex flex-column justify-content-center mb-5 ps-lg-5">
                         <div class="content-freedy p-r">
                             <ul class="p-0 f-jakarta">
-                                <li>Anonymous multi currency wallet, just an email and password are required 
+                                <li>Anonymous multi currency wallet, just an email and password are required  
                                     <u translate="no">
                                         <a href="<?= base_url(); ?>link/spec?spec=<?= base64_encode('2') ?>">
                                             (No KYC & No AML)
                                         </a>
-                                    </u>
+                                    </u> 
                                 </li>
 
                                 <li>Quick and free opening</li>
 
-                                <li><span translate="no">SpeedyBank</span> provides a non-custodial wallet</li>
+                                <li><span translate="no"> SpeedyBank </span> provides a non-custodial wallet</li>
 
                                 <li>
                                     <u>
                                         <a href="<?= base_url()?>link/guide?guide=<?= base64_encode('2')?>">
-                                            100% Legal capital exportation
+                                            Capital exportation 100% legal
                                         </a>
                                     </u>
                                 </li>
@@ -620,7 +622,7 @@
             <div class="col-lg-6 col-12 pe-2 footer-links text-center">
                 <div class="d-flex flex-row flex-wrap align-items-center justify-content-center w-100">
                     <span class="powered f-koulen text-uppercase fw-bold">institute of</span>
-                    <a href="https://tracklessproject.com/">
+                    <a href="https://tracklessproject.com/" target="_blank">
                         <img src="<?= base_url() ?>assets/img/speedybank/tracklessprojects.png" alt="" class="trackless">
                     </a>
                 </div>

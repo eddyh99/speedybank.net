@@ -157,6 +157,7 @@ color: rgba(255, 255, 255, 0.8);
   padding: 1rem 3rem;
   transition: 0.5s;
   color: #fff;
+  border: none;
   background: #0F4E97;
   border-radius: 26.386px;
 }
@@ -249,7 +250,7 @@ color: rgba(255, 255, 255, 0.8);
   padding: 1rem 3rem;
   transition: 0.5s;
   color: #fff;
-  
+  border: none;
   background: #0F4E97;
   border-radius: 26.386px;
 }
@@ -274,6 +275,8 @@ color: rgba(255, 255, 255, 0.8);
   border: 3px solid transparent;
   
 }
+
+
 
 .form-topup-card label,
 .form-topup-card input {
@@ -322,6 +325,12 @@ color: rgba(255, 255, 255, 0.8);
   color: black;
 }
 
+.form-control:disabled, .form-control[readonly] {
+  background-color: #ffffff !important;
+  opacity: 1;
+}
+
+
 .form-req-card input:focus {
   border-color: inherit;
   -webkit-box-shadow: none;
@@ -348,6 +357,13 @@ color: rgba(255, 255, 255, 0.8);
   font-size: 18px;
   font-weight: bolder;
 }
+
+.card-balance div:nth-child(2) input, 
+.card-balance div:nth-child(2) input:focus {
+  border: none;
+  outline: none;
+}
+
 
 
 .card-number div:nth-child(1) {
@@ -376,6 +392,13 @@ color: rgba(255, 255, 255, 0.8);
   font-size: 18px;
   font-weight: 500;
 }
+
+.card-cvv div:nth-child(2) input,
+.card-cvv div:nth-child(2) input:focus {
+  border: none;
+  outline: none;
+}
+
 
 /*--------------------------------------------------------------
 --------------------------------------------------------------*/
@@ -10184,6 +10207,18 @@ color: rgba(255, 255, 255, 0.8);
   .card-number div:nth-child(2) {
     font-size: 20px;
     font-weight: 500;
+  }
+
+  .ri-eye-line,
+  .card-number div:nth-child(2) img 
+  {
+    cursor: pointer;
+  }
+
+  .card-number div:nth-child(2) input,
+  .card-number div:nth-child(2) input:focus {
+    border: none;
+    outline: none;
   }
 
   .card-expire-date div:nth-child(1) {
