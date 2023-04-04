@@ -5,7 +5,9 @@
             <div class="container position-absolute logo-login">
                 <div class="row ">
                     <div class="col-6 mx-auto ">
-                        <img class="img-fluid" src="<?= base_url()?>assets/img/speedybank/logo-login.png" alt="logo-login">
+                        <a href="<?= base_url()?>">
+                            <img class="img-fluid" src="<?= base_url()?>assets/img/speedybank/logo-login.png" alt="logo-login">
+                        </a>
                     </div>
                 </div>
             </div>

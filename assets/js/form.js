@@ -126,6 +126,13 @@ $("#btn-copy-qr").click(function () {
     });
 });
 
+$("#btncardnumcopy").click(function () {
+    var copyText = document.getElementById("cardnumcopy");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(copyText.value);
+});
+
 $("#time_location").val(moment.tz.guess());
 
 // SALDO

@@ -16,8 +16,7 @@ class Soon extends CI_Controller
         $data['title'] = NAMETITLE . " - Search";
 
         $this->load->view('tamplate/header', $data);
-        $this->load->view('tamplate/navbar-top', $data);
-        $this->load->view('tamplate/navbar-bottom', $data);
+        $this->load->view('tamplate/navbar-bottom-homepage', $data);
         $this->load->view('member/soon');
         $this->load->view('tamplate/footer');
     }

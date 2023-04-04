@@ -473,7 +473,7 @@
                 <div class="col-12 mb-5">
                     <div class="row">
                         <div class="col-12 col-md-6">
-                            <h3 class="text-dark">With PiggyBank your money travels with you.</h3>
+                            <h3 class="text-dark">With SpeedyBank your money travels with you.</h3>
                             <p>
                                 With this function integrated into your wallet, you will be able to see all the activities
                                 that accept <b translate="no"> ExchangeTailor </b> as a collection and payment system.
@@ -611,7 +611,7 @@
                                         <ul class="ps-0">
                                             <li class="ali">Integration is free of charge</li>
                                             <li class="ali">No monthly and no annual fees</li>
-                                            <li class="ali">Collections in real time from users of the <span translate="no">TracklessBank</span> circuit
+                                            <li class="ali">Collections in real time from users of the <span translate="no"> TracklessBank </span> circuit
                                             </li>
                                             <li class="ali">Cheaper than credit cards</li>
                                             <li class="ali">Reception and sending of national and international bank

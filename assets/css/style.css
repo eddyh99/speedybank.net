@@ -157,6 +157,7 @@ color: rgba(255, 255, 255, 0.8);
   padding: 1rem 3rem;
   transition: 0.5s;
   color: #fff;
+  border: none;
   background: #0F4E97;
   border-radius: 26.386px;
 }
@@ -249,7 +250,7 @@ color: rgba(255, 255, 255, 0.8);
   padding: 1rem 3rem;
   transition: 0.5s;
   color: #fff;
-  
+  border: none;
   background: #0F4E97;
   border-radius: 26.386px;
 }
@@ -274,6 +275,8 @@ color: rgba(255, 255, 255, 0.8);
   border: 3px solid transparent;
   
 }
+
+
 
 .form-topup-card label,
 .form-topup-card input {
@@ -322,6 +325,12 @@ color: rgba(255, 255, 255, 0.8);
   color: black;
 }
 
+.form-control:disabled, .form-control[readonly] {
+  background-color: #ffffff !important;
+  opacity: 1;
+}
+
+
 .form-req-card input:focus {
   border-color: inherit;
   -webkit-box-shadow: none;
@@ -348,6 +357,13 @@ color: rgba(255, 255, 255, 0.8);
   font-size: 18px;
   font-weight: bolder;
 }
+
+.card-balance div:nth-child(2) input, 
+.card-balance div:nth-child(2) input:focus {
+  border: none;
+  outline: none;
+}
+
 
 
 .card-number div:nth-child(1) {
@@ -376,6 +392,13 @@ color: rgba(255, 255, 255, 0.8);
   font-size: 18px;
   font-weight: 500;
 }
+
+.card-cvv div:nth-child(2) input,
+.card-cvv div:nth-child(2) input:focus {
+  border: none;
+  outline: none;
+}
+
 
 /*--------------------------------------------------------------
 --------------------------------------------------------------*/
@@ -492,6 +515,11 @@ color: rgba(255, 255, 255, 0.8);
   border-radius: 10px !important;
   padding: 6px 20px !important;
   box-shadow: inset 6px 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+.form-login-freedy .form-control:focus{
+  border-color: #ced4da;
+  box-shadow: none;
 }
 
 .country-select:focus {
@@ -612,7 +640,7 @@ color: rgba(255, 255, 255, 0.8);
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background: #CB0000;
+  background: #0F4E97;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -626,7 +654,7 @@ color: rgba(255, 255, 255, 0.8);
 }
 
 .back-to-top.active:hover {
-  background: #CB0000;
+  background: #0F4E97;
   color: #fff;
   opacity: 1;
 }
@@ -1057,6 +1085,20 @@ color: rgba(255, 255, 255, 0.8);
   right: 0;
 }
 
+.buble-soon{
+  font-size: 24px;
+  background: linear-gradient(245.3deg, #77BEFF 30.48%, #84D3FF 58.47%);
+  width: 150px;
+  height: 150px;
+  border-radius: 9999999px;
+}
+
+.buble-soon.abs {
+  right: 0px;
+  top: -100px;
+  z-index: -1;
+}
+
 
 /*--------------------------------------------------------------
 # Banking 
@@ -1068,10 +1110,6 @@ color: rgba(255, 255, 255, 0.8);
 .element-banking.right {
   top: -20px;
   right: 0;
-}
-
-.bg-crypto {
-
 }
 
 
@@ -5271,7 +5309,13 @@ color: rgba(255, 255, 255, 0.8);
     font-weight: 500;
     font-size: 20px;
     line-height: 177.9%;
+    color: #000000;
+  }
 
+  .list-different .items-different span.title.specifications {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 177.9%;
     color: #000000;
   }
 
@@ -7524,6 +7568,12 @@ color: rgba(255, 255, 255, 0.8);
     color: #000000;
   }
 
+  .list-different .items-different span.title.specifications {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 177.9%;
+    color: #000000;
+  }
 
 
   .list-different .items-different a {
@@ -9736,9 +9786,16 @@ color: rgba(255, 255, 255, 0.8);
 
   .list-different .items-different span.title {
     font-weight: 500;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 177.9%;
 
+    color: #000000;
+  }
+
+  .list-different .items-different span.title.specifications {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 177.9%;
     color: #000000;
   }
 
@@ -10150,6 +10207,18 @@ color: rgba(255, 255, 255, 0.8);
   .card-number div:nth-child(2) {
     font-size: 20px;
     font-weight: 500;
+  }
+
+  .ri-eye-line,
+  .card-number div:nth-child(2) img 
+  {
+    cursor: pointer;
+  }
+
+  .card-number div:nth-child(2) input,
+  .card-number div:nth-child(2) input:focus {
+    border: none;
+    outline: none;
   }
 
   .card-expire-date div:nth-child(1) {
@@ -12296,9 +12365,16 @@ color: rgba(255, 255, 255, 0.8);
 
   .list-different .items-different span.title {
     font-weight: 500;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 177.9%;
 
+    color: #000000;
+  }
+
+  .list-different .items-different span.title.specifications {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 177.9%;
     color: #000000;
   }
 

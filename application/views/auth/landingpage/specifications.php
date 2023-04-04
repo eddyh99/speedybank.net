@@ -181,7 +181,7 @@
                             with shared <b translate="no"> order book </b>
                         </h2>
                         <div class="my-3 content-freedy text-start mt-5">
-                            <p>T
+                            <p>
                                 Thanks to the use of the shared <b translate="no">order book</b> combined with a single collection and payment gateway for all platforms, our liquidity is infinite and you will be able to trade with all users of all the platforms of <b translate="no">TracklessProject.</b>
                                 <br>
                                 Distributed, decentralized and completely anonymous, <b translate="no">SpeedyBank</b> is a safe place where cryptocurrencies buyers and sellers meet.

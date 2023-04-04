@@ -8,7 +8,7 @@
         <nav id="navbar" class="navbar">
             <ul class="px-5">
                 <li><a class="f-hahmlet nav-link navbar-freedy scrollto" href="#service">Services</a></li>
-                <li><a class="f-hahmlet nav-link navbar-freedy scrollto" href="#guide">guide</a></li>
+                <li><a class="f-hahmlet nav-link navbar-freedy scrollto" href="#guide">Guide</a></li>
                 <li><a class="f-bevietnam nav-link navbar-freedy scrollto" href="#specifications">Specifications</a>
                 </li>
                 <li><a class="f-bevietnam nav-link navbar-freedy scrollto" href="<?= base_url() ?>link/translate">Translate</a></li>
@@ -57,7 +57,9 @@
         </div>
         <div class="row d-flex justify-content-end">
             <div class="col-12 col-lg-4">
-                <img class="img-fluid" src="<?= base_url()?>assets/img/speedybank/institute.png" alt="institute of trackless">
+                <a href="https://tracklessbank.com/" target="_blank">
+                    <img class="img-fluid" src="<?= base_url()?>assets/img/speedybank/institute.png" alt="institute of trackless">
+                </a>
             </div>
         </div>
     </div>
@@ -71,29 +73,29 @@
             <div class="row gx-0">
                 <div class="row transfer-money">
                     <div class="col-12 col--lg-8 mx-auto text-start text-lg-center">
-                        <h1 class="f-hahmlet fw-bold">Transfer Money <b>Worldwide</b> <br> Fast & <b>Easy</b></h1>
+                        <h1 class="f-hahmlet fw-bold">Transfer Money <b>Worldwide</b> <br> <b>Fast & Easy</b></h1>
                     </div>
                 </div>
                 <div class="row mt-5 pt-3">
                     <div class="col-12 col-lg-6 d-flex flex-column justify-content-center mb-5 ps-lg-5">
                         <div class="content-freedy p-r">
                             <ul class="p-0 f-jakarta">
-                                <li>Anonymous multi currency wallet, just an email and password are required 
+                                <li>Anonymous multi currency wallet, just an email and password are required  
                                     <u translate="no">
                                         <a href="<?= base_url(); ?>link/spec?spec=<?= base64_encode('2') ?>">
                                             (No KYC & No AML)
                                         </a>
-                                    </u>
+                                    </u> 
                                 </li>
 
                                 <li>Quick and free opening</li>
 
-                                <li><span translate="no">SpeedyBank</span> provides a non-custodial wallet</li>
+                                <li><span translate="no"> SpeedyBank </span> provides a non-custodial wallet</li>
 
                                 <li>
                                     <u>
                                         <a href="<?= base_url()?>link/guide?guide=<?= base64_encode('2')?>">
-                                            100% Legal capital exportation
+                                            Capital exportation 100% legal
                                         </a>
                                     </u>
                                 </li>
@@ -272,10 +274,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="text-start mt-5">
-                        <a href="<?= base_url(); ?>auth/signup" class="btn-content-freedy d-inline-flex align-items-center justify-content-center align-self-center">
-                            <span class="">Register Now</span>
-                        </a>
+                    <div class="d-flex flex-column flex-lg-row align-items-center">
+                        <div class="text-start mt-5 me-0 me-lg-5">
+                            <a href="<?= base_url(); ?>auth/signup" class="btn-content-freedy d-inline-flex align-items-center justify-content-center align-self-center">
+                                <span class="">Register Now</span>
+                            </a>
+                        </div>
+                        <div class="buble-soon ms-0 ms-lg-5 d-flex justify-content-center align-items-center text-center f-jakarta fw-bolder mt-5">
+                            <span>
+                                COMING <br> SOON
+                            </span>
+                        </div>
                     </div>
                 </div>
                 <div class="col-5 d-none d-lg-block">
@@ -339,70 +348,70 @@
                     </div>
                     <div id="collapseTwo" class="col-12 accordion-collapse collapse" aria-labelledby="pageTwo" data-bs-parent="#accordionFreedy">
                         <div class="row d-flex flax-wrap justify-content-center align-items-center">
-                            <div class="col-10 col-md-5 col-lg-3 px-2 my-3 list-different  mx-auto">
+                            <div class="col-10 col-md-5 col-lg-3 px-2 pt-5 my-5 list-different  mx-auto">
                                 <div class="items-different p-2 d-flex flex-column justify-content-start align-items-start text-start">
                                     <img src="<?= base_url() ?>assets/img/speedybank/icon-spec-1.png" alt="">
-                                    <span class="f-jakarta title text-blue-freedy my-auto"><b translate="no">Non custodial wallet </b>
+                                    <span class="f-jakarta title specifications text-blue-freedy my-auto"><b translate="no">Non custodial wallet </b>
                                         provided</span>
                                     <a href="<?= base_url(); ?>link/spec?spec=<?= base64_encode('1') ?>" class="active py-2 px-3">Read More</a>
                                 </div>
                             </div>
-                            <div class="col-10 col-md-5 col-lg-3 px-2 my-3 list-different  mx-auto">
+                            <div class="col-10 col-md-5 col-lg-3 px-2 pt-5 my-5 list-different  mx-auto">
                                 <div class="items-different p-2 d-flex flex-column justify-content-start align-items-start text-start">
                                     <img src="<?= base_url() ?>assets/img/speedybank/icon-spec-2.png" alt="">
-                                    <span translate="no" class="f-jakarta title text-blue-freedy my-auto">No KYC No AML</span>
+                                    <span translate="no" class="f-jakarta title specifications text-blue-freedy my-auto">No KYC No AML</span>
                                     <a href="<?= base_url(); ?>link/spec?spec=<?= base64_encode('2') ?>" class="active py-2 px-3">Read More</a>
                                 </div>
                             </div>
-                            <div class="col-10 col-md-5 col-lg-3 px-2 my-3 list-different  mx-auto">
+                            <div class="col-10 col-md-5 col-lg-3 px-2 pt-5 my-5 list-different  mx-auto">
                                 <div class="items-different p-2 d-flex flex-column justify-content-start align-items-start text-start">
                                     <img src="<?= base_url() ?>assets/img/speedybank/icon-spec-3.png" alt="">
-                                    <span class="f-jakarta title text-blue-freedy my-auto">Receive funds in
+                                    <span class="f-jakarta title specifications text-blue-freedy my-auto">Receive funds in
                                         10 FIAT currencies</span>
                                     <a href="<?= base_url(); ?>link/spec?spec=<?= base64_encode('3') ?>" class="active py-2 px-3">Read More</a>
                                 </div>
                             </div>
-                            <div class="col-10 col-md-5 col-lg-3 px-2 my-3 list-different  mx-auto">
+                            <div class="col-10 col-md-5 col-lg-3 px-2 pt-5 my-5 list-different  mx-auto">
                                 <div class="items-different p-2 d-flex flex-column justify-content-start align-items-start text-start">
                                     <img src="<?= base_url() ?>assets/img/speedybank/icon-spec-4.png" alt="">
-                                    <span class="f-jakarta title text-blue-freedy my-auto">Convert, custody
+                                    <span class="f-jakarta title specifications text-blue-freedy my-auto">Convert, custody
                                         & send in over 40
                                         FIAT curencies</span>
                                     <a href="<?= base_url(); ?>link/spec?spec=<?= base64_encode('4') ?>" class="active py-2 px-3">Read More</a>
                                 </div>
                             </div>
-                            <div class="col-10 col-md-5 col-lg-3 px-2 my-3 list-different  mx-auto">
+                            <div class="col-10 col-md-5 col-lg-3 px-2 pt-5 my-5 list-different  mx-auto">
                                 <div class="items-different p-2 d-flex flex-column justify-content-start align-items-start text-start">
                                     <img src="<?= base_url() ?>assets/img/speedybank/icon-spec-5.png" alt="">
-                                    <span class="f-jakarta title text-blue-freedy my-auto">Zero exchange fees and competitive
+                                    <span class="f-jakarta title specifications text-blue-freedy my-auto">Zero exchange fees and competitive
                                         rates for
                                         FIAT to
                                         FIAT</span>
                                     <a href="<?= base_url(); ?>link/spec?spec=<?= base64_encode('5') ?>" class="active py-2 px-3">Read More</a>
                                 </div>
                             </div>
-                            <div class="col-10 col-md-5 col-lg-3 px-2 my-3 list-different  mx-auto">
+                            <div class="col-10 col-md-5 col-lg-3 px-2 pt-5 my-5 list-different  mx-auto">
                                 <div class="items-different p-2 d-flex flex-column justify-content-start align-items-start text-start">
                                     <img src="<?= base_url() ?>assets/img/speedybank/icon-spec-6.png" alt="">
-                                    <span class="f-jakarta title text-blue-freedy my-auto">Clear & transparent
+                                    <span class="f-jakarta title specifications text-blue-freedy my-auto">Clear & transparent
                                         prices without
                                         hidden cost</span>
                                     <a href="<?= base_url(); ?>link/lern_transparency" class="active py-2 px-3">Read
                                         More</a>
                                 </div>
                             </div>
-                            <div class="col-10 col-md-5 col-lg-3 px-2 my-3 list-different  mx-auto">
+                            <div class="col-10 col-md-5 col-lg-3 px-2 pt-5 my-5 list-different  mx-auto">
                                 <div class="items-different p-2 d-flex flex-column justify-content-start align-items-start text-start">
                                     <img src="<?= base_url() ?>assets/img/speedybank/icon-spec-7.png" alt="">
-                                    <span class="f-jakarta title text-blue-freedy my-auto"><b translate="no">Trade-off </b> platform
+                                    <span class="f-jakarta title specifications text-blue-freedy my-auto"><b translate="no">Trade-off </b> platform
                                     </span>
                                     <a href="<?= base_url(); ?>link/spec?spec=<?= base64_encode('7') ?>" class="active py-2 px-3">Read More</a>
                                 </div>
                             </div>
-                            <div class="col-10 col-md-5 col-lg-3 px-2 my-3 list-different  mx-auto">
+                            <div class="col-10 col-md-5 col-lg-3 px-2 my-5 pt-5 list-different  mx-auto">
                                 <div class="items-different p-2 d-flex flex-column justify-content-start align-items-start text-start">
                                     <img src="<?= base_url() ?>assets/img/speedybank/icon-spec-8.png" alt="">
-                                    <span class="f-jakarta title text-blue-freedy my-auto">Integration into
+                                    <span class="f-jakarta title specifications text-blue-freedy my-auto">Integration into
                                         your business
                                         API/plugin</span>
                                     <a href="<?= base_url(); ?>link/spec?spec=<?= base64_encode('8') ?>" class="active py-2 px-3">Read More</a>
@@ -485,15 +494,22 @@
                                         </span>
                                     </h3>
                                     <div class="my-3 c-check">
-                                        <ul class="p-0 f-jakarta">
-                                            <li><span translate="no">Trade off </span> platform</li>
-                                            <li>Shared <span translate="no"> order book</span></li>
-                                            <li>Distributed and decentralized</li>
-                                            <li>Buy crypto from your <span translate="no">FIAT</span> balance of your <b translate="no"> SpeedyBank
-                                                </b> wallet </li>
-                                            <li>Withdraw your earning by bank transfer in more than
-                                                50 currencies to any bank account even not under your name</li>
-                                        </ul>
+                                        <div class="d-flex position-relative">
+                                            <ul class="p-0 f-jakarta position-relative">
+                                                <li><span translate="no">Trade off </span> platform</li>
+                                                <li>Shared <span translate="no"> order book</span></li>
+                                                <li>Distributed and decentralized</li>
+                                                <li>Buy crypto from your <span translate="no">FIAT</span> balance of your <b translate="no"> SpeedyBank
+                                                    </b> wallet </li>
+                                                <li>Withdraw your earning by bank transfer in more than
+                                                    50 currencies to any bank account even not under your name</li>
+                                            </ul>
+                                            <div class="buble-soon abs ms-5 d-flex justify-content-center align-items-center text-center f-jakarta fw-bolder mt-5 position-absolute">
+                                                <span>
+                                                    COMING <br> SOON
+                                                </span>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="text-start">
                                         <a href="<?= base_url() ?>link/crypto" class="btn-content-freedy d-inline-flex align-items-center justify-content-center align-self-center">
@@ -606,11 +622,11 @@
             <div class="col-lg-6 col-12 pe-2 footer-links text-center">
                 <div class="d-flex flex-row flex-wrap align-items-center justify-content-center w-100">
                     <span class="powered f-koulen text-uppercase fw-bold">institute of</span>
-                    <a href="https://tracklessproject.com/">
+                    <a href="https://tracklessproject.com/" target="_blank">
                         <img src="<?= base_url() ?>assets/img/speedybank/tracklessprojects.png" alt="" class="trackless">
                     </a>
                 </div>
-                <p class="copyright py-3 m-0"><b translate="no">Exchange Tailor </b> (GIB)
+                <p class="copyright py-3 m-0"><b translate="no">SpeedyBank</b> (GIB)
             </div>
             <div class="col-lg-3 col-12 text-center text-black mb-5 d-flex justify-content-between">
                 <a href="<?= base_url() ?>link/privacy_policy" class="fw-bold text-black text-decoration-underline">

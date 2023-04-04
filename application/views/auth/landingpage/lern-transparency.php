@@ -11,7 +11,7 @@
             </div>
             <div class="col-12 my-5">
                 <div class="col-12 mb-5 text-center">
-                    <h2 class="title-top-header fw-bold f-hahmlet text-blue-freedy">Clear and transparent prices</h2>
+                    <h2 class="title-top-header fw-bold f-hahmlet text-blue-freedy py-3">Clear and transparent prices</h2>
                 </div>
                 <div class="col-12">
                     <div class="row justify-content-center">

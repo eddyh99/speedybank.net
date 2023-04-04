@@ -60,7 +60,7 @@
                                     ($_SESSION["currency"] == "GBP")
                                 ) { 
                                     if ($_SESSION["currency"] == "EUR") {?>
-                            <a href="<?= base_url() ?>receive/localbank" class="col-8 py-3 my-2">International
+                            <a href="<?= base_url() ?>receive/interbank" class="col-8 py-3 my-2">International
                                 BIC/Swift</a>
                             <?php }else{?>
                             <a href="<?= base_url() ?>receive/interbank" class="col-8 py-3 my-2">International Swift</a>
