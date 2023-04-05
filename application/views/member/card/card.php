@@ -66,8 +66,8 @@
                                 <div>
                                     <span>Card balance</span>
                                 </div>
-                                <div class="text-blue-freedy d-flex align-items-center">
-                                    <input id="text-secret" type="password" class="text-blue-freedy text-end mx-3 fw-semibold" value="<?php echo $_SESSION["symbol"]." ".number_format($detailcard->cardbalance,2);?>" readonly>
+                                <div class="text-blue-freedy d-flex align-items-center justify-content-end">
+                                    <input  id="text-secret" type="password" class="w-50 text-blue-freedy text-end mx-3 fw-semibold" value="<?php echo $_SESSION["symbol"]." ".number_format($detailcard->cardbalance,2);?>" readonly>
                                     <i id="eye-toggle" class="ri-eye-line text-blue-freedy pe-auto"></i>
                                 </div>
                             </div>
@@ -76,8 +76,8 @@
                                 <div class="">
                                     <span>Card number</span>
                                 </div>
-                                <div class="">
-                                    <input type="text" id="cardnumcopy" class="text-end mx-3" value="<?=$detailcard->cardnumber?>" readonly>
+                                <div class="d-flex justify-content-end">
+                                    <input type="text" id="cardnumcopy" class="text-end mx-3 d-inline-block w-50" value="<?=$detailcard->cardnumber?>" readonly>
                                     <span id="btncardnumcopy">
                                         <img src="<?= base_url()?>assets/img/speedybank/copy.png" class="img-fluid" alt="copy">
                                     </span>
@@ -98,8 +98,8 @@
                                 <div>
                                     <span>CVV</span>
                                 </div>
-                                <div class="d-flex align-items-center">
-                                    <input id="text-secret2" type="password" class="text-end mx-3 fw-semibold" value="<?=$detailcard->cvv?>" readonly>
+                                <div class="d-flex align-items-center justify-content-end">
+                                    <input id="text-secret2" type="password" class="w-50 text-end mx-3 fw-semibold" value="<?=$detailcard->cvv?>" readonly>
                                     <i id="eye-toggle2" class="ri-eye-line text-blue-freedy pe-auto"></i>
                                 </div>
                             </div>

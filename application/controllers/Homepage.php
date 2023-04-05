@@ -155,51 +155,6 @@ class Homepage extends CI_Controller
         echo json_encode($response);
     }
 
-
-    // public function card()
-    // {   
-        
-    //     $data['title'] = NAMETITLE . " - Homepage";
-    //     $data['basecard'] = base_url() . 'homepage/card';
-    //     $data['card'] = base64_decode($_GET['card']) ;
-    //     $data['requestcard'] = base64_decode(@$_GET['requestcard']) ;
-    //     $footer["extra"] = "member/js/js_index";
-
-    //     // PERLU VALUE UNTUK VALIDASI, UNTUK KONDISI BELUM FIKS MASIH PERLU DIPERBAIKI
-    //     // IF ALREADY CARD 
-    //     if($_SESSION['user_id'] == !isset($_GET[base_url() . 'homepage/card' ]) )
-    //     {
-    //         $this->load->view('tamplate/header', $data);
-    //         $this->load->view('member/card/card', $data);
-    //         $this->load->view('tamplate/navbar-bottom-back', $data);
-    //         $this->load->view('tamplate/footer', $footer);
-    //     }
-
-
-    // }
-
-    // public function requestcard()
-    // {   
-        
-    //     $data['title'] = NAMETITLE . " - Homepage";
-    //     $data['basecard'] = base_url() . 'homepage/requestcard';
-    //     $data['requestcard'] = base64_decode($_GET['requestcard']) ;
-    //     $data['card'] = base64_decode(@$_GET['card']) ;
-    //     $footer["extra"] = "member/js/js_index";
-        
-    //     // PERLU VALUE UNTUK VALIDASI, UNTUK KONDISI BELUM FIKS MASIH PERLU DIPERBAIKI
-    //     // IF REQUEST CARD
-    //     if($_SESSION['user_id'] == !isset($_GET[base_url() . 'homepage/requestcard']) )
-    //     {
-    //         $this->load->view('tamplate/header', $data);
-    //         $this->load->view('member/card/card-request', $data);
-    //         $this->load->view('tamplate/navbar-bottom-back', $data);
-    //         $this->load->view('tamplate/footer', $footer);
-    //     }
-
-    // }
-    
-
     
     public function card()
     {   
@@ -231,18 +186,22 @@ class Homepage extends CI_Controller
             $this->load->view('tamplate/footer', $data);
 
         }else{
-            $card_id     = $result->message->card_id;
-            $account_id  = $result->message->account_id;
-
+            
+            // Active this comment for show card number, cardid, exp
             // $card_id='be3838a4-72ff-49a7-8f03-82f84a54d73d';
             // $exp_date="2026-03-31T23:59:59Z";
             // $exp    = explode("T",$exp_date)[0];
+            // $card   = apitrackless(URLAPI . "/v1/member/card/decodeCard?card_id=" . $card_id);
 
+
+            // Comment this for Debugging Available Card
+            $card_id     = $result->message->card_id;
+            $account_id  = $result->message->account_id;
+            
             $cardbalance = apitrackless(URLAPI . "/v1/member/card/getcardbalance?card_id=" . $card_id . "&account_id=" . $account_id);
             $exp    = explode("T",$cardbalance->exp_date)[0];
             $exp    = date("d M Y",strtotime($exp));
-            $card   = apitrackless(URLAPI . "/v1/member/card/decodeCard?card_id=" . $cardbalance->card_id);
-            // $card   = apitrackless(URLAPI . "/v1/member/card/decodeCard?card_id=" . $card_id);
+            $card   = apitrackless(URLAPI . "/v1/member/card/decodeCard?card_id=" . $card_id);
             
             $mcard = (object)array(
                     "cardnumber"    => $card->cardnumber,
@@ -321,20 +280,24 @@ class Homepage extends CI_Controller
             "3dpass"    => $passwd
         );
         
+        // Active this comment For Checking Get Information
+        // $card_id='be3838a4-72ff-49a7-8f03-82f84a54d73d';
+        // $exp_date="2026-03-31T23:59:59Z";
+        // $exp    = explode("T",$result->exp_date)[0];
+        // $exp    = date("d M Y",strtotime($result->exp_date));
+        // $card   = apitrackless(URLAPI . "/v1/member/card/decodeCard?card_id=" . $card_id);
+        
+        // Comment this for Debugging Request Card
         $result = apitrackless(URLAPI . "/v1/member/card/activate_card", json_encode($mdata));
         if (@$result->code != "200") {
             $this->session->set_flashdata('failed', $result->message);
             redirect ("homepage/card?requestcard=YWN0aXZlbm93");
             return;
         }
-        
-        // $card_id='be3838a4-72ff-49a7-8f03-82f84a54d73d';
-        // $exp_date="2026-03-31T23:59:59Z";
-        
-        $exp    = explode("T",$result->exp_date)[0];
-        $exp    = date("d M Y",strtotime($result->exp_date));
-        $card   = apitrackless(URLAPI . "/v1/member/card/decodeCard?card_id=" . $result->card_id);
-        // $card   = apitrackless(URLAPI . "/v1/member/card/decodeCard?card_id=" . $card_id);
+
+        $exp    = explode("T",$result->message->exp_date)[0];
+        $exp    = date("d M Y",strtotime($result->message->exp_date));
+        $card   = apitrackless(URLAPI . "/v1/member/card/decodeCard?card_id=" . $result->message->card_id);
 
         $data=array(
             "title"         => NAMETITLE . " - Card",

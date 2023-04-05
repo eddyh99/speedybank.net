@@ -126,12 +126,14 @@ $("#btn-copy-qr").click(function () {
     });
 });
 
+// Start Copy Number Card In Member
 $("#btncardnumcopy").click(function () {
     var copyText = document.getElementById("cardnumcopy");
     copyText.select();
     copyText.setSelectionRange(0, 99999);
     navigator.clipboard.writeText(copyText.value);
 });
+// End Copy Number Card In Member
 
 $("#time_location").val(moment.tz.guess());
 
