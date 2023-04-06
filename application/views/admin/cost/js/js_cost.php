@@ -63,6 +63,12 @@ function readfee() {
                 $("#topup_circuit_fxd_div").show()
                 $("#topup_circuit_pct_div").show()
             }
+
+            if (readcurrency == "EUR"){
+                $("#card_fxd_div").show()
+            }else{
+                $("#card_fxd_div").hide()
+            }
         },
         error: function(response) {
             alert(response);

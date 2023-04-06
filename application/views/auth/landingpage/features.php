@@ -12,27 +12,26 @@
 
             <?php if ($features == 1) { ?>
             <div class="col-12 my-5">
-                <div class="logo-text text-center">
-                    <h2 class="f-hahmlet text-blue-freedy fw-bold">100% Safe</h2>
+                <div class="text-center features-text">
+                    <h2 class="f-hahmlet title-top-header text-blue-freedy fw-bolder">100% Safe</h2>
                 </div>
             </div>
             <div class="col-12 mb-5">
                 <div class="row">
-                    <div class="col-12 col-md-6 text-start">
-                        <h2 class="title-top-header fw-bold mb-3 text-blue-freedy f-hahmlet">Why can you trust <b translate="no">
-                                SpeedyBank </b> ?</h2>
-                        <p>
+                    <div class="col-12 col-md-6 text-start features-text">
+                        <h2 class="title-top-header fw-bold mb-3 text-blue-freedy f-hahmlet">Why can you trust us ?</h2>
+                        <p class="f-jakarta">
                             Your funds are protected by global banks, our clients' funds are entirely deposited in encrypted escrow accounts at the main credit institutions with which our payment gateway works in the various countries.
-                            To give total security to our customers, only the account holder will have access to the operations and even for <b translate="no">SpeedyBank</b> it will be impossible to bypass this security system.
+                            To give total security to our customers, only the account holder will have access to the operations and even for <span translate="no"> SpeedyBank </span> it will be impossible to bypass this security system.
                         </p>
-                        <p>
-                            <b translate="no">SpeedyBank </b>, being part of the <b translate="no">TracklessBank circuit,</b> offers to customers a great guarantee, as any problem that may arise, the funds will always be accessible at another institution of the <b translate="no">TraklessBank circuit.</b>
+                        <p class="f-jakarta">
+                            <span translate="no"> SpeedyBank </span>, being part of the <span translate="no"> TracklessBank circuit, </span> offers to customers a great guarantee, as any problem that may arise, the funds will always be accessible at another institution of the <span translate="no"> TraklessBank circuit. </span>
                          </p>
-                        <p>
-                            None of the <span translate="no">tracklessbank institutions</span> have the ability to make any type of investment or money handling using clients’ funds, leaving the capital available to the customers in the fiat corresponding to the balance of the <b translate="no">SpeedyBank</b>  wallet
+                        <p class="f-jakarta">
+                            None of the <span translate="no"> tracklessbank institutions </span> have the ability to make any type of investment or money handling using clients’ funds, leaving the capital available to the customers in the fiat corresponding to the balance of the <span translate="no"> SpeedyBank </span>  wallet
                         </p>
                     </div>
-                    <div class="col-md-6  d-none d-md-grid m-auto">
+                    <div class="col-md-6  d-none d-md-block m-auto">
                         <img src="<?= base_url() ?>assets/img/speedybank/img-6.png" alt="" class="img-fluid">
                     </div>
                 </div>
@@ -40,17 +39,17 @@
             <?php } ?>
 
             <?php if ($features == 3) { ?>
-            <div class="col-12 my-5">
-                <div class="logo-text text-center">
+            <div class="col-12 mt-5 mb-2">
+                <div class="logo-text technology text-center">
                     <img src="<?= base_url() ?>assets/img/speedybank/features-2.png" alt="">
                     <span class="f-lexend text-blue-freedy fw-bold f-hahmlet">Technology</span>
                 </div>
             </div>
             <div class="col-12 mb-5">
-                <div class="row">
-                    <div class="col-12 col-lg-6 text-start my-auto">
+                <div class="row features-text">
+                    <div class="col-12 col-lg-6 text-start my-auto d-flex align-items-start">
                         <p class="f-jakarta">
-                            <b translate="no"> SpeedyBank </b> is a DApp that running on NP, considered the
+                            <span translate="no" class="fw-semibold"> SpeedyBank </span> is a DApp that running on NP, considered the
                             evolution
                             of the blockchain and
                             it uses <span translate="no">SECC (SMART ELECTRONIC CREDIT CERTIFICATE),</span> developed by MONEY INDUSTRIAL FACTORY on
@@ -64,11 +63,11 @@
                             than 5 years of research and development.
                         </p>
                     </div>
-                    <div class="col-4 mx-auto d-none d-lg-grid">
+                    <div class="col-5 mx-auto d-none d-lg-block">
                         <img src="<?= base_url() ?>assets/img/speedybank/img-7.png" alt="" class="img-fluid">
                     </div>
                     <div class="col-12 text-start">
-                        <h2 class="f-hahmlet fw-bold mb-3">
+                        <h2 class="f-hahmlet fw-semibold mb-3 mt-4  col-12 col-lg-10">
                             This new technology was born as an evolution of the blockchain and is the solution for:</h2>
                         <ol class="f-jakarta">
                             <li>The problem of scalability, the first major problem that afflicts the old blockchain
@@ -78,7 +77,7 @@
                             <li>An ecological system because it has low energy consumption, without losing any of the
                                 strengths of traditional blockchain.</li>
                         </ol>
-                        <p class="f-jakarta">
+                        <p class="f-jakarta mt-4 ">
                             NP eliminates the figure of miners and ensures that this system is decentralized and truly
                             distributed on a large scale and not in the hands of a few large companies, as happens with
                             the main cryptocurrencies. This also allows us to replace the PoW, PoS or PoA with more

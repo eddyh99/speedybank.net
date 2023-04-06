@@ -277,7 +277,7 @@ class Homepage extends CI_Controller
             "ucode"     => $_SESSION["ucode"],
             "currency"  => 'EUR',
             "phone"     => $telp,
-            "3dpass"    => $passwd
+            "passwd"    => $passwd
         );
         
         // Active this comment For Checking Get Information

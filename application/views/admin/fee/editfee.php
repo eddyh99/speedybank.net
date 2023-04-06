@@ -176,7 +176,7 @@
                         <?php }?>
                         <div class="mb-3">
                             <a href="<?= base_url() ?>admin/fee" class="btn btn-warning">Cancel</a>
-                            <button id="btnconfirm" class="btn btn-success">Confirm</button>
+                            <button id="btnconfirm" class="btn btn-primary">Confirm</button>
                         </div>
                     </div>
                 </div>

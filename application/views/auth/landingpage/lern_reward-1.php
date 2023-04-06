@@ -2,7 +2,7 @@
     <div class="col-12">
         <div class="row mb-5">
             <div class="col-12 col-md-12 col-lg-6 p-3">
-                <div class="box-service-list d-flex flex-row">
+                <div class="box-service-list box-tell d-flex flex-row">
                     <div class="text-content d-flex flex-column">
                         <div class="top d-flex flex-row">
                             <span class="number text-blue-freedy">01.</span>
@@ -18,7 +18,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-12 col-lg-6 p-3">
-                <div class="box-service-list d-flex flex-row">
+                <div class="box-service-list box-tell d-flex flex-row">
                     <div class="text-content d-flex flex-column">
                         <div class="top d-flex flex-row">
                             <span class="number text-blue-freedy">02.</span>
@@ -35,7 +35,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-12 col-lg-6 p-3">
-                <div class="box-service-list d-flex flex-row">
+                <div class="box-service-list box-tell d-flex flex-row">
                     <div class="text-content d-flex flex-column">
                         <div class="top d-flex flex-row">
                             <span class="number text-blue-freedy">03.</span>
@@ -43,7 +43,7 @@
                         </div>
                         <div class="bot">
                             <p>
-                                Invite people/companies to register on <b translate="no"> SpeedyBank </b>
+                                Invite people/companies to register on <span translate="no"> SpeedyBank </span>
                                 using your link
                             </p>
                         </div>
@@ -54,7 +54,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-12 col-lg-6 p-3">
-                <div class="box-service-list d-flex flex-row">
+                <div class="box-service-list box-tell d-flex flex-row">
                     <div class="text-content d-flex flex-column">
                         <div class="top d-flex flex-row">
                             <span class="number text-blue-freedy">04.</span>
@@ -62,7 +62,7 @@
                         </div>
                         <div class="bot">
                             <p>
-                                Now you will receive a commission on every <span>FIAT</span> transaction or on every crypto buy /sell
+                                Now you will receive a commission on every FIAT transaction or on every crypto buy /sell
                                 person/company makes.
                             </p>
                         </div>
@@ -74,7 +74,7 @@
             </div>
         </div>
     </div>
-    <div class="col-12 text-center">
+    <div class="col-12 text-center features-text">
         <h2 class="title-top-header fw-bold f-hahmlet text-blue-freedy">Referral earning</h2>
         <span class="fw-bold">(Select currency to see all referral earning)</span>
         <div class="col-12 text-start mx-auto table-responsive my-5">

@@ -64,7 +64,7 @@
 
                 <div class="row d-flex justify-content-center">
                     
-                    <div class="row d-flex justify-content-center">
+                    <div class="row col-12 col-md-10 d-flex justify-content-center">
                         <div class="col-12 mx-auto my-5">
                             <h1 class="text-blue-freedy fw-bolder f-hahmlet text-center">Dashboard</h1>
                         </div>
@@ -74,7 +74,7 @@
                                 <div class="col-12 col-md-6 text-center mx-auto">
                                     <a href="<?= base_url() ?>homepage/setting_currency" class="d-flex align-items-center justify-content-center p-2 my-2">
                                         <img src="<?= base_url()?>assets/img/speedybank/select-currencies.png" alt="gear">
-                                        <span class="ms-4 f-jakarta text-blue-freedy fw-bolder btn-select-currencies">Select Currencies</span>
+                                        <span class="ms-2 f-jakarta text-blue-freedy fw-bolder btn-select-currencies">Select Currencies</span>
                                     </a>
                                 </div>
                                 <div class="col-12 col-md-6 text-center mx-auto">

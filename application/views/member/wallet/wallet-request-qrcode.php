@@ -11,18 +11,10 @@
                     <div class="col-12 infobank-list-app my-4">
                         <div class="py-4 w-receive text-center">
                             <?php $this->load->view('member/alert-notif'); ?>
+                            <h3 class="text-blue-freedy f-hahmlet fw-bold mb-4">Confirmation</h3>
                             <img src="<?= base_url() ?>qr/request/<?= $nameqr ?>.png" alt="">
                             <input type="text" class="form-control" name="" id="copy-qr" value="<?= $linkqr ?>" hidden>
                             <div class="mt-3">
-                                <a href="#" class="mx-1">
-                                    <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M22.9067 36.0268L41.12 46.6402M41.0933 17.3602L22.9067 27.9735M56 13.3335C56 17.7518 52.4183 21.3335 48 21.3335C43.5817 21.3335 40 17.7518 40 13.3335C40 8.91522 43.5817 5.3335 48 5.3335C52.4183 5.3335 56 8.91522 56 13.3335ZM24 32.0002C24 36.4184 20.4183 40.0002 16 40.0002C11.5817 40.0002 8 36.4184 8 32.0002C8 27.5819 11.5817 24.0002 16 24.0002C20.4183 24.0002 24 27.5819 24 32.0002ZM56 50.6668C56 55.0851 52.4183 58.6668 48 58.6668C43.5817 58.6668 40 55.0851 40 50.6668C40 46.2486 43.5817 42.6668 48 42.6668C52.4183 42.6668 56 46.2486 56 50.6668Z"
-                                            stroke="#0F4E97" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                </a>
                                 <a href="#" class="mx-1" id="btn-copy-qr">
                                     <svg width="66" height="66" viewBox="0 0 66 66" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">

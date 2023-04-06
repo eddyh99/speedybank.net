@@ -137,8 +137,13 @@
                         <input type="text" id="referral_bank_pct" name="referral_bank_pct" class="form-control"
                             readonly>
                     </div>
+                    <div class="mb-3" id="card_fxd_div">
+                        <label class="form-label">Card (Fixed)</label>
+                        <input type="text" id="card_fxd" name="card_fxd" class="form-control"
+                            readonly>
+                    </div>
                     <div class="text-start">
-                        <a id="editfee" class="btn btn-success">Edit</a>
+                        <a id="editfee" class="btn btn-primary">Edit</a>
                     </div>
                 </div>
             </div>

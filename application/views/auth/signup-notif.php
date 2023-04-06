@@ -16,7 +16,7 @@
                             your registration email
                             <br>
                             <b>ATTENTION:</b>
-                            <div>You will receive the email within 15 minutes</div>
+                            <div>You will received the email within 15 minutes</div>
                             <div> If you don’t see it check into the SPAM folder</div>
                         </div>
                     </div>

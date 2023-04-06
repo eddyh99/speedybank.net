@@ -11,14 +11,14 @@
                     </div>
                     <div class="col-12 infobank-list-app input-piggy-style my-4">
                         <div class="py-4">
-                            <div class="tutorial-box p-3">
-                                <span class="title mb-3 d-inline-block">Top up procedure :</span>
-                                <ol class="m-0">
-                                    <li>Copy all the fields below</li>
-                                    <li>Paste on your online bank form
+                            <div class="tutorial-box p-3 ">
+                                <span class="title f-hahmlet text-blue-freedy">Top up procedure :</span>
+                                <ol class="m-0 my-3 f-jakarta">
+                                    <li class="fw-normal">Copy all the fields below</li>
+                                    <li class="fw-normal">Paste on your online bank form
                                         (make sure to copy exactly the Causal*,
                                         as it identifies the destination wallet)</li>
-                                    <li>Send the amount chosen</li>
+                                    <li class="fw-normal">Send the amount chosen</li>
                                 </ol>
                             </div>
                             <div class="noted-tutor px-3">

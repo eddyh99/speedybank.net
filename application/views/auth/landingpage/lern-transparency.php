@@ -65,8 +65,8 @@
                         <table class="table tbl-piggy-service fw-bold text-center">
                             <tr>
                                 <th></th>
-                                <th class="text-blue-freedy">Maker</th>
-                                <th class="text-blue-freedy">Taker</th>
+                                <th class="text-blue-freedy" translate="no">Maker</th>
+                                <th class="text-blue-freedy" translate="no">Taker</th>
                             </tr>
                             <tr>
                                 <th>Buy</th>

@@ -15,8 +15,8 @@
                 <li><a class="f-bevietnam nav-link navbar-freedy scrollto" href="#downloadwallet">Download wallet</a></li>
                 <li><a class="f-bevietnam nav-link mx-0 my-2 mx-lg-2 my-lg-auto text-center btn-login active" href="<?= base_url(); ?>auth/signup">Register</a>
                 </li>
-                <li><a class="f-bevietnam nav-link mx-0 my-2 mx-lg-2 my-lg-auto text-center btn-login" href="<?= base_url(); ?>auth/login">Log
-                        in</a>
+                <li>
+                    <a class="f-bevietnam nav-link mx-0 my-2 mx-lg-2 my-lg-auto text-center btn-login" href="<?= base_url(); ?>auth/login">Log in</a>
                 </li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
@@ -39,7 +39,7 @@
                     <br> <br>
                     Carry out comfortably all the payments and bank transfers you want directly from your wallet.
                     <br> <br>
-                    Buy and sell crypto using FIAT thanks to the crypto <span translate="no"> trade-off </span> platform integrated or do forex with FIAT currencies.
+                    Buy and sell crypto using FIAT thanks to the <span translate="no"> trade-off </span> platform integrated or you can do forex with FIAT currencies.
                 </p>
                 <div class="d-flex flex-wrap mt-5 pt-5">
                     <a href="<?= base_url(); ?>auth/signup" class="btn-slider-signin active d-inline-flex align-items-center justify-content-center align-self-center me-3 mb-3">
@@ -79,8 +79,8 @@
                 <div class="row mt-5 pt-3">
                     <div class="col-12 col-lg-6 d-flex flex-column justify-content-center mb-5 ps-lg-5">
                         <div class="content-freedy p-r">
-                            <ul class="p-0 f-jakarta">
-                                <li>Anonymous multi currency wallet, just an email and password are required  
+                            <ul class="p-0 f-jakarta ">
+                                <li class="pb-1">Anonymous multi currency wallet, just an email and password are required  
                                     <u translate="no">
                                         <a href="<?= base_url(); ?>link/spec?spec=<?= base64_encode('2') ?>">
                                             (No KYC & No AML)
@@ -88,11 +88,11 @@
                                     </u> 
                                 </li>
 
-                                <li>Quick and free opening</li>
+                                <li class="pb-1">Quick and free opening</li>
 
-                                <li><span translate="no"> SpeedyBank </span> provides a non-custodial wallet</li>
+                                <li class="pb-1"><span translate="no"> SpeedyBank </span> provides a <span translate="no"> non-custodial wallet </span> </li>
 
-                                <li>
+                                <li class="pb-1">
                                     <u>
                                         <a href="<?= base_url()?>link/guide?guide=<?= base64_encode('2')?>">
                                             Capital exportation 100% legal
@@ -100,7 +100,7 @@
                                     </u>
                                 </li>
 
-                                <li>Withdraw/send your funds from/to any bank account of the world, even if it is not under your name</li>
+                                <li class="pb-1">Withdraw/send your funds from/to any bank account of the world, even if it is not under your name</li>
                             </ul>
                             <div class="text-start mt-5 ms-5">
                                 <a href="<?= base_url(); ?>auth/signup" class="btn-content-freedy d-inline-flex align-items-center justify-content-center align-self-center">
@@ -132,17 +132,17 @@
                     <div class="col-12 col-lg-6 d-flex flex-column justify-content-center mb-5 ps-lg-5">
                         <div class="content-freedy content-bottom p-r">
                             <ul class="p-0 f-jakarta fw-semibold">
-                                <li><span>Receive</span> funds in 10 <b> FIAT </b> currencies</li>
+                                <li class="pb-1"><span>Receive</span> funds in 10 <b> FIAT </b> currencies</li>
 
-                                <li><span>Convert</span> <b> FIAT </b> instantly at the real exchange rate without any fee</li>
+                                <li class="pb-1"><span>Convert</span> <b> FIAT </b> instantly at the real exchange rate without any fee</li>
 
-                                <li><span>Custody</span> and sending of money in more than 40 <b> FIAT </b> currencies.</li>
+                                <li class="pb-1"><span>Custody</span> and sending of money in more than 40 <b> FIAT </b> currencies.</li>
 
-                                <li><span>Trading</span> your crypto from everywhere you are</li>
+                                <li class="pb-1"><span>Trading</span> your crypto from everywhere you are</li>
 
-                                <li><span>Keep your currencies safe</span> in your wallet and make <span class="text-blue-freedy"> instant payments </span> worldwide between all <b translate="no"> TracklessProject </b> users and  carry out <span class="text-blue-freedy">bank transfers</span> toward all bank accounts directly from your wallet</li>
+                                <li class="pb-1"><span>Keep your currencies safe</span> in your wallet and make <span class="text-blue-freedy"> instant payments </span> worldwide between all the users of <span translate="no"> TracklessProject </span> and you can carry out <span class="text-blue-freedy">bank transfers</span> toward all bank accounts directly from your wallet</li>
 
-                                <li><span>Forex</span> of <b> FIAT </b>  currencies</li>
+                                <li class="pb-1"><span>Forex</span> of <b> FIAT </b></li>
                             </ul>
 
                         </div>
@@ -168,7 +168,7 @@
                             <div class="content-freedy p-r text-center">
                                 <button id="btnaccorionOne" class="accordion-button freedy-accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                     <div class="box-title-accordion ms-auto text-center">
-                                        <span class="head px-5 f-hahmlet text-black">How to use <span class="text-blue-freedy">SpeedyBank</span></span>
+                                        <span class="head px-5 f-hahmlet text-black py-2">How to use <span class="text-blue-freedy">SpeedyBank</span></span>
                                         <span class="small f-jakarta" id="seemoreOne">(read more)</span>
                                     </div>
                                 </button>
@@ -267,7 +267,7 @@
         <div class="container">
             <div class="row d-flex align-items-center">
                 <div class="col-12 col-lg-7">
-                    <h1 class="f-hahmlet title-first-debit fw-bold mb-5">The first debit card <br> <span>completely anonymous that fully protect your privacy</span></h1>
+                    <h1 class="f-hahmlet title-first-debit fw-bold mb-5">The first debit card <br> <span>completely anonymous that protect your privacy</span></h1>
                     <div class="row">
                         <div class="col-12 col-md-6 wrap-card-first-debit">
                             <div class="card-first-debit mt-3 p-4 f-jakarta fw-semibold">
@@ -286,20 +286,15 @@
                         </div>
                         <div class="col-12 col-md-6 wrap-card-first-debit">
                             <div class="card-first-debit mt-3 p-4 f-jakarta fw-semibold">
-                                Compatible with <span translate="no">GooglePay ApplePay</span> and others
+                                Compatible with <span translate="no"> GooglePay ApplePay </span> and others
                             </div>
                         </div>
                     </div>
-                    <div class="d-flex flex-column flex-lg-row align-items-center">
+                    <div class="d-flex flex-column flex-lg-row align-items-center mb-5 pb-5">
                         <div class="text-start mt-5 me-0 me-lg-5">
                             <a href="<?= base_url(); ?>auth/signup" class="btn-content-freedy d-inline-flex align-items-center justify-content-center align-self-center">
                                 <span class="">Register Now</span>
                             </a>
-                        </div>
-                        <div class="buble-soon ms-0 ms-lg-5 d-flex justify-content-center align-items-center text-center f-jakarta fw-bolder mt-5">
-                            <span>
-                                COMING <br> SOON
-                            </span>
                         </div>
                     </div>
                 </div>
@@ -355,7 +350,7 @@
                             <div class="content-freedy p-r text-center">
                                 <button id="btnaccorionTwo" class="accordion-button freedy-accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                    <div class="box-title-accordion ms-auto text-center">
-                                        <span class="head px-5 f-hahmlet text-black"><span class="text-blue-freedy">SpeedyBank</span> Specifications</span>
+                                        <span class="head px-5 f-hahmlet text-black py-2"><span class="text-blue-freedy">SpeedyBank</span> Specifications</span>
                                         <span class="small f-jakarta" id="seemoreTwo">(read more)</span>
                                     </div>
                                 </button>
@@ -368,7 +363,7 @@
                                 <div class="items-different p-2 d-flex flex-column justify-content-between align-items-start text-start">
                                     <div class="d-flex flex-column justify-content-center align-items-start">
                                         <img src="<?= base_url() ?>assets/img/speedybank/icon-spec-1.png" alt="">
-                                        <span class="f-jakarta title specifications py-4 text-blue-freedy my-auto"><span translate="no"> Non custodial </span> <br> wallet 
+                                        <span class="f-jakarta title specifications py-4 text-blue-freedy my-auto"><span translate="no"> Non custodial wallet </span>
                                         </span>
                                     </div>
                                     <a href="<?= base_url(); ?>link/spec?spec=<?= base64_encode('1') ?>" class="active py-2 px-3">Read More</a>
@@ -553,7 +548,7 @@
                                                     50 currencies to any bank account even not under your name</li>
                                             </ul>
                                             <div class="buble-soon abs ms-5 d-flex justify-content-center align-items-center text-center f-jakarta fw-bolder mt-5 position-absolute">
-                                                <span>
+                                                <span translate="no">
                                                     COMING <br> SOON
                                                 </span>
                                             </div>
@@ -674,7 +669,7 @@
                         <img src="<?= base_url() ?>assets/img/speedybank/tracklessprojects.png" alt="" class="trackless">
                     </a>
                 </div>
-                <p class="copyright py-3 m-0"><b translate="no">SpeedyBank</b> (GIB)
+                <p class="copyright py-3 m-0"> <b translate="no"> SpeedyBank </b> HKG 
             </div>
             <div class="col-lg-3 col-12 text-center text-black mb-5 d-flex justify-content-between">
                 <a href="<?= base_url() ?>link/privacy_policy" class="fw-bold text-black text-decoration-underline">
