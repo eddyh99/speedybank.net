@@ -4,10 +4,10 @@
             <div class="col-4 m-auto d-none d-md-grid">
                 <img src="<?= base_url() ?>assets/img/speedybank/img-9.png" alt="" class="img-fluid">
             </div>
-            <div class="col-12 col-md-6 fw-bold">
+            <div class="col-12 col-md-6 fw-semibold f-jakarta">
                 <ol>
                     <li>Login into your wallet</li>
-                    <li>Click the button <b class="text-uppercase">‘’wallet to wallet’’</b></li>
+                    <li>Click the button <span class="text-uppercase"> ‘’wallet to wallet’’ </span> </li>
                     <li>Choose if u want to ‘’send’’ or ‘’receive’’ or
                         ‘’request’’ funds
                     </li>

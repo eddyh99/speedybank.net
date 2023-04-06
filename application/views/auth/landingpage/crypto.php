@@ -17,13 +17,14 @@
             <div class="col-12 text-center">
                 <div class="content-freedy">
                     <p class="f-jakarta">
-                        <b translate="no">SpeedyBank </b>, being a <b translate="no"> trade-off </b> platform, the
-                        <b translate="no"> ‘’Buy’’ </b> and <b translate="no"> ‘’Sell’’ </b>
+                        On <span translate="no">SpeedyBank </span>, being a <span translate="no"> trade-off </span> platform, the
+                        <span translate="no"> ‘’Buy’’ </span> and <span translate="no"> ‘’Sell’’ </span>
                         orders are just LIMIT
                         orders.
                         A buy limit order will be executed only at the limit price or a lower price; and a sell limit
                         order
                         will be executed only at the limit price or a higher one.
+                        <br>
                         The price is guaranteed, but the filling of the order is not. Limit orders will be executed only
                         if
                         the price meets the order qualifications.
@@ -62,21 +63,22 @@
                         <div class="col-12 col-md-6 col-lg-3 text-center px-2 py-2">
                             <div class="card freedy-card btop two text-center">
                                 <div class="card-body">
-                                    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect x="0.146484" y="0.0390625" width="63.7755" height="63.1441" rx="17.1429" fill="url(#paint0_linear_46_16912)"/>
-                                        <path d="M26.582 25.4343V19.9829H36.0791V45.0115H29.9762V25.4343H26.582Z" fill="white"/>
+                                    <svg width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.773438" y="0.118103" width="63.7755" height="63.1441" rx="17.1429" fill="url(#paint0_linear_46_16938)"/>
+                                        <path d="M23.6692 40.3938C24.4463 39.7767 24.8006 39.4909 24.732 39.5367C26.972 37.6852 28.732 36.1652 30.012 34.9767C31.3149 33.7881 32.412 32.5424 33.3035 31.2395C34.1949 29.9367 34.6406 28.6681 34.6406 27.4338C34.6406 26.4967 34.4235 25.7652 33.9892 25.2395C33.5549 24.7138 32.9035 24.4509 32.0349 24.4509C31.1663 24.4509 30.4806 24.7824 29.9777 25.4452C29.4977 26.0852 29.2577 26.9995 29.2577 28.1881H23.6006C23.6463 26.2452 24.0577 24.6224 24.8349 23.3195C25.6349 22.0167 26.6749 21.0567 27.9549 20.4395C29.2577 19.8224 30.6977 19.5138 32.2749 19.5138C34.9949 19.5138 37.0406 20.2109 38.412 21.6052C39.8063 22.9995 40.5035 24.8167 40.5035 27.0567C40.5035 29.5024 39.6692 31.7767 38.0006 33.8795C36.332 35.9595 34.2063 37.9938 31.6235 39.9824H40.8806V44.7481H23.6692V40.3938Z" fill="white"/>
                                         <defs>
-                                        <linearGradient id="paint0_linear_46_16912" x1="44.0254" y1="18.2917" x2="22.5873" y2="28.2518" gradientUnits="userSpaceOnUse">
+                                        <linearGradient id="paint0_linear_46_16938" x1="44.6523" y1="18.3707" x2="23.2142" y2="28.3308" gradientUnits="userSpaceOnUse">
                                         <stop stop-color="#77BEFF"/>
                                         <stop offset="1" stop-color="#84D3FF"/>
                                         </linearGradient>
                                         </defs>
                                     </svg>
+
                                     <h5 class="card-title mb-3 text-blue-freedy f-hahmlet fw-bold py-2">Top up your wallet</h5>
                                     <p class="card-text">
-                                        Top up, through a bank transfer, your <b translate="no"> SpeedyBank </b>
+                                        Top up, through a bank transfer, your <span translate="no"> SpeedyBank </span>
                                         wallet with your favorite
-                                        <span translate="no">FIAT</span>
+                                        FIAT
                                         currency and than convert any amount into USDX to start to trading
                                     </p>
                                 </div>
@@ -119,8 +121,8 @@
                                     <h5 class="card-title mb-3 text-blue-freedy f-hahmlet fw-bold py-2">Withdraw your earning</h5>
                                     <p class="card-text">
                                         You will be able to withdraw, anonymously, your FIAT earnings to
-                                        any bank account <b class="text-uppercase">even if are not registered under you
-                                            name</b>
+                                        any bank account <span class="text-uppercase"> even if are not registered under you
+                                            name</span>
                                     </p>
                                 </div>
                             </div>

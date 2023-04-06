@@ -13,17 +13,17 @@
             <?php if ($spec == 1) { ?>
             <div class="col-12 my-5 px-md-5">
                 <div class="row">
-                    <div class="col-12 col-md-8 text-start mx-auto">
-                        <h2 class="title-top-header f-hahmlet text-blue-freedy mb-5 fw-bold"><b translate="no"> SpeedyBank </b> provides
-                            you<br>
-                            <b translate="no"> ''Non-Custodial Wallet'' </b>
+                    <div class="col-12 col-md-6 text-start mx-auto">
+                        <h2 class="title-top-header f-hahmlet text-blue-freedy mb-5 fw-bold"><span translate="no"> SpeedyBank </span> provides you
+                            <br>
+                            <span translate="no"> ''Non-Custodial </span> Wallet''
                         </h2>
-                        <p>With a <b translate="no"> non-custodial wallet </b>, you have sole control of your private
+                        <p>With a <span translate="no"> non-custodial </span> wallet, you have sole control of your private
                             keys, which in turn
                             control
                             your currencies and prove the funds are yours.</p>
                     </div>
-                    <div class="col-12 col-md-4 d-none d-md-grid m-auto">
+                    <div class="col-12 col-md-6 d-md-grid m-auto">
                         <img src="<?= base_url() ?>assets/img/speedybank/img-16.png" alt="img-16" class="img-fluid">
                     </div>
                 </div>
@@ -38,12 +38,12 @@
                         <h2 class="fw-bold subtitle-top-header f-hahmlet mt-5">We Care About Your Privacy</h2>
                         <div class="my-3">
                             <p>
-                                <span translate="no">SpeedyBank</span>, being part of the <span translate="no">TracklessBank circuit </span>, can operate by using several bank 
-                                licenses under different jurisdictions and providing offshore escrow accounts and is not
+                                <span translate="no"> SpeedyBank </span>, being part of the <span translate="no"> TracklessBank </span> circuit,  can operate by using several bank 
+                                licenses under different jurisdictions and providing <span translate="no"> offshore escrow </span> accounts and is not
                                 obliged to perform the Know Your Customer (KYC) procedure.
                             </p>
                             <p>
-                                <span translate="no">SpeedyBank</span>  does not carry out <span translate="no">Anti-Money Laundering (AML)</span> compliance policy, as it 
+                                <span translate="no"> SpeedyBank </span>  does not carry out <span translate="no"> Anti-Money Laundering (AML) </span> compliance policy, as it 
                                 legally makes use of the AML which, mandatorily by law, is carried out by the banking 
                                 institution that introduced fiat into the banking circuit.
                             </p>
@@ -59,20 +59,17 @@
             <?php if ($spec == 3) { ?>
             <div class="col-12 my-5 px-md-5">
                 <div class="row">
-                    <div class="col-12 col-md-8 mb-5 text-start mx-auto">
+                    <div class="col-12 col-md-6 mb-5 text-start mx-auto features-text">
                         <h2 class="fw-bold title-top-header f-hahmlet text-blue-freedy">Receive funds in 10 currencies</h2>
                         <h2 class="fw-bold subtitle-top-header f-hahmlet">We make money work <br>
                             in your favor</h2>
                         <div class="my-3">
-                            <p>
-                                Opening an <b translate="no"> SpeedyBank </b> account you can activate banking data,
-                                for free, for each
-                                of
-                                the 10 currencies allowing you to receive bank transfers.
+                            <p class="pe-5">
+                                Opening a <span translate="no"> SpeedyBank </span> account you can activate banking data, for free, for each of the 10 currencies allowing you to receive bank transfers.
                             </p>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4 d-none d-md-grid m-auto">
+                    <div class="col-12 col-md-6 d-md-grid m-auto">
                         <img src="<?= base_url() ?>assets/img/speedybank/img-18.png" alt="" class="img-fluid">
                     </div>
                 </div>
@@ -87,12 +84,12 @@
                         </h2>
                         <h2 class="fw-bold subtitle-top-header f-hahmlet mt-4">Easy fast wherever you are</h2>
                         <div class="my-3 content-freedy text-start f-jakarta mt-4">
-                            <p>From your multi-currency wallet you can instantly convert one of your <span translate="no">FIAT balances</span> into
+                            <p>From your multi-currency wallet you can instantly convert one of your FIAT balances into
                                 the currency of the country you are in and carry out all the payments you want, quickly
-                                and easily. SpeedyBank offers the best exchange rates you can find on the market and the
+                                and easily. <span translate="no"> SpeedyBank </span> offers the best exchange rates you can find on the market and the
                                 absence of fees.</p>
-                            <div class="c-check mt-5 ">
-                                <ul class="p-0">
+                            <div class="c-check mt-5 features-text">
+                                <ul class="p-0 f-jakarta">
                                     <li>Custody and send money in more than 40 currencies.</li>
                                     <li>Convert at the real exchange rate without any fee.</li>
                                     <li>Keep your currencies safe in your wallet and send money worldwide.</li>
@@ -103,6 +100,9 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-4 d-none d-md-grid m-auto">
+                       
+                    </div>
+                    <div class=" spec-convert-custody">
                         <img src="<?= base_url() ?>assets/img/speedybank/img-19.png" alt="" class="img-fluid">
                     </div>
                 </div>
@@ -116,10 +116,10 @@
                         <h2 class="title-top-header fw-bold f-hahmlet text-blue-freedy py-2">Zero exchange fees<br>
                             & competitive exchange rates</h2>
                     </div>
-                    <div class="col-12 col-md-6 mb-5 text-start mx-auto">
+                    <div class="col-12 col-md-4 mb-5 text-start mx-auto">
                         <h2 class="fw-bold subtitle-top-header f-hahmlet mt-5">Swap is simple</h2>
-                        <div class="my-3 content-freedy text-start mt-5">
-                            <div class="c-check fw-semibold f-poppins">
+                        <div class="my-3 content-freedy text-start mt-5 features-text">
+                            <div class="c-check fw-semibold f-jakarta">
                                 <ul class="p-0">
                                     <li>Real exchange rate</li>
                                     <li>No fees</li>
@@ -128,13 +128,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 d-none d-md-grid m-auto">
+                    <div class="col-12 col-md-8 d-none d-md-grid m-auto">
                         <div class="col-6 m-auto">
                             <img src="<?= base_url() ?>assets/img/speedybank/img-20.png" alt="img-20" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-12 mt-0 mt-md-5">
-                        <div class="hori-timeline" dir="ltr">
+                        <div class="hori-timeline features-text" dir="ltr">
                             <ul
                                 class="list-inline events d-flex flex-column flex-md-row justify-content-center align-items-start">
                                 <li
@@ -142,7 +142,7 @@
                                     <span class="text-blue-freedy f-poppins fw-bold">1</span>
                                     <div class="px-4">
                                         <div class="event-date bg-line-circle"></div>
-                                        <p class="text-mute">Convert your balance into the currency that you want to
+                                        <p class="text-mute f-jakarta">Convert your balance into the currency that you want to
                                             send
                                         </p>
                                     </div>
@@ -152,7 +152,7 @@
                                     <span class="text-blue-freedy f-poppins fw-bold">2</span>
                                     <div class="px-4">
                                         <div class="event-date bg-line-circle"></div>
-                                        <p class="text-mute">Then you can transfer funds
+                                        <p class="text-mute f-jakarta">Then you can transfer funds
                                             as a domestic transfer</p>
                                     </div>
                                 </li>
@@ -161,7 +161,7 @@
                                     <span class="text-blue-freedy f-poppins fw-bold">3</span>
                                     <div class="px-4">
                                         <div class="event-date bg-line-circle"></div>
-                                        <p class="text-mute">DONE! You sent the chosen currency as a national bank
+                                        <p class="text-mute f-jakarta">DONE! You sent the chosen currency as a national bank
                                             transfer
                                         </p>
                                     </div>
@@ -176,18 +176,18 @@
             <?php if ($spec == 7) { ?>
             <div class="col-12 my-5 px-md-5">
                 <div class="row">
-                    <div class="col-12 col-md-6 mb-5 text-start mx-auto">
-                        <h2 class="title-top-header fw-bold f-hahmlet text-blue-freedy"><b translate="no"> Trade-off </b> platform <br>
-                            with shared <b translate="no"> order book </b>
+                    <div class="col-12 col-md-6 mb-5 text-start mx-auto features-text">
+                        <h2 class="title-top-header fw-bold f-hahmlet text-blue-freedy"> <span translate="no"> Trade-off </span> platform <br>
+                            with <span translate="no"> shared  order book </span>
                         </h2>
                         <div class="my-3 content-freedy text-start mt-5">
                             <p>
-                                Thanks to the use of the shared <b translate="no">order book</b> combined with a single collection and payment gateway for all platforms, our liquidity is infinite and you will be able to trade with all users of all the platforms of <b translate="no">TracklessProject.</b>
+                                Thanks to the use of the <span translate="no"> shared order book </span> combined with a single collection and payment gateway for all platforms, our liquidity is infinite and you will be able to trade with all users of all the platforms of <span translate="no"> TracklessProject. </span>
                                 <br>
-                                Distributed, decentralized and completely anonymous, <b translate="no">SpeedyBank</b> is a safe place where cryptocurrencies buyers and sellers meet.
+                                Distributed, decentralized and completely anonymous, <span translate="no"> SpeedyBank </span> is a safe place where cryptocurrencies buyers and sellers meet.
                                 The use of the trade-off platform doesn’t require any personal document.
                                 The platform has no transmission obligation to any tax office of any country and has no transparency obligation with any government.
-                                The shared <b translate="no">order book</b> ensures more privacy.
+                                The <span translate="no"> shared order book </span> ensures more privacy.
                             </p>
                         </div>
                     </div>

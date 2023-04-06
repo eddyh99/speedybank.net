@@ -12,7 +12,7 @@
             <div class="col-12 my-5 d-flex flex-row">
                 <div class="col-12 text-center">
                     <h2 class="title-top-header fw-bold f-hahmlet text-blue-freedy py-2 px-5">
-                        Tell everyone about <b translate="no"> SpeedyBank </b> and earn every time they use it.
+                        Tell everyone about <span translate="no"> SpeedyBank </span> and earn every time they use it.
                     </h2>
                     <h2 class="subtitle-top-header fw-bold " style="text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);">Share it!</h2>
                 </div>

@@ -19,14 +19,14 @@
                                 ($_SESSION["currency"] == "GBP") ||
                                 ($_SESSION["currency"] == "RON")
                             ) { ?>
-                            <button type="button" class="receive-attention d-flex flex-column text-center col-12 p-3"
+                            <button type="button" class="receive-attention features-text d-flex flex-column text-center col-12 p-3"
                                 data-bs-toggle="modal" data-bs-target="#attention">
-                                <span class="mb-2 fw-bold title text-center mx-auto">IMPORTANT</span>
-                                <p class="desc fw-normal">
-                                    To maximize the privacy level, all incoming and outgoing transfers 
-                                        <b class="will-manage">
-                                            will be managed by a payment and collection gateway.
+                                <p class="fw-normal f-jakarta">
+                                    To maximize the level of privacy,
+                                        <b class="all-incoming">
+                                            all incoming and outgoing transfers will be managed by a payment and collection gateway which will not custody the funds but will just transfer them.
                                         </b>
+                                    <br>
                                     The bank details, of each currency, will be the same for all users;  excluding the ‘’causal’’ which identify the receiving wallet.
                                 </p>
                             </button>

@@ -3,9 +3,9 @@ foreach ($history as $dt) { ?>
     <div class="list-transaction d-flex align-items-center">
         <div class="flex-shrink-0">
             <?php if (($dt->ket == "Topup") || ($dt->ket == "topup") || ($dt->ket == "Receive") || ($dt->ket == "Swap Receive") || ($dt->ket == "Referral")) { ?>
-                <img src="assets/img/topup.png" alt="tc">
+                <img src="assets/img/speedybank/topup.png" alt="tc">
             <?php } else { ?>
-                <img src="assets/img/withdraw.png" alt="tc">
+                <img src="assets/img/speedybank/withdraw.png" alt="tc">
             <?php } ?>
         </div>
         <div class="flex-grow-1 ms-3">
