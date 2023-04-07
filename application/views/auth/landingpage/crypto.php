@@ -10,8 +10,8 @@
                 </div>
             </div>
 
-            <div class="col-12 mb-3 text-center mt-5 pt-3">
-                <h1 class="f-hahmlet text-blue-freedy fw-bold">Boost your crypto exchange experience</h1>
+            <div class="col-12 mb-3 text-center mt-5 pt-3 features-text">
+                <h1 class="f-hahmlet title-top-header text-blue-freedy fw-bold">Boost your crypto exchange experience</h1>
             </div>
 
             <div class="col-12 text-center">

@@ -96,11 +96,9 @@
                                 Request Virtual Card
                                 </span>
                             </a>
-                            <a href="#" class="col-12 mx-auto card-topup d-flex align-items-center justify-content-center mt-4">
+                            <a href="<?= base_url(); ?>homepage/requestcard_physical?requestcard_physical=<?= base64_encode('requestcard_physical')?>" class="col-12 mx-auto card-topup d-flex align-items-center justify-content-center mt-4">
                                 <span class="text-blue-freed fw-bold text-center f-hahmlet fw-bold">
-                                Request Physical Card 
-                                <br>
-                                (COMING SOON)
+                                    Request Physical Card 
                                 </span>
                             </a>
                         </div>

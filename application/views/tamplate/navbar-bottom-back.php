@@ -1,4 +1,4 @@
-<?php if($card != 'confirm' && $card != 'success' && $requestcard != 'detailcard'){?>
+<?php if($card != 'confirm' && $card != 'success' && $requestcard != 'detailcard' && $requestcard_physical != 'success' && $requestcard_physical != 'summary'){?>
 <div class="navbar-app fixed-top d-flex justify-content-center">
     <div class="col-12 col-lg-8 col-xl-6 box-navbar-freedy d-flex flex-row justify-content-start align-items-center bottom">
         <a href="<?= base_url() ?>homepage" class="d-flex align-items-center border-0 ms-0 me-auto">
@@ -19,7 +19,7 @@
 </div>
 <?php }?>
 
-<?php if($card != 'success'){?>
+<?php if($card != 'success' && $requestcard_physical != 'success' ){?>  
 <div class="navbar-app fixed-bottom d-flex justify-content-center">
     <div class="col-12 col-lg-8 col-xl-6 box-navbar-freedy d-flex justify-content-center align-items-center top">
         <!-- Start Back -->
@@ -51,6 +51,22 @@
 
             <?php if($card == 'confirm' ) {?>
                 <?= base_url() ?>homepage/card?card=<?= base64_encode('topup')?>
+            <?php }?>
+
+            <?php if($requestcard_physical == 'requestcard_physical' ) {?>
+                <?= base_url() ?>homepage/card
+            <?php }?>
+
+            <?php if($requestcard_physical == '3dpassword' ) {?>
+                <?= base_url() ?>homepage/requestcard_physical?requestcard_physical=<?= base64_encode('requestcard_physical')?>
+            <?php }?>
+
+            <?php if($requestcard_physical == 'shippingdetails' ) {?>
+                <?= base_url() ?>homepage/requestcard_physical?requestcard_physical=<?= base64_encode('3dpassword')?>
+            <?php }?>
+            
+            <?php if($requestcard_physical == 'summary' ) {?>
+                <?= base_url() ?>homepage/requestcard_physical?requestcard_physical=<?= base64_encode('shippingdetails')?>
             <?php }?>
 
 

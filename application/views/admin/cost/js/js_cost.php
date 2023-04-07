@@ -76,12 +76,6 @@ function readfee() {
     })
 }
 
-if (readcurrency == "EUR"){
-    $("#card_fxd_div").show()
-}else{
-    $("#card_fxd_div").hide()
-}
-
 $("#currency").on("change", function() {
     readfee();
 })

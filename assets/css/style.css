@@ -141,6 +141,87 @@ color: rgba(255, 255, 255, 0.8);
 # Member Card
 --------------------------------------------------------------*/
 
+.tbl-freedy-service tr td,
+.tbl-freedy-service tr th {
+  border: 2px solid #0078F0;
+}
+
+
+.country-select-card {
+  background-color: white !important;
+  width: 100%;
+  height: 60px;
+  border: 0 none !important;
+  border-radius: 16px !important;
+  box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.25), inset 2px 2px 4px rgba(0, 0, 0, 0.25);
+  color: #949494;
+  font-weight: 400 !important;
+  padding: 6px 20px !important;
+}
+
+.country-select-card:focus {
+  box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.25), inset 2px 2px 4px rgba(0, 0, 0, 0.25);
+  outline: 2px #acacac solid;
+  background-color: white !important;
+}
+
+
+
+.card-req-physical {
+  overflow-x:auto;
+}
+
+.label-dhl {
+  width: 100%;
+  font-size: 12px;
+  border-radius: 16px;
+  background-color: white !important;
+  box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.25), inset 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card-input-dlh {
+  box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.25), inset 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.card-input-dlh+.card {
+  box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.25), inset 2px 2px 4px rgba(0, 0, 0, 0.25);
+  height: calc(50px + 2*1rem);
+  color: rgb(0, 0, 0);
+  border: 2px solid transparent;
+  border-radius: 16px;
+}
+
+.card-input-dlh+.card:hover {
+  cursor: pointer;
+}
+
+.card-input-dlh:checked+.card {
+  border: 2px solid #0F4E97;
+  -webkit-transition: border .3s;
+  -o-transition: border .3s;
+  transition: border .3s;
+
+}
+
+.card-input-dlh+.card .c-dlh {
+  border: 1px solid black;
+  width: 20px; 
+  height: 20px;
+  border-radius: 999999px;
+  margin-left: 10px;
+}
+
+.card-input-dlh:checked+.card .c-dlh {
+  background-color: #0F4E97;
+  border: 1px solid #0F4E97;
+}
+
+.card-input-dlh+.card .m-dlh {
+  margin-left: 10px;
+}
+
+
 .currencies-card .btn-select-currencies {
   font-size: 14px;
 }
@@ -212,7 +293,8 @@ color: rgba(255, 255, 255, 0.8);
 
 .card-req-activation h3, 
 .card-req-activation h4 {
-  font-size: 16px !important;
+  line-height: 140%;
+  font-size: 14px !important;
 }
 
 .card-req-card {
@@ -5478,6 +5560,14 @@ color: rgba(255, 255, 255, 0.8);
 
 @media (min-width: 375px) {
 
+    .card-input-dlh+.card .m-dlh {
+    margin-left: 15px;
+  }
+
+  .card-input-dlh+.card .m-eur {
+    margin-right: 10px;
+  }
+
   .currencies-card .btn-select-currencies {
     font-size: 16px;
   }
@@ -7753,6 +7843,21 @@ color: rgba(255, 255, 255, 0.8);
 }
 
 @media (min-width: 768px) {
+
+  .card-req-activation h3, 
+  .card-req-activation h4 {
+    font-size: 16px !important;
+  }
+
+  .card-input-dlh+.card .m-dlh {
+    margin-left: 30px;
+    font-size: 14px;
+  }
+
+  .card-input-dlh+.card .m-eur {
+    margin-right: 15px;
+    font-size: 14px;
+  }
 
   .hero h1,
   .transfer-money h1

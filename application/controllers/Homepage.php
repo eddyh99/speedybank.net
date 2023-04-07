@@ -258,6 +258,23 @@ class Homepage extends CI_Controller
             $this->load->view('tamplate/footer', $data);
         }
     }
+
+    public function requestcard_physical()
+    {
+        $data=array(
+            "title"                 => NAMETITLE . " - Card",
+            "basecard"              => 'homepage/requestcard_physical',
+            "requestcard_physical"  => base64_decode($_GET['requestcard_physical']),
+            "card"                  => base64_decode(@$_GET['card']),
+            "requestcard"           => base64_decode(@$_GET['requestcard']),
+            "extra"                 => "member/card/js/js_index"
+        );
+
+        $this->load->view('tamplate/header', $data);
+        $this->load->view('member/card/card-request-physical', $data);
+        $this->load->view('tamplate/navbar-bottom-back', $data);
+        $this->load->view('tamplate/footer', $data);
+    }
     
     public function activecard(){
         $this->form_validation->set_rules('telp', 'Phone number', 'trim|required');
