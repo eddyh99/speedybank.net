@@ -132,17 +132,17 @@
                     <div class="col-12 col-lg-6 d-flex flex-column justify-content-center mb-5 ps-lg-5">
                         <div class="content-freedy content-bottom p-r">
                             <ul class="p-0 f-jakarta fw-semibold">
-                                <li class="pb-1"><span>Receive</span> funds in 10 <b> FIAT </b> currencies</li>
+                                <li class="pb-1"><span>Receive</span> funds in 10 FIAT currencies</li>
 
-                                <li class="pb-1"><span>Convert</span> <b> FIAT </b> instantly at the real exchange rate without any fee</li>
+                                <li class="pb-1"><span>Convert</span> FIAT instantly at the real exchange rate without any fee</li>
 
-                                <li class="pb-1"><span>Custody</span> and sending of money in more than 40 <b> FIAT </b> currencies.</li>
+                                <li class="pb-1"><span>Custody</span> and sending of money in more than 40 FIAT currencies.</li>
 
                                 <li class="pb-1"><span>Trading</span> your crypto from everywhere you are</li>
 
                                 <li class="pb-1"><span>Keep your currencies safe</span> in your wallet and make <span class="text-blue-freedy"> instant payments </span> worldwide between all the users of <span translate="no"> TracklessProject </span> and you can carry out <span class="text-blue-freedy">bank transfers</span> toward all bank accounts directly from your wallet</li>
 
-                                <li class="pb-1"><span>Forex</span> of <b> FIAT </b></li>
+                                <li class="pb-1"><span>Forex</span> of FIAT </li>
                             </ul>
 
                         </div>
@@ -360,7 +360,7 @@
                     <div id="collapseTwo" class="col-12 accordion-collapse collapse" aria-labelledby="pageTwo" data-bs-parent="#accordionFreedy">
                         <div class="row d-flex flax-wrap justify-content-center align-items-center">
                             <div class="col-10 col-md-5 col-lg-3 px-2 pt-5 my-5 list-different  mx-auto">
-                                <div class="items-different p-2 d-flex flex-column justify-content-between align-items-start text-start">
+                                <div class="items-different p-2 d-flex flex-column justify-content-between align-items-center text-start">
                                     <div class="d-flex flex-column justify-content-center align-items-start">
                                         <img src="<?= base_url() ?>assets/img/speedybank/icon-spec-1.png" alt="">
                                         <span class="f-jakarta title specifications py-4 text-blue-freedy my-auto"><span translate="no"> Non custodial wallet </span>
@@ -370,7 +370,7 @@
                                 </div>
                             </div>
                             <div class="col-10 col-md-5 col-lg-3 px-2 pt-5 my-5 list-different  mx-auto">
-                                <div class="items-different p-2 d-flex flex-column justify-content-between align-items-start text-start">
+                                <div class="items-different p-2 d-flex flex-column justify-content-between align-items-center text-start">
                                     <div class="d-flex flex-column justify-content-center align-items-start">
                                         <img src="<?= base_url() ?>assets/img/speedybank/icon-spec-2.png" alt="">
                                         <span translate="no" class="f-jakarta title specifications py-4 text-blue-freedy my-auto">No KYC No AML</span>
@@ -380,7 +380,7 @@
                                 </div>
                             </div>
                             <div class="col-10 col-md-5 col-lg-3 px-2 pt-5 my-5 list-different  mx-auto">
-                                <div class="items-different p-2 d-flex flex-column justify-content-between align-items-start text-start">
+                                <div class="items-different p-2 d-flex flex-column justify-content-between align-items-center text-start">
                                     <div class="d-flex flex-column justify-content-center align-items-start">
                                         <img src="<?= base_url() ?>assets/img/speedybank/icon-spec-3.png" alt="">
                                         <span class="f-jakarta title specifications py-4 text-blue-freedy my-auto">Receive funds in
@@ -392,7 +392,7 @@
                                 </div>
                             </div>
                             <div class="col-10 col-md-5 col-lg-3 px-2 pt-5 my-5 list-different  mx-auto">
-                                <div class="items-different p-2 d-flex flex-column justify-content-between align-items-start text-start">
+                                <div class="items-different p-2 d-flex flex-column justify-content-between align-items-center text-start">
                                     <div class="d-flex flex-column justify-content-center align-items-start">
                                         <img src="<?= base_url() ?>assets/img/speedybank/icon-spec-4.png" alt="">
                                         <span class="f-jakarta title specifications py-4 text-blue-freedy my-auto">Convert, custody
@@ -406,7 +406,7 @@
                                 </div>
                             </div>
                             <div class="col-10 col-md-5 col-lg-3 px-2 pt-5 my-5 list-different  mx-auto">
-                                <div class="items-different p-2 d-flex flex-column justify-content-between align-items-start text-start">
+                                <div class="items-different p-2 d-flex flex-column justify-content-between align-items-center text-start">
                                     <div class="d-flex flex-column justify-content-center align-items-start">
                                         <img src="<?= base_url() ?>assets/img/speedybank/icon-spec-5.png" alt="">
                                         <span class="f-jakarta title specifications py-4 text-blue-freedy my-auto">Zero exchange fees and 
@@ -420,7 +420,7 @@
                                 </div>
                             </div>
                             <div class="col-10 col-md-5 col-lg-3 px-2 pt-5 my-5 list-different  mx-auto">
-                                <div class="items-different p-2 d-flex flex-column justify-content-between align-items-start text-start">
+                                <div class="items-different p-2 d-flex flex-column justify-content-between align-items-center text-start">
                                     <div class="d-flex flex-column justify-content-center align-items-start">
                                         <img src="<?= base_url() ?>assets/img/speedybank/icon-spec-6.png" alt="">
                                         <span class="f-jakarta title specifications py-4 text-blue-freedy my-auto">Clear & transparent
@@ -435,7 +435,7 @@
                                 </div>
                             </div>
                             <div class="col-10 col-md-5 col-lg-3 px-2 pt-5 my-5 list-different  mx-auto">
-                                <div class="items-different p-2 d-flex flex-column justify-content-between align-items-start text-start">
+                                <div class="items-different p-2 d-flex flex-column justify-content-between align-items-center text-start">
                                     <div class="d-flex flex-column justify-content-center align-items-start">
                                         <img src="<?= base_url() ?>assets/img/speedybank/icon-spec-7.png" alt="">
                                         <span class="f-jakarta title specifications py-4 text-blue-freedy my-auto"> <span translate="no"> Trade-off </span> platform
@@ -446,7 +446,7 @@
                                 </div>
                             </div>
                             <div class="col-10 col-md-5 col-lg-3 px-2 my-5 pt-5 list-different  mx-auto">
-                                <div class="items-different p-2 d-flex flex-column justify-content-between align-items-start text-start">
+                                <div class="items-different p-2 d-flex flex-column justify-content-between align-items-center text-start">
                                     <div class="d-flex flex-column justify-content-center align-items-start">
                                         <img src="<?= base_url() ?>assets/img/speedybank/icon-spec-8.png" alt="">
                                         <span class="f-jakarta title specifications py-4 text-blue-freedy my-auto">Integration into
