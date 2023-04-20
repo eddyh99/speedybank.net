@@ -12,7 +12,6 @@ $(function() {
             },
             "dataSrc": function(data) {
                 $("#token").val(data["token"]);
-                console.log(data["member"]);
                 return data["member"];
             },
         },

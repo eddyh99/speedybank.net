@@ -20,11 +20,11 @@ class Wallet extends CI_Controller
             $this->session->set_userdata($session_data);
             if (empty($this->session->userdata('user_id'))) {
                 $this->session->set_flashdata('failed', "You must login first to make a transaction");
-                redirect(base_url('auth/login'));
+                redirect(base_url('/'));
             }
         } else {
             if (empty($this->session->userdata('user_id'))) {
-                redirect(base_url('auth/login'));
+                redirect(base_url('/'));
             }
         }
     }

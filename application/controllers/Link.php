@@ -14,7 +14,7 @@ class Link extends CI_Controller
         $currency   = apitrackless($url)->message;
 
         $data = array(
-            "title"     => NAMETITLE . " - Lern Get Reward",
+            "title"     => NAMETITLE . " - Learn Get Reward",
             "content"   => "auth/landingpage/lern_reward",
             "extra"     => "auth/landingpage/js/js_index",
             "currency"     => $currency,
@@ -84,7 +84,6 @@ class Link extends CI_Controller
         $data = array(
             "title"     => NAMETITLE . " - Translate",
             "content"   => "auth/landingpage/translate",
-            // "extra"     => "auth/landingpage/js/js_index",
         );
 
         $this->load->view('tamplate/wrapper', $data);
@@ -95,7 +94,6 @@ class Link extends CI_Controller
         $data = array(
             "title"     => NAMETITLE . " - Privacy Policy",
             "content"   => "auth/landingpage/privacy-policy",
-            // "extra"     => "auth/landingpage/js/js_index",
         );
 
         $this->load->view('tamplate/wrapper', $data);
@@ -122,7 +120,6 @@ class Link extends CI_Controller
             "title"     => NAMETITLE,
             "content"   => "auth/landingpage/specifications",
             "spec"   => $spec,
-            // "extra"     => "auth/landingpage/js/js_index",
         );
 
         $this->load->view('tamplate/wrapper', $data);

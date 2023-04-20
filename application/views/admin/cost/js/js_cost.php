@@ -6,7 +6,6 @@ function readfee() {
     $.ajax({
         url: "<?= base_url() ?>admin/cost/getcost?currency=" + readcurrency,
         success: function(response) {
-            console.log(response);
             var data = JSON.parse(response);
             $("#walletbank_circuit_fxd").val(data.walletbank_circuit_fxd)
             $("#walletbank_circuit_pct").val(data.walletbank_circuit_pct)

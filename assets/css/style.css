@@ -248,6 +248,16 @@ color: rgba(255, 255, 255, 0.8);
   
 }
 
+.wrap-3dsecure {
+  background-color: white !important;
+  width: 100%;
+  height: 60px;
+  font-weight: 600;
+  color: #121212 !important;
+  border: 0 none !important;
+  border-radius: 16px !important;
+  box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.25), inset 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
 
 
 .nohp-select {
@@ -265,6 +275,10 @@ color: rgba(255, 255, 255, 0.8);
   color: #949494;
   font-weight: 400 !important;
   padding: 6px 20px !important;
+  width: 90%;
+  height: 60px;
+  border: 0 none !important;
+  background-color: transparent;
 }
 
 
@@ -272,6 +286,21 @@ color: rgba(255, 255, 255, 0.8);
   color: #949494;
   font-weight: 400 !important;
   width: 100%;
+}
+
+.wrap-3dsecure .inputPass{
+  color: #949494;
+  font-size: 14px;
+  font-weight: 400 !important;
+  padding: 6px 20px !important;
+  width: 90%;
+  height: 60px;
+  border: 0 none !important;
+  background-color: transparent;
+}
+
+.wrap-3dsecure .inputPass:focus {
+  outline: none;
 }
 
 
@@ -510,6 +539,11 @@ color: rgba(255, 255, 255, 0.8);
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
+.gmaps-search-val {
+  font-size: 12px;
+}
+
+
 .breadcrumbs {
   padding: 15px 0;
   background: #CB0000;
@@ -3989,8 +4023,6 @@ color: rgba(255, 255, 255, 0.8);
   }
 
   .navbar-app>.box-navbar-freedy a {
-    margin: 0 2rem;
-
     font-weight: 700;
     font-size: 12px;
     line-height: 20px;
@@ -5613,6 +5645,12 @@ color: rgba(255, 255, 255, 0.8);
 }
 
 @media (min-width: 576px) {
+  
+  .card-number div:nth-child(2) input,
+  .card-number div:nth-child(2) input:focus {
+    font-size: 18px;
+  }
+
   .box-service-list .icon img {
     height: 65px;
   }
@@ -7843,6 +7881,9 @@ color: rgba(255, 255, 255, 0.8);
 }
 
 @media (min-width: 768px) {
+  .gmaps-search-val {
+    font-size: 16px !important;
+  }
 
   .card-req-activation h3, 
   .card-req-activation h4 {
@@ -10508,6 +10549,16 @@ color: rgba(255, 255, 255, 0.8);
 }
 
 @media (min-width: 1200px) {
+  .card-input-dlh+.card .m-dlh {
+    margin-left: 10px;
+    font-size: 12px;
+  }
+
+  .card-input-dlh+.card .m-eur {
+    margin-right: 5px;
+    font-size: 14px;
+  }
+
   .logo-text.technology span {
     font-size: 40px;
   }

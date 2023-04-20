@@ -1,8 +1,5 @@
 <script>
-    $('#activecurrency').on("change", function() {
-        window.location.replace('homepage?cur=' + $(this).val())
-    })
-    $(function() {
+     $(function() {
         var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
             "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
         ];
@@ -34,7 +31,7 @@
     $('#tgl').on("change", function(e) {
         e.preventDefault();
         $.ajax({
-            url: "<?= base_url() ?>history/gethistory",
+            url: "<?= base_url() ?>card/getHistory",
             method: "post",
             data: $("#frmhistory").serialize(),
             success: function(response) {
@@ -49,27 +46,4 @@
             }
         });
     })
-
-    // Start Open Eye in Member Card Already
-    const toogleEye = document.getElementById('eye-toggle');
-    const textSecret = document.getElementById('text-secret');
-
-    toogleEye.addEventListener('click', function(e) {
-        const type = textSecret.getAttribute('type') === 'password' ? 'text' : 'password';
-        textSecret.setAttribute('type', type);
-
-        this.classList.toggle('ri-eye-off-line');
-    });
-
-    const toogleEye2 = document.getElementById('eye-toggle2');
-    const textSecret2 = document.getElementById('text-secret2');
-
-    toogleEye2.addEventListener('click', function(e) {
-        const type = textSecret2.getAttribute('type') === 'password' ? 'text' : 'password';
-        textSecret2.setAttribute('type', type);
-
-        this.classList.toggle('ri-eye-off-line');
-    });
-    // End Open Eye in Member Card Already
-
 </script>

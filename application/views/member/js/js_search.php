@@ -50,4 +50,44 @@ $("#state").on("change", function() {
     })
 });
 
+var searchme =
+    $('#tblsearchme').DataTable({
+        "scrollX": true,
+        "responsive": true,
+        "ajax": {
+            "url": "<?= base_url() ?>search/searchme",
+            "type": "POST",
+            "data": function(d) {
+                d.csrf_freedy = $("#token").val();
+                d.city = $("#city").val();
+                d.kategori = $("#kategori").val();
+            },
+            "dataSrc": function(data) {
+                $("#token").val(data["token"]);
+                return data["history"];
+            },
+        },
+        "pageLength": 100,
+        "columns": [{
+                "data": "business_name"
+            },
+            {
+                "data": "googlemap",
+                render: function(data, type, row) {
+                    return "<a href='"+data+"' class='gmaps-search-val text-black text-decoration-underline border border-0' target='_blank'>Our Location</a>"
+                }
+            },
+            {
+                "data": "logo",
+                render: function(data, type, row) {
+                    return "<img src='<?=base_url()?>/qr/logo/"+data+"' class='img-fluid'>";
+                }
+            },
+        ]
+    });
+
+$('#search').on("click", function(e) {
+        e.preventDefault();
+        searchme.ajax.reload();
+    })
 </script>

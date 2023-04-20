@@ -43,7 +43,6 @@ var tblhistory =
             },
             "dataSrc": function(data) {
                 $("#token").val(data["token"]);
-                console.log(data["history"]);
                 return data["history"];
             },
         },

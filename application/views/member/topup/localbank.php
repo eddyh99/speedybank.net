@@ -36,7 +36,7 @@
                             if ($currency == "EUR") {
                             ?>
                             <div class="row">
-                                <label>Account Holder</label>
+                                <label>Account Holder (min deposit : <?=@number_format($bank->minimum,2)?> <?=$currency?> )</label>
                                 <div class="d-flex flex-row align-items-center mb-3">
                                     <input class="form-control me-2" type="text" name="" id="inter1"
                                         value="<?= @$bank->name_circuit ?>" readonly>
@@ -87,7 +87,7 @@
                                 <label>Causal</label>
                                 <div class="d-flex flex-row align-items-center mb-3">
                                     <input class="form-control me-2" type="text" name="" id="inter4"
-                                        value="Topup <?= $_SESSION["ucode"] ?>" readonly>
+                                        value="SC <?= $_SESSION["ucode"] ?>" readonly>
                                     <a class="btn btn-copy" id="btninter4">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -117,7 +117,7 @@
                             </div>
                             <?php }elseif($currency == "USD"){?>
                             <div class="row">
-                                <label>Account Holder</label>
+                                <label>Account Holder (min deposit : <?=@number_format($bank->minimum,2)?> <?=$currency?> )</label>
                                 <div class="d-flex flex-row align-items-center mb-3">
                                     <input class="form-control me-2" type="text" name="" id="inter1"
                                         value="<?= @$bank->name_circuit ?>" readonly>
@@ -184,7 +184,7 @@
                                 <label>Causal</label>
                                 <div class="d-flex flex-row align-items-center mb-3">
                                     <input class="form-control me-2" type="text" name="" id="inter4"
-                                        value="Topup <?= $_SESSION["ucode"] ?>" readonly>
+                                        value="SC <?= $_SESSION["ucode"] ?>" readonly>
                                     <a class="btn btn-copy" id="btninter4">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -215,7 +215,7 @@
                             <?php } else {
                             ?>
                             <div class="row">
-                                <label>Account Holder</label>
+                                <label>Account Holder (min deposit : <?=@number_format($bank->minimum,2)?> <?=$_SESSION["currency"]?> )</label>
                                 <div class="d-flex flex-row align-items-center mb-3">
                                     <input class="form-control me-2" type="text" name="" id="us1"
                                         placeholder="Registered Name" value="<?= @$bank->name_circuit ?>" readonly>
@@ -334,7 +334,7 @@
                                 <label>Causal</label>
                                 <div class="d-flex flex-row align-items-center mb-3">
                                     <input class="form-control me-2" type="text" name="" id="us4" placeholder="Causal"
-                                        value="Topup <?= $_SESSION["ucode"] ?>" readonly>
+                                        value="SC <?= $_SESSION["ucode"] ?>" readonly>
                                     <a class="btn btn-copy" id="btnus4">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
