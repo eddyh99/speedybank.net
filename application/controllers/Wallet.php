@@ -46,7 +46,6 @@ class Wallet extends CI_Controller
         $this->session->unset_userdata('wallet_req');
         $linkurl = $_SERVER['REQUEST_URI'];
 
-
         $ucode = "";
         $amount = "";
         $causal = "";
@@ -54,7 +53,6 @@ class Wallet extends CI_Controller
         if (strpos($linkurl, "send?")) {
             $get_url = str_replace(LINKQRCODE . "?", "", $linkurl);
             $decode_url = base64_decode($get_url);
-            // print_r($decode_url)
             
             // Get currency
             $get_datacurr = str_replace("cur=", "", $decode_url);
@@ -74,18 +72,14 @@ class Wallet extends CI_Controller
             // Get UCode
             $get_dataucode = str_replace("cur=" . $_SESSION["currency"] . "&ucode=", "", $decode_url);
             $ucode = strstr($get_dataucode, '&', true);
-            // print_r($get_dataucode);
             
             // Get Amount
             $amount = str_replace("cur=" . $_SESSION["currency"] . "&ucode=" . $ucode . "&amount="  , "", $decode_url);
-            // print_r($amount);
             
             // GET Causal
             $get_datacausal = str_replace("cur=" . $_SESSION["currency"] . "&ucode=" . $ucode . "&amount=" . $amount . "&causal=", "", $decode_url);
             $only_causal = strstr($get_datacausal, '&causal=', false);
             $causal = substr($only_causal, 8);
-            // print_r($causal);
-            // die;
             
             if (empty($ucode)) {
                 $ucode = $get_dataucode;

@@ -309,29 +309,11 @@ class Link extends CI_Controller
         $email          = $this->security->xss_clean($input->post("email"));
         $message        = $this->security->xss_clean($input->post("message"));
         
-        // print_r($email);
-        // print_r($message);
-        // die;
-
-
         send_email($email, $message, $this->phpmailer_lib->load());
-        // echo $result;
-        // die;
-
         
         $this->session->set_flashdata("success", "Message successfully sent!");
         redirect(base_url("#contactus"));
 
-        // print_r($result);
-        // die;
-
-        // if ($result) {
-        //     $this->session->set_flashdata("success", "Message successfully sent!");
-        //     redirect(base_url("#contactus"));
-        // } else {
-        //     $this->session->set_flashdata("failed", 'Message failed to send!');
-        //     redirect(base_url("#contactus"));
-        // }
     }
 
     public function about()
