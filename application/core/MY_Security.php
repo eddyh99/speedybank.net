@@ -75,7 +75,7 @@ class MY_Security extends CI_Security {
             header('Location: ' . $base_url . 'card/requestcard?requestcard=dmlydHVhbA==');
         }
         // Card Unavaiilable Req Physical
-        elseif(strstr($linkurl, 'card/shipping') || strstr($linkurl, 'card/security') || strstr($linkurl, 'card/summary'))
+        elseif(strstr($linkurl, 'card/shipping') || strstr($linkurl, 'card/cardsecurity') || strstr($linkurl, 'card/summary'))
         {
             header('Location: ' . $base_url . 'card/requestcard_physical?requestcard_physical=cmVxdWVzdGNhcmRfcGh5c2ljYWw=');
         }
