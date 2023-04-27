@@ -4,7 +4,7 @@
             <div class="col-12 col-md-6 card mb-5 mt-3 text-center mx-auto">
                 <div class="card-body">
                     <div class="col-12 my-5">
-                        <img src="<?= base_url() ?>assets/img/logo.png" alt="" style="width: 100px;">
+                        <img src="<?= base_url() ?>assets/img/speedybank/logo.png" alt="" style="width: 100px;">
                         <span class="mt-3" style="display: block;">Your transfer successed</span>
                     </div>
                     <a href="<?= base_url() ?>admin/mwallet"

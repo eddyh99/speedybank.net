@@ -175,7 +175,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="collapseOne" class="col-12 accordion-collapse collapse" aria-labelledby="pageOne" data-bs-parent="#accordionFreedy">
+                    <div id="collapseOne" class="col-12 collapse-guide accordion-collapse collapse" aria-labelledby="pageOne" data-bs-parent="#accordionFreedy">
                         <div class="row d-flex flax-wrap justify-content-center align-items-center">
                             <div class="col-10 col-md-5 col-lg-3 px-2 mb-0 mb-md-5 py-3 list-different">
                                 <div class="items-different p-4 d-flex flex-column justify-content-between align-items-center text-center">
@@ -357,7 +357,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="collapseTwo" class="col-12 accordion-collapse collapse" aria-labelledby="pageTwo" data-bs-parent="#accordionFreedy">
+                    <div id="collapseTwo" class="col-12 accordion-collapse collapse-specifications collapse" aria-labelledby="pageTwo" data-bs-parent="#accordionFreedy">
                         <div class="row d-flex flax-wrap justify-content-center align-items-center">
                             <div class="col-10 col-md-5 col-lg-3 px-2 pt-5 my-5 list-different  mx-auto">
                                 <div class="items-different p-2 d-flex flex-column justify-content-between align-items-center text-start">

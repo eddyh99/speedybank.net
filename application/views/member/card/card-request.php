@@ -140,6 +140,7 @@
                                                 </i>
                                             </span>
                                         </div>
+                                        <span class="d-flex ps-3 mt-2" style="font-size: 12px; color: gray;">Password must at least 8 - 35 Character</span>
                                     </div>
                                     <div class="col-md-10 my-2 mt-4">
                                         <div class="d-flex justify-content-evenly align-items-center wrap-3dsecure">
@@ -150,6 +151,7 @@
                                                 </i>
                                             </span>
                                         </div>
+                                        
                                     </div>
                                 </div>
                                 <div class="text-start d-flex justify-content-center mt-5 mb-4">

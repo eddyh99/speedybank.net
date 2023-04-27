@@ -45,7 +45,7 @@
                                 </div>
                                 <div class="mb-3">
                                     <label class="ms-2 form-label">Causal</label>
-                                    <input type="text" class="form-control" name="causal" maxlength="10">
+                                    <input type="text" class="form-control" name="causal" placeholder="Causal" value="<?= $causal?>" <?php echo (empty($causal) ? "" : "readonly") ?> maxlength="10">
                                 </div>
                                 <div class="row">
                                     <div class="d-flex flex-row mt-4">

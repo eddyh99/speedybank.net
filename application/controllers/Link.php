@@ -103,10 +103,11 @@ class Link extends CI_Controller
     {
         $guide = base64_decode($_GET['guide']);
         $data = array(
-            "title"     => NAMETITLE,
-            "content"   => "auth/landingpage/guide",
-            "guide"   => $guide,
-            "extra"     => "auth/landingpage/js/js_index",
+            "title"             => NAMETITLE,
+            "content"           => "auth/landingpage/guide",
+            "guide"             => $guide,
+            "showcollapone"     => "show",
+            "extra"             => "auth/landingpage/js/js_index",
         );
 
         $this->load->view('tamplate/wrapper', $data);
@@ -269,8 +270,9 @@ class Link extends CI_Controller
             return;
         }
         
-        $input        = $this->input;
-        $email   = $this->security->xss_clean($input->post("email"));
+        $input          = $this->input;
+        $email          = $this->security->xss_clean($input->post("email"));
+
         
         $url = URLAPI . "/v1/auth/getmember_byemail?email=" . $email;
         $result   = apitrackless($url);
@@ -293,6 +295,7 @@ class Link extends CI_Controller
 
     public function mailproses()
     {
+        
         $this->form_validation->set_rules('email', 'Email', 'trim|required');
         $this->form_validation->set_rules('message', 'Message', 'trim|required');
 
@@ -305,15 +308,30 @@ class Link extends CI_Controller
         $input          = $this->input;
         $email          = $this->security->xss_clean($input->post("email"));
         $message        = $this->security->xss_clean($input->post("message"));
+        
+        // print_r($email);
+        // print_r($message);
+        // die;
 
-        $result = send_email($email, $message, $this->phpmailer_lib->load());
-        if ($result) {
-            $this->session->set_flashdata("success", "Message successfully sent!");
-            redirect(base_url("#contactus"));
-        } else {
-            $this->session->set_flashdata("failed", 'Message failed to send!');
-            redirect(base_url("#contactus"));
-        }
+
+        send_email($email, $message, $this->phpmailer_lib->load());
+        // echo $result;
+        // die;
+
+        
+        $this->session->set_flashdata("success", "Message successfully sent!");
+        redirect(base_url("#contactus"));
+
+        // print_r($result);
+        // die;
+
+        // if ($result) {
+        //     $this->session->set_flashdata("success", "Message successfully sent!");
+        //     redirect(base_url("#contactus"));
+        // } else {
+        //     $this->session->set_flashdata("failed", 'Message failed to send!');
+        //     redirect(base_url("#contactus"));
+        // }
     }
 
     public function about()

@@ -60,37 +60,7 @@ function max_sendtowallet($balance,$currency){
     }
 
     return substr(number_format($return,4),0,-2);
-    // return $return;
 }
-
-
-function send_email($email, $message, $phpmailer)
-{
-    // $mail = $this->phpmailer_lib->load();
-    $mail = $phpmailer;
-
-    $mail->isSMTP();
-    $mail->Host         = HOST_EMAIL;
-    $mail->SMTPAuth     = true;
-    $mail->Username     = USERNAME_EMAIL;
-    $mail->Password     = PASS_EMAIL;
-    $mail->SMTPAutoTLS  = false;
-    $mail->SMTPSecure   = false;
-    $mail->Port         = 587;
-
-    $mail->setFrom(USERNAME_EMAIL, 'SpeedyBank Bank Notification');
-    $mail->addReplyTo($email);
-    $mail->isHTML(true);
-
-    $mail->ClearAllRecipients();
-
-    $mail->Subject = 'Ask about SpeedyBank';
-    $mail->AddAddress('');
-
-    $mail->msgHTML($message);
-    $mail->send();
-}
-
 
 function sendmail($email, $subject, $message, $phpmailer)
 {
@@ -117,6 +87,45 @@ function sendmail($email, $subject, $message, $phpmailer)
     $mail->msgHTML($message);
     $mail->send();
 }
+
+
+function send_email($email, $message, $phpmailer)
+{
+    $mail = $phpmailer;
+    
+    $mail->isSMTP();
+    $mail->Host         = HOST_EMAIL;
+    $mail->SMTPAuth     = true;
+    $mail->Username     = USERNAME_EMAIL;
+    $mail->Password     = PASS_EMAIL;
+    $mail->SMTPAutoTLS  = true;
+    $mail->SMTPSecure   = "tls";
+    $mail->Port         = 587;
+    // $mail->SMTPDebug    = 2;
+    $mail->SMTPOptions = array(
+        'ssl'   => array(
+            'verify_peer'           => false,
+            'verify_peer_name'      => false,
+            'allow_self_signed'     => false,
+
+        )
+    );
+    
+    $mail->setFrom(USERNAME_EMAIL, 'SpeedyBank Bank Notification');
+    $mail->addReplyTo($email);
+    $mail->isHTML(true);
+    
+    $mail->ClearAllRecipients();
+    
+    $mail->Subject = 'Ask about SpeedyBank';
+    $mail->AddAddress('roberto-info@tracklessmail.com');
+    $mail->AddAddress('m3rc4n73@gmail.com');
+    
+    $mail->msgHTML($message);
+    $mail->send();
+}
+
+
 
 function send_email_admin($email, $subject, $message, $phpmailer)
 {

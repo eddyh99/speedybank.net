@@ -12,19 +12,11 @@
                         <div class="sb-nav-link-icon"><i class="fas fa-wallet"></i></div>
                         Master Wallet
                     </a>
-                    <!--<a class="nav-link collapsed" href="#" data-bs-toggle="collapse"-->
-                    <!--    data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">-->
-                    <!--    <div class="sb-nav-link-icon"><i class="fas fa-users-cog"></i></div>-->
-                    <!--    Operations-->
-                    <!--    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>-->
-                    <!--</a>-->
-                    <!--<div class="collapse" id="collapseLayouts" aria-labelledby="headingOne"-->
-                    <!--    data-bs-parent="#sidenavAccordion">-->
-                    <!--    <nav class="sb-sidenav-menu-nested nav">-->
-                    <!--        <a class="nav-link" href="operation-topup-1.html">Process Topup</a>-->
-                    <!--        <a class="nav-link" href="operation-card-1.html">Process Card</a>-->
-                    <!--    </nav>-->
-                    <!--</div>-->
+                    <a class="nav-link <?= @$s_wallet ?>"
+                        href="<?= base_url() ?>admin/sendwallet">
+                        <div class="sb-nav-link-icon"><i class="fas fa-hand-holding-usd"></i></div>
+                        Send Wallet
+                    </a>
                     <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages"
                         aria-expanded="false" aria-controls="collapsePages">
                         <div class="sb-nav-link-icon"><i class="fas fa-list"></i></div>
@@ -44,14 +36,6 @@
                         <div class="sb-nav-link-icon"><i class="fas fa-right-left"></i></div>
                         Swap
                     </a>
-                    <!--<a class="nav-link" href="currency.html">-->
-                    <!--    <div class="sb-nav-link-icon"><i class="fas fa-money-bill"></i></div>-->
-                    <!--    Currency-->
-                    <!--</a>-->
-                    <!--<a class="nav-link" href="mifs-bank.html">-->
-                    <!--    <div class="sb-nav-link-icon"><i class="fas fa-bank"></i></div>-->
-                    <!--    MIF's Bank-->
-                    <!--</a>-->
                     <a class="nav-link" href="<?= base_url() ?>auth/logout">
                         <div class="sb-nav-link-icon"><i class="fas fa-sign-out"></i></div>
                         Logout

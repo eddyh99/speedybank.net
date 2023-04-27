@@ -44,8 +44,8 @@
                                             <i class="fa fa-envelope"></i>
                                         </span>
                                     </div>
-                                    <input type="text" class="form-control f-publicsans border-0" name="email"
-                                        id="email" placeholder="Email" value="<?= $email; ?>" required disabled>
+                                    <input type="text" class="form-control message-email f-publicsans border-0" name="email"
+                                        id="email" placeholder="Email" value="<?= $email?>" readonly required >
                                 </div>
                             </div>
                             <div class="col-12 mb-5">
@@ -55,8 +55,8 @@
                                             <i class="fa fa-message"></i>
                                         </span>
                                     </div>
-                                    <textarea type="text" class="form-control f-publicsans border-0" name="question"
-                                        id="question" placeholder="Message" required></textarea>
+                                    <textarea type="text" class="form-control f-publicsans border-0" name="message"
+                                        id="message" placeholder="Message" required></textarea>
                                 </div>
                             </div>
                             <div class="col-12 text-center">

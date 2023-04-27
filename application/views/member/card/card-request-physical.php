@@ -196,6 +196,7 @@ require_once('countries-list.php'); ?>
                                                     </i>
                                                 </span>
                                             </div>
+                                            <span class="d-flex ps-3 mt-2" style="font-size: 12px; color: gray;">Password must at least 8 - 35 Character</span>
                                         </div>
                                         <div class="col-md-10 my-2 mt-4">
                                             <!-- <input class="nohp-select inputPass" type="password" name="confpasswd" placeholder="*Confirm 3D Secure password " required minlength="8" maxlength="36"> -->

@@ -79,6 +79,19 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- Start Hidden Validation Password -->
+                                <div class="password_info ms-3 py-3 ps-3 pe-5 mb-4" id="password_info">
+                                    <p><strong>Password must contain the following:</strong></p>
+                                    <ul>
+                                        <li class="invalid" id="letter">A lowercase letter</li>
+                                        <li class="invalid" id="capital">A capital (uppercase) letter</li>
+                                        <li class="invalid" id="number">A number</li>
+                                        <li class="invalid" id="length">At least 9 - 35 characters</li>
+                                        <li class="invalid" id="special">Contains at least 2 special
+                                                    character (^!@#$%^&*\-_=+)</li>
+                                    </ul>
+                                </div>
+                                <!-- END Hidden Validation Password -->
                                 <div class="col-12 mb-4">
                                     <label for="password2" class="form-label f-publicsans">Confirm Password</label>
                                     <div class="input-group">
@@ -89,6 +102,7 @@
                                             </span>
                                         </div>
                                     </div>
+                                    <span class="mt-2" id="pswdmatch" style="font-size: 12px; color: red;">Password Do Not Match!</span>
                                 </div>
                                 <div class="col-12 mb-5">
                                     <label for="email" class="form-label f-publicsans">Refferal code <span class="text-mute">(
