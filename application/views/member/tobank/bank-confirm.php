@@ -116,6 +116,9 @@
                                     <p>It is possible that additional costs, unknown to us, are applied by the reference bank</p>
                                     <p>If you are sure to make this transaction click confirm</p>
                                 </div>
+                                <p class="text-center text-primary pt-3">
+                                    By clicking confirm, you authorize wise to withdraw the funds from your account and transfer them to the data you entered, relieving us of any responsibility as the successful completion of the operation will be at the sole discretion of wise
+                                </p>
                                 <div class="col-12 d-flex flex-row mt-5">
                                     <a href="<?= base_url() ?>bank" class="btn btn-wallet-cancle py-2 me-auto">Cancel</a>
                                     <button class="btn btn-receive-bank px-5 py-2" type="submit" id="btnconfirm">Confirm</button>
