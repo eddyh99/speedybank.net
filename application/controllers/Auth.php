@@ -67,6 +67,7 @@ class Auth extends CI_Controller
 		$this->load->view('tamplate/header', $data);
 		$this->load->view('auth/signup');
 		$this->load->view('tamplate/footer');
+		$this->load->view('auth/js/js_signup');
 	}
 
 	public function register()
@@ -124,6 +125,16 @@ class Auth extends CI_Controller
 
 		if (empty($time_location)) {
 			$time_location = "Asia/Singapore";
+		}
+
+		if ($referral == "sp33dy34") {
+			$referral = NULL;
+		}
+
+		if (!preg_match('/(?=[A-Za-z0-9!@#$%^&*\-_=+]+$)^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*(?:[^!@#$%^&*\-_=+]*[!@#$%^&*\-_=+]){2})(?=.{9,}).*$/', $pass) == true) {
+			$this->session->set_flashdata('failed', "Invalid Password. Password should contain 1 Uppercase, 1 lowercase, 1 Numeric and 2 Special Charaters");
+			redirect(base_url('auth/signup'));
+			return;
 		}
 
 		$mdata = array(
@@ -261,10 +272,6 @@ class Auth extends CI_Controller
 				$this->ciqrcode->addLogo($result->message->ucode, '/qr/ref/', '/assets/img/speedybank/logoQR.png');
 			}
 
-			// if (@getimagesize($srcr) == FALSE) {
-			// 	$urlqr = base_url() . 'wallet/send?' . base64_encode('ucode=' . $_SESSION["ucode"]);
-			// 	$this->qrcodereceive($urlqr, $result->message->ucode);
-			// }
 			if (empty($this->session->userdata('wallet_req'))) {
 				redirect("homepage");
 			} else {
@@ -493,7 +500,7 @@ class Auth extends CI_Controller
 		}
 	}
 
-	public function requestbank($curr = '', $ucode = '', $amount = NULL)
+	public function requestbank($curr = '', $ucode = '', $amount = NULL, $causal = '')
 	{
 		if ((empty($curr)) || (empty($ucode))) {
 			redirect(base_url());
@@ -510,6 +517,8 @@ class Auth extends CI_Controller
 		$data['curr'] = base64_decode($curr);
 		$data['ucode'] = base64_decode($ucode);
 		$data['amount'] = base64_decode(@$amount);
+		$data['causal'] = base64_decode(@$causal);
+
 
 		$data['title'] = NAMETITLE . " - Request";
 

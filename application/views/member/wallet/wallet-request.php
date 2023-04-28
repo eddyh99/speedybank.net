@@ -33,6 +33,11 @@
                                     <input type="text" class="form-control money-input" name="confirm_amount"
                                         id="confirm_amount" placeholder="Confirm Amount">
                                 </div>
+                                <div class="mb-3">
+                                    <label class="ms-2 form-label">CAUSAL</label>
+                                    <input type="text" class="form-control" name="causal"
+                                        id="causal" placeholder="Causal" maxlength="10">
+                                </div>
                                 <div class="row">
                                     <div class="d-flex flex-row mt-4">
                                         <button class="btn btn-receive-bank px-5 py-2 mx-auto" type="submit"

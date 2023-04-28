@@ -7,14 +7,22 @@ class Search extends CI_Controller
     {
         parent::__construct();
         if (empty($this->session->userdata('user_id'))) {
-            redirect(base_url('auth/login'));
+            redirect("/");
         }
     }
 
     public function index()
     {
-        $data['title'] = NAMETITLE . " - Search";
-        $footer["extra"]    = "member/js/js_index";
+        $url = URLAPI . "/v1/member/findme/get_countrylist";
+        $country   = apitrackless($url)->message;
+
+        $url      = URLAPI . "/v1/member/findme/get_category";
+        $category = apitrackless($url)->message;
+
+        $data['title']      = NAMETITLE . " - Search";
+        $data["country"]    = $country;
+        $data["category"]   = $category;
+        $footer["extra"]    = "member/js/js_search";        
 
         $this->load->view('tamplate/header', $data);
         $this->load->view('tamplate/navbar-top', $data);
@@ -23,41 +31,29 @@ class Search extends CI_Controller
         $this->load->view('tamplate/footer', $footer);
     }
 
-    public function getHistory()
-    {
-        $this->form_validation->set_rules('tgl', 'Date', 'trim|required');
-        if ($this->form_validation->run() == FALSE) {
-            header("HTTP/1.1 500 Internal Server Error");
-            $error = array(
-                "token"     => $this->security->get_csrf_hash(),
-                "message"   => validation_errors()
-            );
-            echo json_encode($error);
-            return;
-        }
-
-        $input = $this->input;
-        $tgl = explode("-", $this->security->xss_clean($input->post("tgl")));
-        $awal = date_format(date_create($tgl[0]), "Y-m-d");
-        $akhir = date_format(date_create($tgl[1]), "Y-m-d");
-
-        $mdata = array(
-            "userid"    => $_SESSION["user_id"],
-            "currency"  => $_SESSION["currency"],
-            "date_start" => $awal,
-            "date_end"  => $akhir,
-            "timezone"  => $_SESSION["time_location"]
-        );
-        $result = apitrackless(URLAPI . "/v1/member/history/getAll", json_encode($mdata));
-        $data['history'] = $result->message;
-        $response = array(
-            "token"     => $this->security->get_csrf_hash(),
-            "message"   => utf8_encode($this->load->view('member/history', $data, TRUE))
-        );
-        echo json_encode($response);
+    public function getstate(){
+        $country    = $_GET["country"];
+        $url    = URLAPI . "/v1/member/findme/get_statelist?country=".$country;
+        $state  = apitrackless($url)->message;
+        echo json_encode($state);
     }
 
-    public function searchHistory()
-    {
+    public function getcity(){
+        $country    = $_GET["country"];
+        $state      = $_GET["state"];
+        $url    = URLAPI . "/v1/member/findme/get_citylist?country=".$country."&state=".$state;
+        $city   = apitrackless($url)->message;
+        echo json_encode($city);
+    }
+
+    public function searchme(){
+        $input = $this->input;
+        $city = $this->security->xss_clean($input->post("city"));
+        $kategori = $this->security->xss_clean($input->post("kategori"));
+        $url    = URLAPI . "/v1/member/findme/getlocation?city=".$city."&category=".$kategori;
+        $result = apitrackless($url)->message;
+        $data["token"] = $this->security->get_csrf_hash();
+        $data["history"]=$result;
+        echo json_encode($data);
     }
 }

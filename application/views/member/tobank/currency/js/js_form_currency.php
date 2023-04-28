@@ -19,7 +19,6 @@
             error: function(xhr, status, error) {
                 var data = JSON.parse(xhr.responseText);
                 $("#token").val(data.token);
-                console.log(data.message);
             }
         });
     }

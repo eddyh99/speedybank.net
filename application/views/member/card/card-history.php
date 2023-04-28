@@ -14,7 +14,6 @@
                                             value="<?php echo $this->security->get_csrf_hash(); ?>">
                                         <input type="text" name="tgl" id="tgl" readonly class="border-0"
                                             style="cursor: pointer;">
-                                        <button type="submit">View</button>
                                     </form>
                                 </div>
                                 <div class="col-12 box-transaction overflow-auto">

@@ -18,7 +18,7 @@
                             <span><?=$exp?></span>
                         </div>
                         <div class="text-start d-flex justify-content-center mt-5 mb-4">
-                            <a href="<?= base_url(); ?>homepage/card"
+                            <a href="<?= base_url(); ?>card"
                                 class="btn-card-confirm-nocard  d-inline-flex align-items-center justify-content-center align-self-center">
                                 <span class="f-lexend">Confirm</span>
                             </a>
@@ -34,16 +34,9 @@
             <div class="container" style="margin-bottom: 8rem;">
                 <div class="app-container py-5 ">
                     <?php $this->load->view("tamplate/banner-nofiat-balance"); ?>
-                    <?php if($requestcard ==  'requestcard'){?>
+                    <?php if($requestcard ==  'virtual'){?>
                         <div class="row my-5 ">
                             <div class="text-topup-card features-text">
-                                <?php if (@isset($_SESSION["failed"])) { ?>
-                                    <div class="col-12 alert alert-danger alert-dismissible fade show" role="alert">
-                                        <span class="notif-login f-poppins"><?= $_SESSION["failed"] ?></span>
-                                        <button type="button" class="btn-close" data-bs-dismiss="alert"
-                                            aria-label="Close"></button>
-                                    </div>
-                                <?php } ?>
                                 <h1 class="text-black fw-bolder f-hahmlet text-center ">
                                     Request Card
                                 </h1>
@@ -75,7 +68,7 @@
                                 </div>
     
                                 <div class="text-start d-flex justify-content-center mt-5 mb-4">
-                                    <a href="<?= base_url(); ?>homepage/requestcard?requestcard=<?= base64_encode('virtual')?>"
+                                    <a href="<?= base_url(); ?>card/requestcard?requestcard=<?= base64_encode('activenow')?>"
                                         class="btn-card-confirm d-inline-flex align-items-center justify-content-center align-self-center">
                                         <span class="f-lexend">Next</span>
                                     </a>
@@ -84,23 +77,28 @@
                         </div>
                     <?php }?>
     
-                    <?php if($requestcard == 'virtual'){?>
+                    <?php if($requestcard == 'requestcard'){?>
+                        <?php if (@isset($_SESSION["failed"])) { ?>
+                            <div class="col-12 alert alert-danger alert-dismissible fade show" role="alert">
+                                <span class="notif-login f-poppins"><?= $_SESSION["failed"] ?></span>
+                                <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                    aria-label="Close"></button>
+                            </div>
+                        <?php } ?>
                         <div class="row my-4">
                             <div class="text-topup-card mt-5 mb-3">
                                 <h1 class="text-blue-freedy fw-bolder f-hahmlet text-center">
                                     Card
                                 </h1>
                             </div>
-                            <a href="<?= base_url(); ?>homepage/requestcard?requestcard=<?= base64_encode('activenow')?>" class="col-12 mx-auto card-topup d-flex align-items-center justify-content-center">
+                            <a href="<?= base_url(); ?>card/requestcard?requestcard=<?= base64_encode('virtual')?>" class="col-12 mx-auto card-topup d-flex align-items-center justify-content-center">
                                 <span class="text-blue-freed fw-bold text-center f-hahmlet fw-bold">
                                 Request Virtual Card
                                 </span>
                             </a>
-                            <a href="#" class="col-12 mx-auto card-topup d-flex align-items-center justify-content-center mt-4">
+                            <a href="<?= base_url(); ?>card/requestcard_physical?requestcard_physical=<?= base64_encode('requestcard_physical')?>" class="col-12 mx-auto card-topup d-flex align-items-center justify-content-center mt-4">
                                 <span class="text-blue-freed fw-bold text-center f-hahmlet fw-bold">
-                                Request Physical Card 
-                                <br>
-                                (COMING SOON)
+                                    Request Physical Card 
                                 </span>
                             </a>
                         </div>
@@ -108,7 +106,7 @@
     
                     <?php if($requestcard == 'activenow'){?>
                         <div class="row my-4 card-req-activation">
-                            <form action="<?=base_url()?>homepage/activecard" method="POST">
+                            <form action="<?=base_url()?>card/activecard" method="POST">
                                 <input type="hidden" id="token" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>">
                                 <?php if (@isset($_SESSION["failed"])) { ?>
                                     <div class="col-12 alert alert-danger alert-dismissible fade show" role="alert">
@@ -134,10 +132,26 @@
                                 </div> 
                                 <div class="row my-5 mx-auto d-flex justify-content-center">
                                     <div class="col-md-10 my-2">
-                                        <input class="nohp-select inputPass" type="password" name="passwd" placeholder="*Create a password 3D Secure" required>
+                                        <div class="d-flex justify-content-evenly align-items-center wrap-3dsecure">
+                                            <input id="password" class="inputPass" type="password" name="passwd" placeholder="*Create a password 3D Secure" minlength="8" maxlength="35" required>
+                                            <span class="d-flex pe-3 justify-content-center">
+                                                <i class="far fa-eye "  id="togglePassword" style="cursor: pointer"
+                                                    toggle="#password">
+                                                </i>
+                                            </span>
+                                        </div>
+                                        <span class="d-flex ps-3 mt-2" style="font-size: 12px; color: gray;">Password must at least 8 - 35 Character</span>
                                     </div>
                                     <div class="col-md-10 my-2 mt-4">
-                                        <input class="nohp-select inputPass" type="password" name="confpasswd" placeholder="*Confirm 3D Secure password " required>
+                                        <div class="d-flex justify-content-evenly align-items-center wrap-3dsecure">
+                                            <input id="password2" class="inputPass" type="password" name="confpasswd" placeholder="*Confirm 3D Secure password" minlength="8" maxlength="35" required>
+                                            <span class="d-flex pe-3 justify-content-center">
+                                                <i class="far fa-eye "  id="togglePassword2" style="cursor: pointer"
+                                                    toggle="#password2">
+                                                </i>
+                                            </span>
+                                        </div>
+                                        
                                     </div>
                                 </div>
                                 <div class="text-start d-flex justify-content-center mt-5 mb-4">
@@ -147,8 +161,7 @@
                                     </button>
                                 </div>
                             </form>
-                        </div>
-                        
+                        </div>    
                     <?php }?>
                 </div>
             </div>

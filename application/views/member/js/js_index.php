@@ -34,7 +34,7 @@
     $('#tgl').on("change", function(e) {
         e.preventDefault();
         $.ajax({
-            url: "<?= base_url() ?>search/gethistory",
+            url: "<?= base_url() ?>history/gethistory",
             method: "post",
             data: $("#frmhistory").serialize(),
             success: function(response) {

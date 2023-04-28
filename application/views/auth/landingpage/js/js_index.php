@@ -89,7 +89,6 @@ function readreff() {
     $.ajax({
         url: "<?= base_url() ?>link/get_reff/" + readcurrency,
         success: function(response) {
-            console.log(response);
             var data = JSON.parse(response);
             $("#tu").html(data.referral_topup_pct + "%" + " + " + data.referral_topup_fxd)
             $("#wtwr").html(data.referral_receive_pct + "%" + " + " + data.referral_receive_fxd)
@@ -105,4 +104,20 @@ function readreff() {
 $("#currency").on("change", function() {
     readreff();
 })
+
+
+// Accordion SHOW when dirrect to own hash 
+$(function(){    
+    if(window.location.hash === '#guide'){
+        $('.collapse-guide').addClass('show');
+    }
+    
+    if(window.location.hash === '#specifications'){
+        $('.collapse-specifications').addClass('show');
+    }
+});
+
+
+
+
 </script>

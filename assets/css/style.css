@@ -105,6 +105,50 @@ color: rgba(255, 255, 255, 0.8);
 /*--------------------------------------------------------------
 # Registrasi & Login
 --------------------------------------------------------------*/
+.password_info {
+  background-color: #e3f6ff;
+  border: 2px dashed #325261;
+  display: none;
+  border-radius: 4px;
+  position: absolute;
+  z-index: 99999999;
+}
+
+#pswdmatch {
+  display: none;
+}
+
+.incorrectMsg {
+  display: none;
+}
+
+.password_info .invalid:before {
+  content: "\292B";
+  left: -5px;
+  position: relative;
+}
+.password_info .invalid {
+  color: red;
+  transition: all .1s ease-in;
+}
+
+.password_info .valid::before {
+  content: "\2713 ";
+  left: -5px;
+  position: relative;
+}
+
+.password_info .valid {
+  color: green;
+  transition: all .1s ease-in;
+}
+
+.password_info ul li{
+  list-style: none;
+  padding: 5px 0px;
+}
+
+
 .login.wrap-signup {
   overflow-x: hidden;
 }
@@ -141,6 +185,87 @@ color: rgba(255, 255, 255, 0.8);
 # Member Card
 --------------------------------------------------------------*/
 
+.tbl-freedy-service tr td,
+.tbl-freedy-service tr th {
+  border: 2px solid #0078F0;
+}
+
+
+.country-select-card {
+  background-color: white !important;
+  width: 100%;
+  height: 60px;
+  border: 0 none !important;
+  border-radius: 16px !important;
+  box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.25), inset 2px 2px 4px rgba(0, 0, 0, 0.25);
+  color: #949494;
+  font-weight: 400 !important;
+  padding: 6px 20px !important;
+}
+
+.country-select-card:focus {
+  box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.25), inset 2px 2px 4px rgba(0, 0, 0, 0.25);
+  outline: 2px #acacac solid;
+  background-color: white !important;
+}
+
+
+
+.card-req-physical {
+  overflow-x:auto;
+}
+
+.label-dhl {
+  width: 100%;
+  font-size: 12px;
+  border-radius: 16px;
+  background-color: white !important;
+  box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.25), inset 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card-input-dlh {
+  box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.25), inset 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.card-input-dlh+.card {
+  box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.25), inset 2px 2px 4px rgba(0, 0, 0, 0.25);
+  height: calc(50px + 2*1rem);
+  color: rgb(0, 0, 0);
+  border: 2px solid transparent;
+  border-radius: 16px;
+}
+
+.card-input-dlh+.card:hover {
+  cursor: pointer;
+}
+
+.card-input-dlh:checked+.card {
+  border: 2px solid #0F4E97;
+  -webkit-transition: border .3s;
+  -o-transition: border .3s;
+  transition: border .3s;
+
+}
+
+.card-input-dlh+.card .c-dlh {
+  border: 1px solid black;
+  width: 20px; 
+  height: 20px;
+  border-radius: 999999px;
+  margin-left: 10px;
+}
+
+.card-input-dlh:checked+.card .c-dlh {
+  background-color: #0F4E97;
+  border: 1px solid #0F4E97;
+}
+
+.card-input-dlh+.card .m-dlh {
+  margin-left: 10px;
+}
+
+
 .currencies-card .btn-select-currencies {
   font-size: 14px;
 }
@@ -167,6 +292,16 @@ color: rgba(255, 255, 255, 0.8);
   
 }
 
+.wrap-3dsecure {
+  background-color: white !important;
+  width: 100%;
+  height: 60px;
+  font-weight: 600;
+  color: #121212 !important;
+  border: 0 none !important;
+  border-radius: 16px !important;
+  box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.25), inset 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
 
 
 .nohp-select {
@@ -184,6 +319,10 @@ color: rgba(255, 255, 255, 0.8);
   color: #949494;
   font-weight: 400 !important;
   padding: 6px 20px !important;
+  width: 90%;
+  height: 60px;
+  border: 0 none !important;
+  background-color: transparent;
 }
 
 
@@ -191,6 +330,21 @@ color: rgba(255, 255, 255, 0.8);
   color: #949494;
   font-weight: 400 !important;
   width: 100%;
+}
+
+.wrap-3dsecure .inputPass{
+  color: #949494;
+  font-size: 14px;
+  font-weight: 400 !important;
+  padding: 6px 20px !important;
+  width: 90%;
+  height: 60px;
+  border: 0 none !important;
+  background-color: transparent;
+}
+
+.wrap-3dsecure .inputPass:focus {
+  outline: none;
 }
 
 
@@ -212,7 +366,8 @@ color: rgba(255, 255, 255, 0.8);
 
 .card-req-activation h3, 
 .card-req-activation h4 {
-  font-size: 16px !important;
+  line-height: 140%;
+  font-size: 14px !important;
 }
 
 .card-req-card {
@@ -330,7 +485,9 @@ color: rgba(255, 255, 255, 0.8);
   opacity: 1;
 }
 
-
+.form-control.message-email:disabled, .form-control[readonly] {
+  background-color: transparent !important;
+}
 .form-req-card input:focus {
   border-color: inherit;
   -webkit-box-shadow: none;
@@ -428,6 +585,11 @@ color: rgba(255, 255, 255, 0.8);
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
+.gmaps-search-val {
+  font-size: 12px;
+}
+
+
 .breadcrumbs {
   padding: 15px 0;
   background: #CB0000;
@@ -3808,7 +3970,7 @@ color: rgba(255, 255, 255, 0.8);
   }
 
   .form-login-freedy .bg-black {
-    background: #161e25 !important;
+    background: #0D5FA4 !important;
     border-radius: 10px;
 
     color: #fff;
@@ -3907,8 +4069,6 @@ color: rgba(255, 255, 255, 0.8);
   }
 
   .navbar-app>.box-navbar-freedy a {
-    margin: 0 2rem;
-
     font-weight: 700;
     font-size: 12px;
     line-height: 20px;
@@ -3937,7 +4097,7 @@ color: rgba(255, 255, 255, 0.8);
   }
 
   .navbar-app>.box-navbar-freedy a .icon-menus.home-svg>img {
-    height: 75px;
+    height: 60px;
   }
 
   .app-logo {
@@ -4048,6 +4208,10 @@ color: rgba(255, 255, 255, 0.8);
     line-height: 17px;
 
     color: #1D003F;
+  }
+
+  .copy-refcode #refcode {
+    min-width: 28ch;
   }
 
   .menus-list-app a {
@@ -4471,7 +4635,7 @@ color: rgba(255, 255, 255, 0.8);
     width: 3.5em;
     height: 1.5em;
     background-color: #efefef !important;
-    background: url(../img/checkbox-ball.png);
+    background: url(../img/speedybank/checkbox-ball.png);
     background-repeat: no-repeat;
     background-size: auto 100%;
     background-position: left center;
@@ -4483,7 +4647,7 @@ color: rgba(255, 255, 255, 0.8);
     width: 3.5em;
     height: 1.5em;
     background-color: #00A7DC !important;
-    background: url(../img/checkbox-ball-chacked.png);
+    background: url(../img/speedybank/checkbox-ball-chacked.png);
     background-repeat: no-repeat;
     background-size: auto 100%;
     background-position: right center;
@@ -4895,7 +5059,7 @@ color: rgba(255, 255, 255, 0.8);
 
   .btn-receive-bank {
     font-weight: 600;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 22px;
     color: #ffffff;
     background-color: #0F4E97;
@@ -5478,6 +5642,14 @@ color: rgba(255, 255, 255, 0.8);
 
 @media (min-width: 375px) {
 
+    .card-input-dlh+.card .m-dlh {
+    margin-left: 15px;
+  }
+
+  .card-input-dlh+.card .m-eur {
+    margin-right: 10px;
+  }
+
   .currencies-card .btn-select-currencies {
     font-size: 16px;
   }
@@ -5523,6 +5695,12 @@ color: rgba(255, 255, 255, 0.8);
 }
 
 @media (min-width: 576px) {
+  
+  .card-number div:nth-child(2) input,
+  .card-number div:nth-child(2) input:focus {
+    font-size: 18px;
+  }
+
   .box-service-list .icon img {
     height: 65px;
   }
@@ -6091,7 +6269,7 @@ color: rgba(255, 255, 255, 0.8);
   }
 
   .form-login-freedy .bg-black {
-    background: #161e25 !important;
+    background: #0D5FA4 !important;
     border-radius: 10px;
 
     color: #fff;
@@ -6331,6 +6509,10 @@ color: rgba(255, 255, 255, 0.8);
     line-height: 17px;
 
     color: #1D003F;
+  }
+
+  .copy-refcode #refcode {
+    min-width: 52ch;
   }
 
   .menus-list-app a {
@@ -6754,7 +6936,7 @@ color: rgba(255, 255, 255, 0.8);
     width: 3.5em;
     height: 1.5em;
     background-color: #efefef !important;
-    background: url(../img/checkbox-ball.png);
+    background: url(../img/speedyank/checkbox-ball.png);
     background-repeat: no-repeat;
     background-size: auto 100%;
     background-position: left center;
@@ -6766,7 +6948,7 @@ color: rgba(255, 255, 255, 0.8);
     width: 3.5em;
     height: 1.5em;
     background-color: #00A7DC !important;
-    background: url(../img/checkbox-ball-chacked.png);
+    background: url(../img/speedybank/checkbox-ball-chacked.png);
     background-repeat: no-repeat;
     background-size: auto 100%;
     background-position: right center;
@@ -7753,6 +7935,24 @@ color: rgba(255, 255, 255, 0.8);
 }
 
 @media (min-width: 768px) {
+  .gmaps-search-val {
+    font-size: 16px !important;
+  }
+
+  .card-req-activation h3, 
+  .card-req-activation h4 {
+    font-size: 16px !important;
+  }
+
+  .card-input-dlh+.card .m-dlh {
+    margin-left: 30px;
+    font-size: 14px;
+  }
+
+  .card-input-dlh+.card .m-eur {
+    margin-right: 15px;
+    font-size: 14px;
+  }
 
   .hero h1,
   .transfer-money h1
@@ -8336,7 +8536,7 @@ color: rgba(255, 255, 255, 0.8);
   }
 
   .form-login-freedy .bg-black {
-    background: #161e25 !important;
+    background: #0D5FA4 !important;
     border-radius: 10px;
 
     color: #fff;
@@ -8575,6 +8775,10 @@ color: rgba(255, 255, 255, 0.8);
     line-height: 17px;
 
     color: #1D003F;
+  }
+
+  .copy-refcode #refcode {
+    min-width: 52ch;
   }
 
   .menus-list-app a {
@@ -8998,7 +9202,7 @@ color: rgba(255, 255, 255, 0.8);
     width: 3.5em;
     height: 1.5em;
     background-color: #efefef !important;
-    background: url(../img/checkbox-ball.png);
+    background: url(../img/speedybank/checkbox-ball.png);
     background-repeat: no-repeat;
     background-size: auto 100%;
     background-position: left center;
@@ -9010,7 +9214,7 @@ color: rgba(255, 255, 255, 0.8);
     width: 3.5em;
     height: 1.5em;
     background-color: #00A7DC !important;
-    background: url(../img/checkbox-ball-chacked.png);
+    background: url(../img/speedybank/checkbox-ball-chacked.png);
     background-repeat: no-repeat;
     background-size: auto 100%;
     background-position: right center;
@@ -10260,7 +10464,7 @@ color: rgba(255, 255, 255, 0.8);
   }
 
   .form-login-freedy .bg-black {
-    background: #161e25 !important;
+    background: #0D5FA4 !important;
     border-radius: 10px;
 
     color: #fff;
@@ -10403,6 +10607,16 @@ color: rgba(255, 255, 255, 0.8);
 }
 
 @media (min-width: 1200px) {
+  .card-input-dlh+.card .m-dlh {
+    margin-left: 10px;
+    font-size: 12px;
+  }
+
+  .card-input-dlh+.card .m-eur {
+    margin-right: 5px;
+    font-size: 14px;
+  }
+
   .logo-text.technology span {
     font-size: 40px;
   }
@@ -11004,9 +11218,8 @@ color: rgba(255, 255, 255, 0.8);
   }
 
   .form-login-freedy .bg-black {
-    background: #161e25 !important;
+    background: #0D5FA4 !important;
     border-radius: 10px;
-
     color: #fff;
   }
 
@@ -11244,6 +11457,10 @@ color: rgba(255, 255, 255, 0.8);
     line-height: 17px;
 
     color: #1D003F;
+  }
+
+  .copy-refcode #refcode {
+    min-width: 38ch;
   }
 
   .menus-list-app a {
@@ -11667,7 +11884,7 @@ color: rgba(255, 255, 255, 0.8);
     width: 3.5em;
     height: 1.5em;
     background-color: #efefef !important;
-    background: url(../img/checkbox-ball.png);
+    background: url(../img/speedybank/checkbox-ball.png);
     background-repeat: no-repeat;
     background-size: auto 100%;
     background-position: left center;
@@ -11679,7 +11896,7 @@ color: rgba(255, 255, 255, 0.8);
     width: 3.5em;
     height: 1.5em;
     background-color: #00A7DC !important;
-    background: url(../img/checkbox-ball-chacked.png);
+    background: url(../img/speedybank/checkbox-ball-chacked.png);
     background-repeat: no-repeat;
     background-size: auto 100%;
     background-position: right center;

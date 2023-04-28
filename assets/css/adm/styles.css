@@ -12993,3 +12993,47 @@ body {
 .swap-form-icon input[readonly] {
   background: #FFFFFF !important;
 }
+
+.f-hahmlet {
+  font-family: 'Hahmlet', serif;
+}
+
+.f-jakarta {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+
+.infowallet-list-app {
+  background: #ffffff;
+  border: 1px solid #00A7DC;
+  border-radius: 5px;
+}
+
+
+.list-send-wallet span {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.attention-box {
+  background: linear-gradient(180deg, #00A7DC 0%, #0F4E97 100%);
+  border: 3px solid #0F4E97;
+  border-radius: 10px;
+}
+
+.attention-box .title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 110%;
+  color: #ffffff;
+}
+
+.attention-box p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #e1e1e1;
+}
