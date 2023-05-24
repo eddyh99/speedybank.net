@@ -11,7 +11,7 @@
                         value="<?php echo $this->security->get_csrf_hash(); ?>">
                     <input type="hidden" name="token" value="<?= $_SESSION["token"] ?>">
                     <div class="col-12 mb-4 text-center">
-                        <span class="my-3 title f-poppins">Forgot Password</span>
+                        <span class="my-3 title f-poppins">Reset Your Password</span>
                         <a href="<?= base_url() ?>">
                             <img src="<?= base_url() ?>assets/img/logo.png" alt="">
                         </a>

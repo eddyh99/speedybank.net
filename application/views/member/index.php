@@ -77,12 +77,12 @@
                                         <span class="ms-2 f-jakarta text-blue-freedy fw-bolder btn-select-currencies">Select Currencies</span>
                                     </a>
                                 </div>
-                                <div class="col-12 col-md-6 text-center mx-auto">
+                                <!-- <div class="col-12 col-md-6 text-center mx-auto">
                                     <a href="<?= base_url() ?>card" class="d-flex align-items-center justify-content-center p-2 my-2 ">
                                         <img class="" src="<?= base_url()?>assets/img/speedybank/cardhome.png" alt="">
                                         <span class="ms-5 f-jakarta text-blue-freedy fw-bolder btn-select-currencies">Card</span>
                                     </a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         

@@ -8,7 +8,7 @@
                     Transactions
                 </div>
                 <div class="card-body">
-                    <form method="POST" id="swapconfirm" action="<?= base_url() ?>admin/swap/confirm"
+                    <form method="POST" id="swapconfirm" action="<?= base_url() ?>admin/swap/admin_confirm"
                         class="swap text-center" onsubmit="return validate()">
 
                         <?php if (@isset($_SESSION["failed"])) { ?>

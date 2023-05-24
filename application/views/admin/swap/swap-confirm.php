@@ -7,7 +7,7 @@
                     Transactions
                 </div>
                 <div class="card-body">
-                    <form method="POST" id="swapconfirm" action="<?= base_url() ?>admin/swap/notif" class="swap"
+                    <form method="POST" id="swapconfirm" action="<?= base_url() ?>admin/swap/admin_notif" class="swap"
                         onsubmit="return validate()">
                         <input type="hidden" id="token" name="<?php echo $this->security->get_csrf_token_name(); ?>"
                             value="<?php echo $this->security->get_csrf_hash(); ?>">

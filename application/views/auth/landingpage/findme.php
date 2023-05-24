@@ -23,6 +23,15 @@
         
               <!-- Start Country -->
               <?php if($findme == 1){ ?>
+                <?php if (@isset($_SESSION["failed"])) { ?>
+                  <div class="alert alert-danger alert-dismissible" id="danger-alert" style="display: grid; position: fixed; top: 10px; z-index: 99999; padding: 1rem;
+                    left: 0;
+                    right: 0;
+                    max-width: 300px;
+                    margin: 0 auto;">
+                        <?= $_SESSION["failed"]; ?>
+                    </div>
+                <?php } ?>
                 <form action="<?=base_url()?>link/findcategory" method="post">
                     <input type="hidden" name="findme" value="<?=base64_encode(2)?>">
                     <input type="hidden" id="token"

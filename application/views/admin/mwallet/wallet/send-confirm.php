@@ -10,7 +10,7 @@
                 </div>
                 <div class="col-12 infowallet-list-app f-jakarta my-4">
                     <div class="col-12 py-4 px-4">
-                        <form method="POST" action="<?= base_url() ?>admin/sendwallet/send_notif" id="form_submit" onsubmit="return validate()">
+                        <form method="POST" action="<?= base_url() ?>admin/sendwallet/admin_notif" id="form_submit" onsubmit="return validate()">
                             <input type="hidden" id="token" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>">
                             <div class="col-12 list-send-wallet d-flex flex-column mb-3">
                                 <span>Recipients unique code</span>

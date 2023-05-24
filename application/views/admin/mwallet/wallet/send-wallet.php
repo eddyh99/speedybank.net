@@ -23,7 +23,7 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                             </div>
                         <?php } ?>
-                        <form method="POST" action="<?= base_url() ?>admin/sendwallet/send_confirm" class="input-piggy-style" id="form_submit" onsubmit="return validate()">
+                        <form method="POST" action="<?= base_url() ?>admin/sendwallet/admin_confirm" class="input-piggy-style" id="form_submit" onsubmit="return validate()">
                             <input type="hidden" id="token" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>">
                             <div class="mb-3">
                                 <label class="ms-2 form-label">RECIPIENT’S UNIQUE CODE</label>

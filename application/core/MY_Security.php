@@ -26,59 +26,86 @@ class MY_Security extends CI_Security {
             header('Location: ' . $base_url . 'homepage');
         }
         // Registrasi
-        elseif(strstr($linkurl, 'auth/signup'))
+        if(strstr($linkurl, 'auth/signup'))
         {
             header('Location: ' . $base_url . 'auth/signup_notif');
         }
         // Findme
-        elseif(strstr($linkurl, 'link/findcategory') || strstr($linkurl, 'link/findbusiness') )
+        if(strstr($linkurl, 'link/findcategory') || strstr($linkurl, 'link/findbusiness') )
         {
             header('Location: ' . $base_url . 'link/findme?findme=MQ==');
         }
         // Contact Us Landingpage
-        elseif(strstr($linkurl, 'link/send_message'))
+        if(strstr($linkurl, 'link/send_message'))
         {
             header('Location: ' . $base_url . '#technology' );
+        }        
+
+        /* ========= START ADMIN AREA ========= */
+        // Wallet Send
+        if(strstr($linkurl, 'wallet/admin_confirm') || strstr($linkurl, 'wallet/admin_notif'))
+        {
+            header('Location: ' . $base_url . 'admin/sendwallet');
+        }
+        // Swap
+        if(strstr($linkurl, 'admin/swap/admin_confirm') || strstr($linkurl, 'admin/swap/admin_notif'))
+        {
+            header('Location: ' . $base_url . 'admin/swap');
+        }
+        /* ========= END ADMIN AREA ========= */
+
+
+        /* ========= START MEMBER AREA ========= */
+        // Topup Local
+        if(strstr($linkurl, 'receive/localbank_confirm') || strstr($linkurl, 'receive/localbank_notif'))
+        {
+            header('Location: ' . $base_url . 'receive/localbank');
+        }
+        // Topup International
+        if(strstr($linkurl, 'receive/interbank_confirm') || strstr($linkurl, 'receive/interbank_notif'))
+        {
+            header('Location: ' . $base_url . 'receive/interbank');
         }
         // Wallet Send
-        elseif(strstr($linkurl, 'wallet/send_confirm') || strstr($linkurl, 'wallet/send_notif'))
+        if(strstr($linkurl, 'wallet/send_confirm') || strstr($linkurl, 'wallet/send_notif'))
         {
             header('Location: ' . $base_url . 'wallet/send');
         }
         // Wallet Request
-        elseif(strstr($linkurl, 'wallet/request_qrcode'))
+        if(strstr($linkurl, 'wallet/request_qrcode'))
         {
             header('Location: ' . $base_url . 'wallet/request');
         }
         // toBank Local
-        elseif(strstr($linkurl, 'bank/bankconfirm') || strstr($linkurl, 'bank/banknotif'))
+        if(strstr($linkurl, 'bank/bankconfirm') || strstr($linkurl, 'bank/banknotif'))
         {
             header('Location: ' . $base_url . 'bank');
         }
         // Swap
-        elseif(strstr($linkurl, 'swap/confirm') || strstr($linkurl, 'swap/notif'))
+        if(strstr($linkurl, 'swap/confirm') || strstr($linkurl, 'swap/notif'))
         {
             header('Location: ' . $base_url . 'swap');
         }
         // Card Available
-        elseif(strstr($linkurl, 'card/topupconfirm'))
+        if(strstr($linkurl, 'card/topupconfirm'))
         {
             header('Location: ' . $base_url . 'card/topupcard ');
         }
-        elseif(strstr($linkurl, 'card/topupproses'))
+        if(strstr($linkurl, 'card/topupproses'))
         {
             header('Location: ' . $base_url . 'card ');
         }
         // Card Unavaiilable Req Virtual    
-        elseif(strstr($linkurl, 'card/activecard'))
+        if(strstr($linkurl, 'card/activecard'))
         {
             header('Location: ' . $base_url . 'card/requestcard?requestcard=dmlydHVhbA==');
         }
         // Card Unavaiilable Req Physical
-        elseif(strstr($linkurl, 'card/shipping') || strstr($linkurl, 'card/cardsecurity') || strstr($linkurl, 'card/summary'))
+        if(strstr($linkurl, 'card/shipping') || strstr($linkurl, 'card/cardsecurity') || strstr($linkurl, 'card/summary'))
         {
             header('Location: ' . $base_url . 'card/requestcard_physical?requestcard_physical=cmVxdWVzdGNhcmRfcGh5c2ljYWw=');
         }
+        /* ========= END MEMBER AREA ========= */
 
         // End Check Condition Direct Page CSRF 
     }

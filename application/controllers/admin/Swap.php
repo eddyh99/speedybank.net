@@ -88,7 +88,7 @@ class Swap extends CI_Controller
         }
     }
 
-    public function confirm()
+    public function admin_confirm()
     {
         $amount        = $this->security->xss_clean($this->input->post("amount"));
         $a = $this->input->post("amount");
@@ -127,7 +127,7 @@ class Swap extends CI_Controller
         $this->load->view('admin_template/wrapper2', $data);
     }
 
-    public function notif()
+    public function admin_notif()
     {
         $this->form_validation->set_rules('toswap', 'Currency Target', 'trim|required|max_length[3]|min_length[3]');
         $this->form_validation->set_rules('amount', 'Amount', 'trim|required|greater_than[0]');
