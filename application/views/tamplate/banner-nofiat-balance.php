@@ -4,7 +4,7 @@
             <div class="d-flex flex-row">
                 <div class="d-flex flex-column">
                     <div class="copy-uqcode mt-3 mb-2 d-flex flex-row align-items-center">
-                        <span class="me-2">UNIQUE CODE : </span>
+                        <span class="me-2">Short Code : </span>
                         <input class="me-2" type="text" name="" id="uqcode" value="<?= $_SESSION["ucode"] ?>" readonly>
                         <a class="btn btn-copy me-2" id="btnuq">
                           <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">

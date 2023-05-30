@@ -154,4 +154,8 @@ function resizeInput() {
 Reference: http://jsfiddle.net/BB3JK/47/
 */
 
+$("#btnconfirm").click(function () {
+    $('#load').show();
+});
+
 
