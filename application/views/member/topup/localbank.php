@@ -38,7 +38,7 @@
                                 <input type="hidden" id="token"
                                     name="<?php echo $this->security->get_csrf_token_name(); ?>"
                                     value="<?php echo $this->security->get_csrf_hash(); ?>">
-
+                                <input type="hidden" id="currency" name="currency" value="<?= $currency?>">
                                 <div class="my-3">
                                     <label class="ms-2 form-label">AMOUNT</label>
                                     <input type="text" class="form-control money-input" name="amount" id="amount"

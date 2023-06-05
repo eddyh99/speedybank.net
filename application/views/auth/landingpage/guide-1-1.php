@@ -7,10 +7,11 @@
                     <li>Choose the FIAT currency that you want to receive</li>
                     <li>Go on ‘’DEPOSIT/RECEIVE FUNDS’’ section of your wallet and :
                         <ul>
+                            <li>Choose if you want to make a national or an international transfer</li>
+                            <li>Enter the amount than confirm the amount and click ‘’Next’’ button</li>
+                            <li>Check the entered data and click ‘’Confirm’’ button</li>
                             <li>Copy all the fields of the form that you find on the page</li>
-                            <li>Paste on your online bank form/bank desk, making sure to copy exactly the ‘’Causal’’, as
-                                it
-                                identifies the destination wallet</li>
+                            <li>Paste on your online bank form/bank desk, making sure to copy exactly the ‘’Causal’’ which is the short code that it identifies the destination wallet</li>
                             <li>Send the bank transfer from your bank</li>
                         </ul>
                     </li>

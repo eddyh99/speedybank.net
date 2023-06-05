@@ -59,12 +59,12 @@ class MY_Security extends CI_Security {
         // Topup Local
         if(strstr($linkurl, 'receive/localbank_confirm') || strstr($linkurl, 'receive/localbank_notif'))
         {
-            header('Location: ' . $base_url . 'receive/localbank');
+            header('Location: ' . $base_url . 'receive');
         }
         // Topup International
         if(strstr($linkurl, 'receive/interbank_confirm') || strstr($linkurl, 'receive/interbank_notif'))
         {
-            header('Location: ' . $base_url . 'receive/interbank');
+            header('Location: ' . $base_url . 'receive');
         }
         // Wallet Send
         if(strstr($linkurl, 'wallet/send_confirm') || strstr($linkurl, 'wallet/send_notif'))

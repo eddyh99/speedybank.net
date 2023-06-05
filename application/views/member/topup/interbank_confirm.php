@@ -24,6 +24,7 @@
                         <div class="col-12 py-4">
                             <form method="POST" action="<?= base_url() ?>receive/interbank_notif" id="form_submit" onsubmit="return validate()">
                                 <input type="hidden" id="token" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>">
+                                <input type="hidden" id="currency" name="currency" value="<?= $data['currency'] ?>">
                                 <div class="col-12 list-send-wallet d-flex flex-column mb-3">
                                     <span>Amount: </span>
                                     <span class="fs-6 text-blue-freedy"><?= $data["amount"] ?></span>
