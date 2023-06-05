@@ -24,7 +24,7 @@
                         </h6>
                         <div class="d-flex justify-content-start">
                             <a href="">
-                                <button class="btn btn-content-silver">Top up support</button>
+                                <button class="btn btn-topup-support">Top up support</button>
                             </a>
                         </div>
                         <p class="my-3">                       
